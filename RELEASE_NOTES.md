@@ -1,18 +1,24 @@
 # UUI Studio Windows 测试版发行说明
 
-版本：0.1.0。构建批次：2026-11-09。性质：预览测试版。
+版本：0.1.0。构建批次：2026-11-09-logo.1。性质：预览测试版（新图标修订1）。
 
-本次预览测试版已在 [GitHub Releases](https://github.com/felixdds/uui-studio/releases/tag/v0.1.0-preview.20261109) 发布。
+本次预览测试版已在 [GitHub Releases](https://github.com/felixdds/uui-studio/releases/tag/v0.1.0-preview.20261109-logo.1) 发布。
 
-[下载安装包（推荐）](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261109/UUI-Studio-0.1.0-Windows-Rust-Setup.exe) · [便携 ZIP（可选）](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261109/UUI-Studio-0.1.0-Windows-Rust.zip) · [中文演示视频](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261109/UUI-Studio-AI-Cafe-Demo-zh-CN.mp4) · [校验文件](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261109/SHA256SUMS.txt)
+[下载安装包（推荐）](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261109-logo.1/UUI-Studio-0.1.0-Windows-Rust-Setup.exe) · [便携 ZIP（可选）](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261109-logo.1/UUI-Studio-0.1.0-Windows-Rust.zip) · [中文演示视频](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261109-logo.1/UUI-Studio-AI-Cafe-Demo-zh-CN.mp4) · [校验文件](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261109-logo.1/SHA256SUMS.txt)
 
 ## 下载选择
 
-推荐独立 Setup：`UUI-Studio-0.1.0-Windows-Rust-Setup.exe`，57,227,747字节（54.58 MiB）。可选便携版：`UUI-Studio-0.1.0-Windows-Rust.zip`，88,347,835字节（84.26 MiB）。两者任选其一；Setup 不依赖 ZIP。
+推荐独立 Setup：`UUI-Studio-0.1.0-Windows-Rust-Setup.exe`，57,250,833字节（54.60 MiB）。可选便携版：`UUI-Studio-0.1.0-Windows-Rust.zip`，88,355,186字节（84.26 MiB）。两者任选其一；Setup 不依赖 ZIP。
 
 文件名与此前版本相同，请以构建批次及 SHA-256 区分，避免重复发布同名旧包。
 
-## 更新内容
+## 本次图标修订
+
+Setup 安装器、便携 ZIP、窗口与 EXE 均采用新的 UUI Studio 图标，含九种尺寸。与初版 ZIP 对比，仅图标 SVG、ICO、EXE 图标资源与包清单改变，业务代码与 SDK 未变。已验证新包的便携运行、隔离安装、用户 APP 构建与启动/重开，以及卸载；原安装文件未变。
+
+[原预览版归档](https://github.com/felixdds/uui-studio/releases/tag/v0.1.0-preview.20261109)继续保留，演示视频内容不变。
+
+## 保留的产品能力
 
 - 同步当前 Windows 运行载荷、原生计划审批、AI 工程历史及截图需求参考；AI 可按批准范围移动已有组件并恢复属性默认行为。
 - 统一75项事件契约及 uui 公共入口。新模块使用 v2，已有 UUI 三参模块继续兼容，不批量改写用户业务。
@@ -42,8 +48,8 @@
 ## SHA-256
 
 ```text
-0ceedaab319e75b62653aa827184a77ee23b03f35373d1005b4c465b5464af06  UUI-Studio-0.1.0-Windows-Rust-Setup.exe
-3c51a481a36dcfb3b87cef510f174077b3f2150a9115892e31ed0181ac9760f1  UUI-Studio-0.1.0-Windows-Rust.zip
+03a9e68bdc88bd737e8bc6721d618d42cbf56f92adfe2d84f797fa21293ff64e  UUI-Studio-0.1.0-Windows-Rust-Setup.exe
+b2d21120824c065a862b6e16e0768bf97578da78b41f52909bf1521f779b7b10  UUI-Studio-0.1.0-Windows-Rust.zip
 ```
 
 Windows 可用 `Get-FileHash -Algorithm SHA256 -LiteralPath '下载文件路径'` 核对。[SHA256SUMS.txt](SHA256SUMS.txt)提供相同摘要。

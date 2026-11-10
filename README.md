@@ -8,7 +8,7 @@
 
 统一用户界面工作室是一套支持可视化设计与 AI 协作的应用开发工具。人通过设计器编辑，AI 通过协议操作，共同维护同一份可编辑工程；生成后仍能继续调整界面、检查业务代码并追加需求。
 
-本次介绍对应的 Windows 测试版本为 **0.1.0，2026-11-09 构建批次**。欢迎开发者试用、反馈，并探讨联合技术验证与产品合作。
+本次介绍对应的 Windows 测试版本为 **0.1.0，2026-11-09-logo.1 构建批次（新图标修订1）**。欢迎开发者试用、反馈，并探讨联合技术验证与产品合作。
 
 ![咖啡点餐应用实际运行](assets/咖啡点餐_会员九折.png)
 
@@ -20,9 +20,9 @@
 
 ## 演示与下载
 
-**Windows 预览测试版现已开放下载。** [查看本次发行](https://github.com/felixdds/uui-studio/releases/tag/v0.1.0-preview.20261109)。
+**Windows 预览测试版现已开放下载。** [查看本次发行](https://github.com/felixdds/uui-studio/releases/tag/v0.1.0-preview.20261109-logo.1)。
 
-[下载安装包（推荐）](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261109/UUI-Studio-0.1.0-Windows-Rust-Setup.exe) · [便携 ZIP（可选）](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261109/UUI-Studio-0.1.0-Windows-Rust.zip) · [中文演示视频](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261109/UUI-Studio-AI-Cafe-Demo-zh-CN.mp4) · [校验文件](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261109/SHA256SUMS.txt)
+[下载安装包（推荐）](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261109-logo.1/UUI-Studio-0.1.0-Windows-Rust-Setup.exe) · [便携 ZIP（可选）](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261109-logo.1/UUI-Studio-0.1.0-Windows-Rust.zip) · [中文演示视频](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261109-logo.1/UUI-Studio-AI-Cafe-Demo-zh-CN.mp4) · [校验文件](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261109-logo.1/SHA256SUMS.txt)
 
 [下载与演示](下载与演示.md) · [本次发行说明](RELEASE_NOTES.md) · [快速上手与测试反馈](测试指南.md)
 
@@ -30,12 +30,14 @@
 
 | 文件 | 用途 | 大小 |
 | --- | --- | --- |
-| UUI-Studio-0.1.0-Windows-Rust-Setup.exe | 推荐，独立安装，无需另下 ZIP | 54.58 MiB |
+| UUI-Studio-0.1.0-Windows-Rust-Setup.exe | 推荐，独立安装，无需另下 ZIP | 54.60 MiB |
 | UUI-Studio-0.1.0-Windows-Rust.zip | 可选，解压完整目录后运行 | 84.26 MiB |
 
 安装包与便携版均使用 Rust 宿主，界面和业务脚本使用 HTML/CSS/JavaScript。运行 Studio 和构建用户 APP 不需要 Python 或安装 Rust 编译器。包含中英文离线帮助和十个可编辑示例。AI 需要自行配置服务与 API Key，调用费用及可用模型取决于服务方。
 
 ## 本次更新
+
+- 本次下载为新图标修订1：Setup、便携 ZIP、窗口与 EXE 图标同步；业务代码和 SDK 未变。
 
 - 计划审批、工程内 AI 历史及截图需求参考。
 - 统一75项事件契约和 uui 公共接口；新模块采用 v2，保留旧三参事件模块兼容。
