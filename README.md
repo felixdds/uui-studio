@@ -50,6 +50,14 @@ Windows Studio 与独立 APP 已有真实运行及构建证据；AI 在线闭环
 
 Android 当前为 Rust ARM64，最低系统目标为 Android10/API29，WebView120为待最低设备验收的候选下限。macOS、Linux 和 iOS 的当前 Rust 版本尚未完成全面原生验收；iOS/iPadOS17是目标范围。通用其他编程语言桥接仍为后续方向。
 
+## UUI Studio 的故事
+
+UUI Studio 由一名牙医提出构想并主导架构设计，需求、规则与交互判断由人负责，实现代码由 Codex 生成。项目在日常工作间隙逐步推进：AI 能干的事情，就尽量交给 AI，各取所长，不否定别人，也不否定自己。
+
+[从一个跨平台构想开始](stories/01-origin.md) · [五个月的见缝插针式开发](stories/02-between-patients.md) · [一个属性旁边的小叉](stories/03-inline-properties.md)
+
+[阅读全部八篇故事](stories/README.md) · [软件开发者视角的评述](docs/review.md)
+
 ## 联合验证与合作
 
 希望与开发工具、研发效能及应用开发团队交流，由架构设计者与专业工程师共同选择一个小型业务场景，验证工程可维护性、AI 增量修改、构建与问题定位，再讨论产品完善、发行及推广合作。欢迎通过[Issues](https://github.com/felixdds/uui-studio/issues) 提出技术交流意向，请勿在公开反馈中提交密钥或业务私密资料。
