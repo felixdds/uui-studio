@@ -1,5 +1,7 @@
 # Codex 能写代码 我负责守住架构
 
+简体中文 · [English](en/06-working-with-codex.md)
+
 Codex 往往能很快做出一个功能，但它采用的方式未必符合 UUI Studio 的架构。一个看起来正常的结果，仍可能需要重做。
 
 ## 能显示出来 还不够

@@ -1,5 +1,7 @@
 # 为什么 Splitter 只是 Panel 的一个属性
 
+简体中文 · [English](en/04-component-responsibilities.md)
+
 Codex 最初实现 Splitter 时，把它设计成了一个独立组件。这是很常见的做法，但我问：Splitter 是用来调整 Panel 尺寸的，为什么不能直接成为 Panel 的一个属性？
 
 ## 方向已经包含在停靠关系里

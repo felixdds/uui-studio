@@ -1,5 +1,7 @@
 # 为了一个 BMI 计算器 我先做了一套平台
 
+简体中文 · [English](en/07-apps-and-platforms.md)
+
 我经常开玩笑：“为了开发一个 BMI 计算器，我先开发了一套跨平台应用开发平台。”
 
 BMI Calculator 和 MyBible，是我用 UUI Studio 开发的应用。对我来说，它们不仅是展示材料，也是发现平台哪里不好用的机会。

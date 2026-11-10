@@ -1,5 +1,7 @@
 # UUI Studio
 
+[中文故事](stories/README.md) · [English stories](stories/en/README.md) · [Developer commentary in English](docs/en/review.md)
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/brand/uui-studio-horizontal-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/brand/uui-studio-horizontal-light.svg">
@@ -56,7 +58,9 @@ UUI Studio 由一名牙医提出构想并主导架构设计，需求、规则与
 
 [从一个跨平台构想开始](stories/01-origin.md) · [五个月的见缝插针式开发](stories/02-between-patients.md) · [一个属性旁边的小叉](stories/03-inline-properties.md)
 
-[阅读全部八篇故事](stories/README.md) · [软件开发者视角的评述](docs/review.md)
+[中文故事目录](stories/README.md) · [English stories](stories/en/README.md)
+
+[软件开发者视角的评述](docs/review.md) · [Developer commentary in English](docs/en/review.md)
 
 ## 联合验证与合作
 
