@@ -2,7 +2,9 @@
 
 版本：0.1.0。构建批次：2026-11-09。性质：预览测试版。
 
-本文说明本地已生成的测试包；GitHub Releases 附件尚未上传，当前不是下载已开放的通知。
+本次预览测试版已在 [GitHub Releases](https://github.com/felixdds/uui-studio/releases/tag/v0.1.0-preview.20261109) 发布。
+
+[下载安装包（推荐）](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261109/UUI-Studio-0.1.0-Windows-Rust-Setup.exe) · [便携 ZIP（可选）](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261109/UUI-Studio-0.1.0-Windows-Rust.zip) · [中文演示视频](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261109/UUI-Studio-AI-Cafe-Demo-zh-CN.mp4) · [校验文件](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261109/SHA256SUMS.txt)
 
 ## 下载选择
 
