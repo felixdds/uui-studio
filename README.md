@@ -1,5 +1,11 @@
 # UUI Studio
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/brand/uui-studio-horizontal-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/brand/uui-studio-horizontal-light.svg">
+  <img alt="UUI Studio" src="assets/brand/uui-studio-horizontal-light.svg" width="760">
+</picture>
+
 统一用户界面工作室是一套支持可视化设计与 AI 协作的应用开发工具。人通过设计器编辑，AI 通过协议操作，共同维护同一份可编辑工程；生成后仍能继续调整界面、检查业务代码并追加需求。
 
 本次介绍对应的 Windows 测试版本为 **0.1.0，2026-11-09 构建批次**。欢迎开发者试用、反馈，并探讨联合技术验证与产品合作。
