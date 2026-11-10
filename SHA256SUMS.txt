@@ -1,0 +1,2 @@
+0ceedaab319e75b62653aa827184a77ee23b03f35373d1005b4c465b5464af06  UUI-Studio-0.1.0-Windows-Rust-Setup.exe
+3c51a481a36dcfb3b87cef510f174077b3f2150a9115892e31ed0181ac9760f1  UUI-Studio-0.1.0-Windows-Rust.zip
