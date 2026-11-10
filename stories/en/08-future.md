@@ -36,4 +36,4 @@ I do not know how far UUI Studio will ultimately go. But as long as I can look a
 
 ---
 
-[Series index](README.md) · [Product homepage (Chinese)](../../README.md) · [Previous](07-apps-and-platforms.md)
+[Series index](README.md) · [Product homepage](../../README.en.md) · [Previous](07-apps-and-platforms.md)

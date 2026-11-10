@@ -36,4 +36,4 @@ Those small intervals gradually added up to today's UUI Studio.
 
 ---
 
-[Series index](README.md) · [Product homepage (Chinese)](../../README.md) · [Previous](01-origin.md) · [Next](03-inline-properties.md)
+[Series index](README.md) · [Product homepage](../../README.en.md) · [Previous](01-origin.md) · [Next](03-inline-properties.md)

@@ -6,7 +6,7 @@ I am a dentist, and the person behind UUI Studio's concept and architecture. I h
 
 > If AI can handle something, I try to let it. We each do what we do best, without dismissing others or discounting my own contribution.
 
-Read in order or start with a question that interests you. These are accounts of development and design decisions. For the capabilities and validation scope of the current public test packages, consult the [product homepage](../../README.md), [release notes](../../RELEASE_NOTES.md), and [testing guide](../../测试指南.md), currently in Chinese.
+Read in order or start with a question that interests you. These are accounts of development and design decisions. For the capabilities and validation scope of the current public test packages, consult the [product homepage](../../README.en.md), [release notes](../../RELEASE_NOTES.en.md), and [testing guide](../../docs/en/testing.md).
 
 ## Suggested reading order
 
@@ -46,4 +46,4 @@ Read in order or start with a question that interests you. These are accounts of
 
 [A Software Developer's Perspective](../../docs/en/review.md) is separate from the first-person stories. It discusses consistency, engineering boundaries, and questions for further assessment. It is analytical commentary, not an outside expert's endorsement or an independent audit.
 
-[Product homepage (Chinese)](../../README.md)
+[Product homepage](../../README.en.md)

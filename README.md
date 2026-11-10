@@ -1,5 +1,7 @@
 # UUI Studio
 
+简体中文 · [English](README.en.md)
+
 [中文故事](stories/README.md) · [English stories](stories/en/README.md) · [Developer commentary in English](docs/en/review.md)
 
 <picture>

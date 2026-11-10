@@ -44,4 +44,4 @@ To me, this connects directly to Studio using UDM first: find problems through a
 
 ---
 
-[Series index](README.md) · [Product homepage (Chinese)](../../README.md) · [Previous](04-component-responsibilities.md) · [Next](06-working-with-codex.md)
+[Series index](README.md) · [Product homepage](../../README.en.md) · [Previous](04-component-responsibilities.md) · [Next](06-working-with-codex.md)

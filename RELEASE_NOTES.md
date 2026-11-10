@@ -1,5 +1,7 @@
 # UUI Studio Windows 测试版发行说明
 
+简体中文 · [English](RELEASE_NOTES.en.md)
+
 版本：0.1.0。构建批次：2026-11-09-logo.1。性质：预览测试版（新图标修订1）。
 
 本次预览测试版已在 [GitHub Releases](https://github.com/felixdds/uui-studio/releases/tag/v0.1.0-preview.20261109-logo.1) 发布。

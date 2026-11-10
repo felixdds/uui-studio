@@ -34,4 +34,4 @@ Twelve years ago, I had an idea. Now I can look at an actual piece of software a
 
 ---
 
-[Series index](README.md) · [Product homepage (Chinese)](../../README.md) · [Next](02-between-patients.md)
+[Series index](README.md) · [Product homepage](../../README.en.md) · [Next](02-between-patients.md)

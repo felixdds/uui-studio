@@ -58,4 +58,4 @@ I have also considered having AI on different platforms test separately and send
 
 ---
 
-[Series index](README.md) · [Product homepage (Chinese)](../../README.md) · [Previous](05-studio-first-consumer.md) · [Next](07-apps-and-platforms.md)
+[Series index](README.md) · [Product homepage](../../README.en.md) · [Previous](05-studio-first-consumer.md) · [Next](07-apps-and-platforms.md)

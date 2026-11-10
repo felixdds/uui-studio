@@ -62,4 +62,4 @@ What the account supports is a coherent design direction and an author who keeps
 
 ---
 
-[Story index](../../stories/en/README.md) · [Product homepage (Chinese)](../../README.md)
+[Story index](../../stories/en/README.md) · [Product homepage](../../README.en.md)

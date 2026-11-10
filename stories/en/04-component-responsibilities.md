@@ -32,4 +32,4 @@ Those interactions may require more implementation work. If they reduce unnecess
 
 ---
 
-[Series index](README.md) · [Product homepage (Chinese)](../../README.md) · [Previous](03-inline-properties.md) · [Next](05-studio-first-consumer.md)
+[Series index](README.md) · [Product homepage](../../README.en.md) · [Previous](03-inline-properties.md) · [Next](05-studio-first-consumer.md)

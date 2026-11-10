@@ -40,4 +40,4 @@ Behind that little cross is the question of how the model understands user inten
 
 ---
 
-[Series index](README.md) · [Product homepage (Chinese)](../../README.md) · [Previous](02-between-patients.md) · [Next](04-component-responsibilities.md)
+[Series index](README.md) · [Product homepage](../../README.en.md) · [Previous](02-between-patients.md) · [Next](04-component-responsibilities.md)

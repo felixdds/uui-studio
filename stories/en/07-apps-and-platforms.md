@@ -28,7 +28,7 @@ We successfully compiled on Windows, Android, Linux, macOS, and iOS. Moving betw
 
 At that stage, I needed to establish that this codebase could compile across platforms. I was not requiring full acceptance testing of all features and devices on each platform then.
 
-Those historical compilation experiences must be distinguished from the checks completed for a currently published version on a particular platform. Successful compilation, successful startup, functional checks, and long-term stability should not be combined into one conclusion. For the scope of current public test packages, see the repository's [validation notes in Chinese](../../README.md#当前验证范围).
+Those historical compilation experiences must be distinguished from the checks completed for a currently published version on a particular platform. Successful compilation, successful startup, functional checks, and long-term stability should not be combined into one conclusion. For the scope of current public test packages, see the repository's [validation notes](../../README.en.md#current-validation-scope).
 
 ## Continuing to improve what is already there
 
@@ -38,4 +38,4 @@ A platform need not continually prove its value by adding features. Making exist
 
 ---
 
-[Series index](README.md) · [Product homepage (Chinese)](../../README.md) · [Previous](06-working-with-codex.md) · [Next](08-future.md)
+[Series index](README.md) · [Product homepage](../../README.en.md) · [Previous](06-working-with-codex.md) · [Next](08-future.md)
