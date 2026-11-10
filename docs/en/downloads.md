@@ -2,9 +2,9 @@
 
 [简体中文](../../下载与演示.md) · English
 
-The Windows preview test version, new icon revision 1, and a Chinese demo video are available: [view this release](https://github.com/felixdds/uui-studio/releases/tag/v0.1.0-preview.20261109-logo.1).
+The Windows preview test version, localization and approval revision 1, and a Chinese demo video are available: [view this release](https://github.com/felixdds/uui-studio/releases/tag/v0.1.0-preview.20261110-locale-approval.1).
 
-[Installer (recommended)](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261109-logo.1/UUI-Studio-0.1.0-Windows-Rust-Setup.exe) · [Portable ZIP (optional)](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261109-logo.1/UUI-Studio-0.1.0-Windows-Rust.zip) · [Demo video in Chinese](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261109-logo.1/UUI-Studio-AI-Cafe-Demo-zh-CN.mp4) · [Checksums](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261109-logo.1/SHA256SUMS.txt)
+[Installer (recommended)](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-0.1.0-Windows-Rust-Setup.exe) · [Portable ZIP (optional)](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-0.1.0-Windows-Rust.zip) · [Demo video in Chinese](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-AI-Cafe-Demo-zh-CN.mp4) · [Checksums](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/SHA256SUMS.txt)
 
 ## Download and install
 
@@ -19,3 +19,5 @@ The video attachment is named `UUI-Studio-AI-Cafe-Demo-zh-CN.mp4` and lasts appr
 The recording shows a phone-proportioned application running on Windows. It does not establish that Android or iPhone has passed equivalent acceptance testing. Accelerated waiting and execution segments are marked. To make AI service calls yourself, you need to configure your own key.
 
 [English product homepage](../../README.en.md) · [Release notes](../../RELEASE_NOTES.en.md) · [Getting started and testing](testing.md)
+
+This batch updates language grouping and AI approval. The video is unchanged and does not show every new interaction. The previous installer and ZIP remain available in the [previous release](https://github.com/felixdds/uui-studio/releases/tag/v0.1.0-preview.20261109-logo.1).
