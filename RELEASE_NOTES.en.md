@@ -1,5 +1,7 @@
 # UUI Studio Windows Preview Release Notes
 
+**Icon revision: 2026-11-10-module-icon.1.** Downloads now use the component-cube icon with a larger UUI badge. The release tag and filenames are unchanged; verify the updated SHA-256. Application code and localization/approval behavior are unchanged.
+
 [简体中文](RELEASE_NOTES.md) · English
 
 Version: 0.1.0. Build: 2026-11-10-locale-approval.1. Status: preview test version, localization and approval revision 1.
@@ -10,7 +12,7 @@ Version: 0.1.0. Build: 2026-11-10-locale-approval.1. Status: preview test versio
 
 ## Choose a download
 
-The recommended standalone installer is `UUI-Studio-0.1.0-Windows-Rust-Setup.exe`, 57,289,602 bytes (54.64 MiB). The optional portable package is `UUI-Studio-0.1.0-Windows-Rust.zip`, 88,405,074 bytes (84.31 MiB). Choose either; the installer does not require the ZIP. Filenames remain the same, so distinguish builds by their identifier and SHA-256.
+The recommended standalone installer is `UUI-Studio-0.1.0-Windows-Rust-Setup.exe`, 58,389,743 bytes (55.68 MiB). The optional portable package is `UUI-Studio-0.1.0-Windows-Rust.zip`, 89,267,223 bytes (85.13 MiB). Choose either; the installer does not require the ZIP. Filenames remain the same, so distinguish builds by their identifier and SHA-256.
 
 ## Updates in this release
 
@@ -49,8 +51,8 @@ The [previous icon revision](https://github.com/felixdds/uui-studio/releases/tag
 ## SHA-256
 
 ```text
-d7e039794d68f2792ca081f6cb74314f5058b28f8f295c47193d08e3985ab18d  UUI-Studio-0.1.0-Windows-Rust-Setup.exe
-8422b55677d7ead6e9e834a0af4170b6449a067ed714d5c3e446bc99a7e51072  UUI-Studio-0.1.0-Windows-Rust.zip
+074997774ab7131d6973b68b051f2dc8fbf194b9d5ceabfde79ce798980f8b45  UUI-Studio-0.1.0-Windows-Rust-Setup.exe
+cedad00cdf8488d33a7626d4c6e78f5efd55e0169b3d983de633cb69ab111368  UUI-Studio-0.1.0-Windows-Rust.zip
 ```
 
 On Windows, use `Get-FileHash -Algorithm SHA256 -LiteralPath 'path-to-downloaded-file'`. [SHA256SUMS.txt](SHA256SUMS.txt) contains the same hashes.

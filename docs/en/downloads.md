@@ -1,5 +1,7 @@
 # Downloads and Demo
 
+**Icon revision: 2026-11-10-module-icon.1.** Downloads now use the component-cube icon with a larger UUI badge. The release tag and filenames are unchanged; verify the updated SHA-256. Application code and localization/approval behavior are unchanged.
+
 [简体中文](../../下载与演示.md) · English
 
 The Windows preview test version, localization and approval revision 1, and a Chinese demo video are available: [view this release](https://github.com/felixdds/uui-studio/releases/tag/v0.1.0-preview.20261110-locale-approval.1).

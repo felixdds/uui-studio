@@ -1,5 +1,7 @@
 # UUI Studio Windows 测试版发行说明
 
+**图标修订：2026-11-10-module-icon.1。** 本页下载已更新为组件魔方图标与放大的 UUI 标牌；发行标签和文件名保持不变，请核对最新 SHA-256。业务代码与翻译／审批功能保持不变。
+
 简体中文 · [English](RELEASE_NOTES.en.md)
 
 版本：0.1.0。构建批次：2026-11-10-locale-approval.1。性质：预览测试版，翻译与审批修订1。
@@ -10,7 +12,7 @@
 
 ## 下载选择
 
-推荐独立安装包 `UUI-Studio-0.1.0-Windows-Rust-Setup.exe`，57,289,602 字节（54.64 MiB）；可选便携包 `UUI-Studio-0.1.0-Windows-Rust.zip`，88,405,074 字节（84.31 MiB）。二者任选其一，Setup 不依赖 ZIP。文件名保持不变，请用构建批次和 SHA-256 区分新旧包。
+推荐独立安装包 `UUI-Studio-0.1.0-Windows-Rust-Setup.exe`，58,389,743 字节（55.68 MiB）；可选便携包 `UUI-Studio-0.1.0-Windows-Rust.zip`，89,267,223 字节（85.13 MiB）。二者任选其一，Setup 不依赖 ZIP。文件名保持不变，请用构建批次和 SHA-256 区分新旧包。
 
 ## 本次更新
 
@@ -49,8 +51,8 @@ Windows 使用 WebView2，受本机环境影响。既有在线 AI 证据来自 O
 ## SHA-256
 
 ```text
-d7e039794d68f2792ca081f6cb74314f5058b28f8f295c47193d08e3985ab18d  UUI-Studio-0.1.0-Windows-Rust-Setup.exe
-8422b55677d7ead6e9e834a0af4170b6449a067ed714d5c3e446bc99a7e51072  UUI-Studio-0.1.0-Windows-Rust.zip
+074997774ab7131d6973b68b051f2dc8fbf194b9d5ceabfde79ce798980f8b45  UUI-Studio-0.1.0-Windows-Rust-Setup.exe
+cedad00cdf8488d33a7626d4c6e78f5efd55e0169b3d983de633cb69ab111368  UUI-Studio-0.1.0-Windows-Rust.zip
 ```
 
 Windows 可用 `Get-FileHash -Algorithm SHA256 -LiteralPath '下载文件路径'` 核对。[SHA256SUMS.txt](SHA256SUMS.txt)提供相同摘要。

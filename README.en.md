@@ -1,13 +1,15 @@
 # UUI Studio
 
+**Icon revision: 2026-11-10-module-icon.1.** Downloads now use the component-cube icon with a larger UUI badge. The release tag and filenames are unchanged; verify the updated SHA-256. Application code and localization/approval behavior are unchanged.
+
 [简体中文](README.md) · English
 
 [Downloads and demo](docs/en/downloads.md) · [Getting started and testing](docs/en/testing.md) · [English stories](stories/en/README.md)
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/brand/uui-studio-horizontal-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/brand/uui-studio-horizontal-light.svg">
-  <img alt="UUI Studio" src="assets/brand/uui-studio-horizontal-light.svg" width="760">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/brand/uui-studio-horizontal-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="assets/brand/uui-studio-horizontal-light.png">
+  <img alt="UUI Studio" src="assets/brand/uui-studio-horizontal-light.png" width="760">
 </picture>
 
 UUI Studio, short for Unified User Interface Studio, is an application development tool with visual design and AI collaboration. People edit through the designer, while AI operates through a protocol, both working on the same editable project. After generation, you can continue adjusting the interface, inspecting business logic, and adding requirements.
@@ -36,8 +38,8 @@ The new recording lasts approximately 2 minutes 34 seconds: 1920×1080, 16:9, 30
 
 | File | Purpose | Size |
 | --- | --- | --- |
-| UUI-Studio-0.1.0-Windows-Rust-Setup.exe | Recommended standalone installer; no separate ZIP needed | 54.64 MiB |
-| UUI-Studio-0.1.0-Windows-Rust.zip | Optional portable package; extract the entire directory before running | 84.31 MiB |
+| UUI-Studio-0.1.0-Windows-Rust-Setup.exe | Recommended standalone installer; no separate ZIP needed | 55.68 MiB |
+| UUI-Studio-0.1.0-Windows-Rust.zip | Optional portable package; extract the entire directory before running | 85.13 MiB |
 
 Both packages use a Rust host, with HTML/CSS/JavaScript for the interface and business logic. Running Studio and building user applications do not require Python or an installed Rust compiler. The packages include Chinese and English offline help and ten editable examples. AI use requires configuring your own service and API key; fees and available models depend on the provider.
 

@@ -1,13 +1,15 @@
 # UUI Studio
 
+**图标修订：2026-11-10-module-icon.1。** 本页下载已更新为组件魔方图标与放大的 UUI 标牌；发行标签和文件名保持不变，请核对最新 SHA-256。业务代码与翻译／审批功能保持不变。
+
 简体中文 · [English](README.en.md)
 
 [中文故事](stories/README.md) · [English stories](stories/en/README.md) · [Developer commentary in English](docs/en/review.md)
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/brand/uui-studio-horizontal-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/brand/uui-studio-horizontal-light.svg">
-  <img alt="UUI Studio" src="assets/brand/uui-studio-horizontal-light.svg" width="760">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/brand/uui-studio-horizontal-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="assets/brand/uui-studio-horizontal-light.png">
+  <img alt="UUI Studio" src="assets/brand/uui-studio-horizontal-light.png" width="760">
 </picture>
 
 统一用户界面工作室是一套支持可视化设计与 AI 协作的应用开发工具。人通过设计器编辑，AI 通过协议操作，共同维护同一份可编辑工程；生成后仍能继续调整界面、检查业务代码并追加需求。
@@ -36,8 +38,8 @@
 
 | 文件 | 用途 | 大小 |
 | --- | --- | --- |
-| UUI-Studio-0.1.0-Windows-Rust-Setup.exe | 推荐，独立安装，无需另下 ZIP | 54.64 MiB |
-| UUI-Studio-0.1.0-Windows-Rust.zip | 可选，解压完整目录后运行 | 84.31 MiB |
+| UUI-Studio-0.1.0-Windows-Rust-Setup.exe | 推荐，独立安装，无需另下 ZIP | 55.68 MiB |
+| UUI-Studio-0.1.0-Windows-Rust.zip | 可选，解压完整目录后运行 | 85.13 MiB |
 
 安装包与便携版均使用 Rust 宿主，界面和业务脚本使用 HTML/CSS/JavaScript。运行 Studio 和构建用户 APP 不需要 Python 或安装 Rust 编译器。包含中英文离线帮助和十个可编辑示例。AI 需要自行配置服务与 API Key，调用费用及可用模型取决于服务方。
 
