@@ -1,62 +1,26 @@
 # UUI Studio Windows 测试版发行说明
 
-**图标修订：2026-11-10-module-icon.1。** 本页下载已更新为组件魔方图标与放大的 UUI 标牌；发行标签和文件名保持不变，请核对最新 SHA-256。业务代码与翻译／审批功能保持不变。
+**帮助与简体中文修订：2026-11-11-help-locale.1。** 13 个操作窗口统一支持标题栏“？”和 F1，上下文帮助包含中英文，简单确认框不加。九项过时译文已更新；本批次干净安装的简体中文待更新为 0。旧软件和演示视频继续保留。
 
-简体中文 · [English](RELEASE_NOTES.en.md)
+版本: 0.1.0 · 2026-11-11-help-locale.1
 
-版本：0.1.0。构建批次：2026-11-10-locale-approval.1。性质：预览测试版，翻译与审批修订1。
+[Setup](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261111-help-locale.1/UUI-Studio-0.1.0-Windows-Rust-Setup.exe) · [ZIP](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261111-help-locale.1/UUI-Studio-0.1.0-Windows-Rust.zip) · [SHA-256](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261111-help-locale.1/SHA256SUMS.txt)
 
-[查看本次发行](https://github.com/felixdds/uui-studio/releases/tag/v0.1.0-preview.20261110-locale-approval.1)
+## 更新内容
 
-[下载安装包（推荐）](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-0.1.0-Windows-Rust-Setup.exe) · [便携 ZIP（可选）](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-0.1.0-Windows-Rust.zip) · [1080P 中英字幕演示](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-Localization-Approval-1080p-zh-en.mp4) · [校验文件](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/SHA256SUMS.txt)
+- 操作窗口各自声明帮助主题，通用机制通过“？”和 F1 打开随包离线帮助，复用既有属性、组件和 AI 帮助。
+- 关闭帮助返回原窗口并恢复焦点；帮助操作不提交或取消原窗口草稿。已在 Windows WebView2 验证嵌套窗口与重复点击。
+- 九项简体中文译文与当前源文同步，包括服务密钥管理、密钥保存状态、空白 Form、搜索及平台标签；逐条审阅后更新源文校验值。本地覆盖译文单独处理。
 
-## 下载选择
+独立 Setup（推荐）: 58,399,740 bytes. 可选便携 ZIP: 89,276,497 bytes.
 
-推荐独立安装包 `UUI-Studio-0.1.0-Windows-Rust-Setup.exe`，58,389,743 字节（55.68 MiB）；可选便携包 `UUI-Studio-0.1.0-Windows-Rust.zip`，89,267,223 字节（85.13 MiB）。二者任选其一，Setup 不依赖 ZIP。文件名保持不变，请用构建批次和 SHA-256 区分新旧包。
+## 验证与范围
 
-## 本次更新
+44 项产品契约检查全部通过；检查干净载荷清单及文件哈希。Windows 实测覆盖包内中文状态、帮助主题跳转、焦点与草稿保留、嵌套帮助及简单确认框排除。本版仍是预览版，不代表最低 Android/iOS 设备验收；继续包含此前的翻译分组与按任务／按阶段 AI 审批功能。
 
-- 语言编辑器按“已从源文移除、待更新、已更新”分组，空组隐藏，显示筛选计数；保存后重新分组，已更新的目标译文仍可编辑。
-- 清理先确认该语言全部已确认移除的条目，不只处理搜索结果。修复旧随包译文在合并后重新出现的问题；同名源文重新加入仍可出现，不误删活动翻译。
-- AI 批准入口改为 SplitButton，主按钮批准，下拉选择按任务或按实施阶段；旧工程默认按任务。逐项策略初次批准覆盖总计划与第一阶段，后续阶段暂停等待批准；当前已批范围内普通修复可以继续。
-- 批准关联计划、范围、输入版本和一次性原生授权；越界和版本变化会阻止旧批准继续使用。原生审批记录在现有消息区查看，写入失败或容量上限阻止新授权；历史聊天不能授权。没有新增 shell、文件删除或依赖安装工具。
-- 附件入口为输入框前“＋”，当前附加图片；会话列表标题两行显示，过长省略并提示全文。中英文内置帮助同步以上操作。
-
-## 安装与升级
-
-关闭 Studio 和相关 APP，先备份自己的工程与数据。Setup 按向导安装。便携版完整解压到可写目录，运行 `UUI Studio.exe`，保持配套文件完整；升级时建议解压到新目录，再打开自己的工程。
-
-运行 Studio 和构建用户 APP 不需要 Python 或安装 Rust 编译器。包内保留中英文离线帮助及十个可编辑示例。AI 使用自己的服务和 API Key，费用与模型可用性由服务方决定。事件模块继续保留 `UUI` 三参旧协议和 `uui` v2，不要仅通过改名迁移旧代码。详见[测试指南](测试指南.md)。
-
-## 本批次验证
-
-- 完整 44 项产品契约检查；新包完整文件哈希、运行文件白名单、工具依赖闭包及六组 SDK 清单。
-- 新便携包和同载荷隔离安装：实际启动、隐藏开发菜单、拒绝开发专用打包／迁移入口、新建 v2 工程、编辑保存、独立 Windows APP 构建与启动／重开；便携包另检查 BMI 计算 24.1 和重置。
-- 两种交付形态的隔离副本均检查语言分组、搜索、保存后重分组、完成译文继续编辑、清理和完整进程重启后的持久化；均通过 11 项真实 WebView 审批界面／原生接口检查。
-- 原生翻译存储 7 项与审批 15 项测试通过，包括两种审批模式、计数器失败修复和真实检查、BMI 构建、阶段暂停、篡改／越权拒绝、取消及原生日志。模型响应来自脚本化测试提供器，不调用在线模型，不把它写成新增在线服务验收。
-- 隔离安装验证使用正式模板和相同载荷，仅调整测试安装身份及显示名称等；不是在所有干净机器上直接安装公开 EXE 的覆盖。测试卸载通过，原有安装文件指纹不变。
-
-## 验证边界
-
-Windows 使用 WebView2，受本机环境影响。既有在线 AI 证据来自 OpenAI 单 Form 小应用；其他服务、多 Form 编排、所有组件业务及在线数据库仍需分别验证。Android 最低设备、当前 Rust 的 Apple/Linux 全面原生验收仍未完成；Android 输出为 ARM64 调试 APK，不是商店正式包。通用其他语言桥接尚未实现。审批中的危险调用识别是保守静态检查，不是任意 JavaScript 的完整安全证明。
-
-## 演示与旧版
-
-新增[1080P 中英字幕演示](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-Localization-Approval-1080p-zh-en.mp4)，约 2 分 34 秒，展示翻译分组与两种审批方式。它使用真实 OpenAI 单 Form 实录，包含第二阶段的原生待批；这是新增演示证据，与上文安装包发布前的离线专项测试分开。[字幕与范围说明](docs/demo-1080p.md)。软件包及原校验值不变。
-
-咖啡点餐视频沿用之前约 3 分 35 秒的中文录制，不演示本批次全部新增的语言分组和阶段审批；其手机比例窗口运行于 Windows，不代表手机真机验收。
-
-[上一批次 新图标修订1](https://github.com/felixdds/uui-studio/releases/tag/v0.1.0-preview.20261109-logo.1)与[最初预览版](https://github.com/felixdds/uui-studio/releases/tag/v0.1.0-preview.20261109)继续保留，旧附件与原校验值不替换。
-
-## SHA-256
+[旧软件与 1080P 演示](https://github.com/felixdds/uui-studio/releases/tag/v0.1.0-preview.20261110-locale-approval.1)
 
 ```text
-074997774ab7131d6973b68b051f2dc8fbf194b9d5ceabfde79ce798980f8b45  UUI-Studio-0.1.0-Windows-Rust-Setup.exe
-cedad00cdf8488d33a7626d4c6e78f5efd55e0169b3d983de633cb69ab111368  UUI-Studio-0.1.0-Windows-Rust.zip
+a16791a228715254b3b6b8e157e95ab3ff24a9ecf6feb13c240dd73a976e3554  UUI-Studio-0.1.0-Windows-Rust-Setup.exe
+c17457d18334689c4c46935ab0fec36c499dd443953a91e24a1fd7031bd7777c  UUI-Studio-0.1.0-Windows-Rust.zip
 ```
-
-Windows 可用 `Get-FileHash -Algorithm SHA256 -LiteralPath '下载文件路径'` 核对。[SHA256SUMS.txt](SHA256SUMS.txt)提供相同摘要。
-
-## 反馈
-
-按[测试指南](测试指南.md)提供构建批次、系统、复现步骤及预期／实际结果，在 [Issues](https://github.com/felixdds/uui-studio/issues)反馈。不要提交密钥、连接口令、私密业务或患者资料。使用与分发范围仍以软件随附协议及授权为准。

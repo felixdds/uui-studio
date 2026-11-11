@@ -1,5 +1,7 @@
 # Getting Started and Test Feedback
 
+**Help and Simplified Chinese revision: 2026-11-11-help-locale.1.** Thirteen operational dialogs share title-bar ? and F1 context help in English and Simplified Chinese; simple confirmations are excluded. Nine outdated translations are updated, with zero pending Simplified Chinese entries in a clean installation of this batch. Previous software and demonstration videos remain available.
+
 [简体中文](../../测试指南.md) · English
 
 ## First run
@@ -44,3 +46,7 @@ Do not submit API keys, connection passwords, or private business data. If you o
 For the scope of existing checks and pending validation, see the [release notes](../../RELEASE_NOTES.en.md#known-scope) and [product validation summary](../../README.en.md#current-validation-scope).
 
 [English product homepage](../../README.en.md) · [Downloads and demo](downloads.md) · [Release notes](../../RELEASE_NOTES.en.md)
+
+## Context help and translation check
+
+Open New Project or Settings, choose ? or press F1, then close Help: focus and draft input should return. In AI Workspace, test Help inside Manage AI keys as well. Simple yes/no confirmations have no Help button. Open the Simplified Chinese language editor: this batch has no missing or outdated source entries in a clean profile. Existing locally customized translations may still require review.

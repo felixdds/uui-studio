@@ -1,6 +1,6 @@
 # UUI Studio
 
-**Icon revision: 2026-11-10-module-icon.1.** Downloads now use the component-cube icon with a larger UUI badge. The release tag and filenames are unchanged; verify the updated SHA-256. Application code and localization/approval behavior are unchanged.
+**Help and Simplified Chinese revision: 2026-11-11-help-locale.1.** Thirteen operational dialogs share title-bar ? and F1 context help in English and Simplified Chinese; simple confirmations are excluded. Nine outdated translations are updated, with zero pending Simplified Chinese entries in a clean installation of this batch. Previous software and demonstration videos remain available.
 
 [简体中文](README.md) · English
 
@@ -14,7 +14,7 @@
 
 UUI Studio, short for Unified User Interface Studio, is an application development tool with visual design and AI collaboration. People edit through the designer, while AI operates through a protocol, both working on the same editable project. After generation, you can continue adjusting the interface, inspecting business logic, and adding requirements.
 
-This introduction covers the **Windows preview test version 0.1.0, build 2026-11-10-locale-approval.1 (localization and approval revision 1)**. Developers are welcome to try it, provide feedback, and discuss joint technical evaluation and product collaboration.
+This introduction covers the **Windows preview test version 0.1.0, build 2026-11-11-help-locale.1 (context help and Simplified Chinese revision 1)**. Developers are welcome to try it, provide feedback, and discuss joint technical evaluation and product collaboration.
 
 ![Coffee ordering application running on Windows](assets/咖啡点餐_会员九折.png)
 
@@ -26,9 +26,9 @@ People and AI can take turns working on the same components, properties, event b
 
 ## Demo and downloads
 
-**The Windows preview test version is available to download.** [View this release](https://github.com/felixdds/uui-studio/releases/tag/v0.1.0-preview.20261110-locale-approval.1).
+**The Windows preview test version is available to download.** [View this release](https://github.com/felixdds/uui-studio/releases/tag/v0.1.0-preview.20261111-help-locale.1).
 
-[Installer (recommended)](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-0.1.0-Windows-Rust-Setup.exe) · [Portable ZIP (optional)](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-0.1.0-Windows-Rust.zip) · [1080p demo with bilingual captions](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-Localization-Approval-1080p-zh-en.mp4) · [Checksums](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/SHA256SUMS.txt)
+[Installer (recommended)](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261111-help-locale.1/UUI-Studio-0.1.0-Windows-Rust-Setup.exe) · [Portable ZIP (optional)](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261111-help-locale.1/UUI-Studio-0.1.0-Windows-Rust.zip) · [1080p demo with bilingual captions](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-Localization-Approval-1080p-zh-en.mp4) · [Checksums](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261111-help-locale.1/SHA256SUMS.txt)
 
 [Download and demo guide](docs/en/downloads.md) · [Release notes](RELEASE_NOTES.en.md) · [Getting started and test feedback](docs/en/testing.md)
 
@@ -38,8 +38,8 @@ The new recording lasts approximately 2 minutes 34 seconds: 1920×1080, 16:9, 30
 
 | File | Purpose | Size |
 | --- | --- | --- |
-| UUI-Studio-0.1.0-Windows-Rust-Setup.exe | Recommended standalone installer; no separate ZIP needed | 55.68 MiB |
-| UUI-Studio-0.1.0-Windows-Rust.zip | Optional portable package; extract the entire directory before running | 85.13 MiB |
+| UUI-Studio-0.1.0-Windows-Rust-Setup.exe | Recommended standalone installer; no separate ZIP needed | 55.69 MiB |
+| UUI-Studio-0.1.0-Windows-Rust.zip | Optional portable package; extract the entire directory before running | 85.14 MiB |
 
 Both packages use a Rust host, with HTML/CSS/JavaScript for the interface and business logic. Running Studio and building user applications do not require Python or an installed Rust compiler. The packages include Chinese and English offline help and ten editable examples. AI use requires configuring your own service and API key; fees and available models depend on the provider.
 

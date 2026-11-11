@@ -1,6 +1,6 @@
 # UUI Studio
 
-**图标修订：2026-11-10-module-icon.1。** 本页下载已更新为组件魔方图标与放大的 UUI 标牌；发行标签和文件名保持不变，请核对最新 SHA-256。业务代码与翻译／审批功能保持不变。
+**帮助与简体中文修订：2026-11-11-help-locale.1。** 13 个操作窗口统一支持标题栏“？”和 F1，上下文帮助包含中英文，简单确认框不加。九项过时译文已更新；本批次干净安装的简体中文待更新为 0。旧软件和演示视频继续保留。
 
 简体中文 · [English](README.en.md)
 
@@ -14,7 +14,7 @@
 
 统一用户界面工作室是一套支持可视化设计与 AI 协作的应用开发工具。人通过设计器编辑，AI 通过协议操作，共同维护同一份可编辑工程；生成后仍能继续调整界面、检查业务代码并追加需求。
 
-本次介绍对应的 Windows 测试版本为 **0.1.0，2026-11-10-locale-approval.1 构建批次（翻译与审批修订1）**。欢迎开发者试用、反馈，并探讨联合技术验证与产品合作。
+本次介绍对应的 Windows 测试版本为 **0.1.0，2026-11-11-help-locale.1 构建批次（帮助与简体中文修订1）**。欢迎开发者试用、反馈，并探讨联合技术验证与产品合作。
 
 ![咖啡点餐应用实际运行](assets/咖啡点餐_会员九折.png)
 
@@ -26,9 +26,9 @@
 
 ## 演示与下载
 
-**Windows 预览测试版现已开放下载。** [查看本次发行](https://github.com/felixdds/uui-studio/releases/tag/v0.1.0-preview.20261110-locale-approval.1)。
+**Windows 预览测试版现已开放下载。** [查看本次发行](https://github.com/felixdds/uui-studio/releases/tag/v0.1.0-preview.20261111-help-locale.1)。
 
-[下载安装包（推荐）](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-0.1.0-Windows-Rust-Setup.exe) · [便携 ZIP（可选）](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-0.1.0-Windows-Rust.zip) · [1080P 中英字幕演示](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-Localization-Approval-1080p-zh-en.mp4) · [校验文件](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/SHA256SUMS.txt)
+[下载安装包（推荐）](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261111-help-locale.1/UUI-Studio-0.1.0-Windows-Rust-Setup.exe) · [便携 ZIP（可选）](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261111-help-locale.1/UUI-Studio-0.1.0-Windows-Rust.zip) · [1080P 中英字幕演示](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-Localization-Approval-1080p-zh-en.mp4) · [校验文件](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261111-help-locale.1/SHA256SUMS.txt)
 
 [下载与演示](下载与演示.md) · [本次发行说明](RELEASE_NOTES.md) · [快速上手与测试反馈](测试指南.md)
 
@@ -38,8 +38,8 @@
 
 | 文件 | 用途 | 大小 |
 | --- | --- | --- |
-| UUI-Studio-0.1.0-Windows-Rust-Setup.exe | 推荐，独立安装，无需另下 ZIP | 55.68 MiB |
-| UUI-Studio-0.1.0-Windows-Rust.zip | 可选，解压完整目录后运行 | 85.13 MiB |
+| UUI-Studio-0.1.0-Windows-Rust-Setup.exe | 推荐，独立安装，无需另下 ZIP | 55.69 MiB |
+| UUI-Studio-0.1.0-Windows-Rust.zip | 可选，解压完整目录后运行 | 85.14 MiB |
 
 安装包与便携版均使用 Rust 宿主，界面和业务脚本使用 HTML/CSS/JavaScript。运行 Studio 和构建用户 APP 不需要 Python 或安装 Rust 编译器。包含中英文离线帮助和十个可编辑示例。AI 需要自行配置服务与 API Key，调用费用及可用模型取决于服务方。
 

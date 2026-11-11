@@ -1,12 +1,12 @@
 # Downloads and Demo
 
-**Icon revision: 2026-11-10-module-icon.1.** Downloads now use the component-cube icon with a larger UUI badge. The release tag and filenames are unchanged; verify the updated SHA-256. Application code and localization/approval behavior are unchanged.
+**Help and Simplified Chinese revision: 2026-11-11-help-locale.1.** Thirteen operational dialogs share title-bar ? and F1 context help in English and Simplified Chinese; simple confirmations are excluded. Nine outdated translations are updated, with zero pending Simplified Chinese entries in a clean installation of this batch. Previous software and demonstration videos remain available.
 
 [简体中文](../../下载与演示.md) · English
 
-The Windows preview test version, localization and approval revision 1, and a Chinese demo video are available: [view this release](https://github.com/felixdds/uui-studio/releases/tag/v0.1.0-preview.20261110-locale-approval.1).
+The Windows preview test version, context help and Simplified Chinese revision 1, and a Chinese demo video are available: [view this release](https://github.com/felixdds/uui-studio/releases/tag/v0.1.0-preview.20261111-help-locale.1).
 
-[Installer (recommended)](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-0.1.0-Windows-Rust-Setup.exe) · [Portable ZIP (optional)](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-0.1.0-Windows-Rust.zip) · [1080p demo with bilingual captions](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-Localization-Approval-1080p-zh-en.mp4) · [Checksums](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/SHA256SUMS.txt)
+[Installer (recommended)](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261111-help-locale.1/UUI-Studio-0.1.0-Windows-Rust-Setup.exe) · [Portable ZIP (optional)](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261111-help-locale.1/UUI-Studio-0.1.0-Windows-Rust.zip) · [1080p demo with bilingual captions](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-Localization-Approval-1080p-zh-en.mp4) · [Checksums](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261111-help-locale.1/SHA256SUMS.txt)
 
 ## Download and install
 
