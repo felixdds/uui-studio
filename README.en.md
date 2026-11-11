@@ -26,11 +26,13 @@ People and AI can take turns working on the same components, properties, event b
 
 **The Windows preview test version is available to download.** [View this release](https://github.com/felixdds/uui-studio/releases/tag/v0.1.0-preview.20261110-locale-approval.1).
 
-[Installer (recommended)](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-0.1.0-Windows-Rust-Setup.exe) · [Portable ZIP (optional)](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-0.1.0-Windows-Rust.zip) · [Demo video in Chinese](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-AI-Cafe-Demo-zh-CN.mp4) · [Checksums](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/SHA256SUMS.txt)
+[Installer (recommended)](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-0.1.0-Windows-Rust-Setup.exe) · [Portable ZIP (optional)](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-0.1.0-Windows-Rust.zip) · [1080p demo with bilingual captions](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-Localization-Approval-1080p-zh-en.mp4) · [Checksums](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/SHA256SUMS.txt)
 
 [Download and demo guide](docs/en/downloads.md) · [Release notes](RELEASE_NOTES.en.md) · [Getting started and test feedback](docs/en/testing.md)
 
-The coffee ordering recording lasts approximately 3 minutes 35 seconds. It starts from a blank project, generates an ordering interface, adds a 10% member discount, includes a human review and color correction, and checks checkout behavior in an actual Windows application. The recording is unchanged and does not newly demonstrate this batch's language groups or staged approval. Narration and subtitles are in Chinese. Accelerated waiting and execution segments are marked. The phone-proportioned window runs on Windows; it is not evidence that this release has passed physical mobile-device acceptance testing.
+The new recording lasts approximately 2 minutes 34 seconds: 1920×1080, 16:9, 30 fps, Chinese narration, and Chinese/English captions. It shows translation groups, task approval, a genuine stage pause and subsequent approval, builds/checks, and native records. Acceleration and reading holds are labeled. [Viewing notes and subtitles](docs/en/demo-1080p.md). The [older coffee ordering demo](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-AI-Cafe-Demo-zh-CN.mp4) remains available.
+
+[![Actual stage awaiting approval](assets/localization-approval-1080p.png)](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-Localization-Approval-1080p-zh-en.mp4)
 
 | File | Purpose | Size |
 | --- | --- | --- |
@@ -48,7 +50,7 @@ Both packages use a Rust host, with HTML/CSS/JavaScript for the interface and bu
 
 ## Current validation scope
 
-Approval-specific checks for this batch use a scripted test provider with real local builds, applications, and native permission checks; they do not constitute new online model acceptance testing. Installation checks use the same template and payload with a separate test installation identity, not every clean-machine environment.
+The pre-release approval checks used a scripted provider with real local execution. The new video separately records both policies using the real OpenAI service in a single Form, limited to title changes and Reset checks. Installation checks use the same template and payload with a separate test installation identity, not every clean-machine environment.
 
 There is evidence from actual Windows Studio operation and standalone application builds and runs. Evidence of the online AI workflow comes from OpenAI and small, single-Form applications. AI has access to the complete component contracts, but this does not mean all component behavior has passed online acceptance testing. Other model services, AI orchestration across Forms, and online databases require separate validation.
 

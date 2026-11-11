@@ -4,7 +4,7 @@
 
 The Windows preview test version, localization and approval revision 1, and a Chinese demo video are available: [view this release](https://github.com/felixdds/uui-studio/releases/tag/v0.1.0-preview.20261110-locale-approval.1).
 
-[Installer (recommended)](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-0.1.0-Windows-Rust-Setup.exe) · [Portable ZIP (optional)](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-0.1.0-Windows-Rust.zip) · [Demo video in Chinese](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-AI-Cafe-Demo-zh-CN.mp4) · [Checksums](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/SHA256SUMS.txt)
+[Installer (recommended)](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-0.1.0-Windows-Rust-Setup.exe) · [Portable ZIP (optional)](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-0.1.0-Windows-Rust.zip) · [1080p demo with bilingual captions](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-Localization-Approval-1080p-zh-en.mp4) · [Checksums](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/SHA256SUMS.txt)
 
 ## Download and install
 
@@ -14,10 +14,10 @@ For installation and upgrade steps, see [Installation and upgrades](../../RELEAS
 
 ## Watch the demo
 
-The video attachment is named `UUI-Studio-AI-Cafe-Demo-zh-CN.mp4` and lasts approximately 3 minutes 35 seconds. Download it and use a player supporting H.264/AAC. It has Chinese subtitles and narration. The sequence covers requirements and planning, user approval, interface generation, an incremental 10% member discount, human visual review, and testing the ordering behavior.
+The new attachment is `UUI-Studio-Localization-Approval-1080p-zh-en.mp4`: approximately 2 minutes 34 seconds, 1920×1080, 16:9, 30 fps, H.264/AAC. It has Chinese narration and bilingual captions, with three separate SRT files and optional embedded subtitle tracks. See the [viewing notes and subtitles](demo-1080p.md).
 
-The recording shows a phone-proportioned application running on Windows. It does not establish that Android or iPhone has passed equivalent acceptance testing. Accelerated waiting and execution segments are marked. To make AI service calls yourself, you need to configure your own key.
+It shows translation groups, editing and confirmed cleanup, continuous execution after task approval, and a genuine pause before stage two followed by another approval. It uses the real OpenAI service and local builds/interaction checks. Acceleration and reading holds are labeled.
 
-[English product homepage](../../README.en.md) · [Release notes](../../RELEASE_NOTES.en.md) · [Getting started and testing](testing.md)
+The [older coffee demo](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-AI-Cafe-Demo-zh-CN.mp4) and [older software batch](https://github.com/felixdds/uui-studio/releases/tag/v0.1.0-preview.20261109-logo.1) remain available. Adding this video does not change software packages or their checksums. No YouTube upload or new mobile-device/platform acceptance testing was performed.
 
-This batch updates language grouping and AI approval. The video is unchanged and does not show every new interaction. The previous installer and ZIP remain available in the [previous release](https://github.com/felixdds/uui-studio/releases/tag/v0.1.0-preview.20261109-logo.1).
+[Product homepage](../../README.en.md) · [Release notes](../../RELEASE_NOTES.en.md) · [Getting started and testing](testing.md)

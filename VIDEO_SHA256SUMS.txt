@@ -1,0 +1,5 @@
+635b754ad6ad4ed11323f824259f0586cd23d2bff344bed4569c21c7a67cf81f  UUI-Studio-Localization-Approval-1080p-zh-en.mp4
+2c5cf0d06c9d0f617057556282b65b5f4eac1b8f7252cc94e8fa2aca17e8d20d  UUI-Studio-Localization-Approval-1080p.zh-CN.srt
+1423fbcf5ba82d486de542980ec795345f1f12231d542ef1da87505e927b2b10  UUI-Studio-Localization-Approval-1080p.en.srt
+16a32c398a014c372daec167c4d4fbf03544f2a0c6fa1ad516ff8a8c1f725a53  UUI-Studio-Localization-Approval-1080p.zh-en.srt
+9bb48f8f2a51423c89ad7f8ace0cc98975a918cf52d6a7cbd5d42e31068233ec  README-Localization-Approval-1080p.txt

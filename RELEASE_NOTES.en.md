@@ -6,7 +6,7 @@ Version: 0.1.0. Build: 2026-11-10-locale-approval.1. Status: preview test versio
 
 [View this release](https://github.com/felixdds/uui-studio/releases/tag/v0.1.0-preview.20261110-locale-approval.1)
 
-[Installer (recommended)](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-0.1.0-Windows-Rust-Setup.exe) · [Portable ZIP (optional)](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-0.1.0-Windows-Rust.zip) · [Demo video in Chinese](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-AI-Cafe-Demo-zh-CN.mp4) · [Checksums](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/SHA256SUMS.txt)
+[Installer (recommended)](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-0.1.0-Windows-Rust-Setup.exe) · [Portable ZIP (optional)](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-0.1.0-Windows-Rust.zip) · [1080p demo with bilingual captions](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-Localization-Approval-1080p-zh-en.mp4) · [Checksums](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/SHA256SUMS.txt)
 
 ## Choose a download
 
@@ -39,6 +39,8 @@ Running Studio and building user applications require neither Python nor an inst
 Windows uses WebView2 and is affected by the local environment. Existing online AI evidence is from OpenAI and small single-Form applications. Other services, multi-Form orchestration, all component behavior, and online databases require separate validation. Android minimum-spec device testing and comprehensive native acceptance testing of the current Rust versions on Apple platforms and Linux remain incomplete. Android output is an ARM64 debug APK, not a mobile-store production package. General bridging to other programming languages is not implemented. Static identification of risky calls during approval is conservative, not a complete proof of arbitrary JavaScript safety.
 
 ## Demo and older versions
+
+A new [1080p bilingual demo](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-Localization-Approval-1080p-zh-en.mp4), approximately 2 minutes 34 seconds long, shows language groups and both approval policies. It uses the real OpenAI service in one Form, including a native pause before stage two. This is separate from the pre-release offline checks above. See [subtitles and scope](docs/en/demo-1080p.md). Software packages and their original checksums are unchanged.
 
 The coffee ordering video is the previous Chinese recording, approximately 3 minutes 35 seconds long. It does not demonstrate every new language-grouping or staged-approval interaction in this batch. Its phone-proportioned application runs on Windows and does not establish physical mobile-device acceptance.
 

@@ -26,11 +26,13 @@
 
 **Windows 预览测试版现已开放下载。** [查看本次发行](https://github.com/felixdds/uui-studio/releases/tag/v0.1.0-preview.20261110-locale-approval.1)。
 
-[下载安装包（推荐）](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-0.1.0-Windows-Rust-Setup.exe) · [便携 ZIP（可选）](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-0.1.0-Windows-Rust.zip) · [中文演示视频](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-AI-Cafe-Demo-zh-CN.mp4) · [校验文件](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/SHA256SUMS.txt)
+[下载安装包（推荐）](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-0.1.0-Windows-Rust-Setup.exe) · [便携 ZIP（可选）](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-0.1.0-Windows-Rust.zip) · [1080P 中英字幕演示](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-Localization-Approval-1080p-zh-en.mp4) · [校验文件](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/SHA256SUMS.txt)
 
 [下载与演示](下载与演示.md) · [本次发行说明](RELEASE_NOTES.md) · [快速上手与测试反馈](测试指南.md)
 
-咖啡点餐实录约3分35秒：从空白工程开始，生成点餐界面，追加会员九折，经人工复核修正配色，再在实际 Windows APP 中检查结算。视频沿用此前录制，未新增演示本批次的语言分组与阶段审批；配有中文解说与字幕，等待与执行加速处有标注。手机比例窗口是在 Windows 运行，不代表本次已完成手机真机验收。
+新版演示约 2 分 34 秒，1920×1080、16:9、30 fps，中文旁白及中英字幕。展示翻译分组、按任务审批、真实阶段暂停与后续批准、构建检查及原生记录；加速与阅读停留均有标注。[观看说明及字幕](docs/demo-1080p.md)。[旧咖啡点餐演示](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-AI-Cafe-Demo-zh-CN.mp4)继续保留。
+
+[![实际阶段待批画面](assets/localization-approval-1080p.png)](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-Localization-Approval-1080p-zh-en.mp4)
 
 | 文件 | 用途 | 大小 |
 | --- | --- | --- |
@@ -48,7 +50,7 @@
 
 ## 当前验证范围
 
-本批次的审批专项使用脚本化测试提供器和真实本地构建／APP／原生权限检查，没有新增在线模型验收。安装检查使用同一模板与同一载荷、独立测试安装身份，不覆盖所有干净机器环境。
+安装包发布前的审批专项使用脚本化提供器与真实本地执行检查；本次新增视频另有真实 OpenAI 单 Form 的两种审批在线实录，仅覆盖标题修改与 Reset 检查。安装检查使用同一模板与同一载荷、独立测试安装身份，不覆盖所有干净机器环境。
 
 Windows Studio 与独立 APP 已有真实运行及构建证据；AI 在线闭环证据来自 OpenAI 与单 Form 小应用。完整组件契约已公开给 AI，但不表示所有组件业务均完成在线验收。其他模型服务、AI 跨 Form 编排及在线数据库需要分别验证。
 

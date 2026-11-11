@@ -6,7 +6,7 @@
 
 [查看本次发行](https://github.com/felixdds/uui-studio/releases/tag/v0.1.0-preview.20261110-locale-approval.1)
 
-[下载安装包（推荐）](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-0.1.0-Windows-Rust-Setup.exe) · [便携 ZIP（可选）](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-0.1.0-Windows-Rust.zip) · [中文演示视频](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-AI-Cafe-Demo-zh-CN.mp4) · [校验文件](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/SHA256SUMS.txt)
+[下载安装包（推荐）](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-0.1.0-Windows-Rust-Setup.exe) · [便携 ZIP（可选）](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-0.1.0-Windows-Rust.zip) · [1080P 中英字幕演示](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-Localization-Approval-1080p-zh-en.mp4) · [校验文件](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/SHA256SUMS.txt)
 
 ## 下载选择
 
@@ -39,6 +39,8 @@
 Windows 使用 WebView2，受本机环境影响。既有在线 AI 证据来自 OpenAI 单 Form 小应用；其他服务、多 Form 编排、所有组件业务及在线数据库仍需分别验证。Android 最低设备、当前 Rust 的 Apple/Linux 全面原生验收仍未完成；Android 输出为 ARM64 调试 APK，不是商店正式包。通用其他语言桥接尚未实现。审批中的危险调用识别是保守静态检查，不是任意 JavaScript 的完整安全证明。
 
 ## 演示与旧版
+
+新增[1080P 中英字幕演示](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-Localization-Approval-1080p-zh-en.mp4)，约 2 分 34 秒，展示翻译分组与两种审批方式。它使用真实 OpenAI 单 Form 实录，包含第二阶段的原生待批；这是新增演示证据，与上文安装包发布前的离线专项测试分开。[字幕与范围说明](docs/demo-1080p.md)。软件包及原校验值不变。
 
 咖啡点餐视频沿用之前约 3 分 35 秒的中文录制，不演示本批次全部新增的语言分组和阶段审批；其手机比例窗口运行于 Windows，不代表手机真机验收。
 
