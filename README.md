@@ -30,6 +30,8 @@
 
 [下载安装包（推荐）](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261111-help-locale.1/UUI-Studio-0.1.0-Windows-Rust-Setup.exe) · [便携 ZIP（可选）](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261111-help-locale.1/UUI-Studio-0.1.0-Windows-Rust.zip) · [1080P 中英字幕演示](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-Localization-Approval-1080p-zh-en.mp4) · [校验文件](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261111-help-locale.1/SHA256SUMS.txt)
 
+> **Windows 安装提示（SmartScreen）**：当前预览版尚未进行受信任的代码签名。下载或首次运行安装包／便携版程序时，Windows SmartScreen 可能显示“Windows 已保护你的电脑”或“未知发布者”。这类信誉提示本身不等于检测到病毒。请确认文件来自本项目官方 GitHub Releases，并可使用发布页的 SHA256 校验值核对文件是否一致。确认来源并决定信任后，可在系统提供该选项时点击“更多信息 → 仍要运行”。无需关闭 Windows Defender 或系统安全保护；如果出现具体的病毒检测提示，请停止运行并反馈。
+
 [下载与演示](下载与演示.md) · [本次发行说明](RELEASE_NOTES.md) · [快速上手与测试反馈](测试指南.md)
 
 新版演示约 2 分 34 秒，1920×1080、16:9、30 fps，中文旁白及中英字幕。展示翻译分组、按任务审批、真实阶段暂停与后续批准、构建检查及原生记录；加速与阅读停留均有标注。[观看说明及字幕](docs/demo-1080p.md)。[旧咖啡点餐演示](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-AI-Cafe-Demo-zh-CN.mp4)继续保留。
