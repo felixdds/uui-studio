@@ -1,6 +1,6 @@
 # Getting Started and Test Feedback
 
-**Help and Simplified Chinese revision: 2026-11-11-help-locale.1.** Thirteen operational dialogs share title-bar ? and F1 context help in English and Simplified Chinese; simple confirmations are excluded. Nine outdated translations are updated, with zero pending Simplified Chinese entries in a clean installation of this batch. Previous software and demonstration videos remain available.
+**Updated batch: 2026-11-11-bridge-help.1.** Unified help icons, sizes and hover/pressed/focus feedback; restored AI window controls to the right; standardized native bridges on UUI naming and removed retired runtime remnants. Packaged Windows, independent APP builds and execution, and all 44 product contracts passed.
 
 [简体中文](../../测试指南.md) · English
 
