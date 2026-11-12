@@ -1,6 +1,6 @@
 # UUI Studio
 
-**本批次更新：2026-11-11-bridge-help.1。** 统一全部帮助按钮的图标、尺寸和悬停／按下／焦点反馈；恢复 AI 窗口右侧控制按钮；原生桥接统一为 UUI 命名，移除旧运行环境遗留。Windows 打包版、独立 APP 构建与运行及 44 个产品契约检查通过。
+**本批次更新：2026-11-11-motion-android.1。** 恢复含标题栏与边框的 Windows 整窗 zoom in/out；Android 原有构建入口支持 Debug APK / Release AAB＋APK；AI 改为 primary 主按钮，Windows 菜单仅保留安装包；模式与许可对话框不再显示等待光标。
 
 简体中文 · [English](README.en.md)
 
@@ -14,7 +14,7 @@
 
 统一用户界面工作室是一套支持可视化设计与 AI 协作的应用开发工具。人通过设计器编辑，AI 通过协议操作，共同维护同一份可编辑工程；生成后仍能继续调整界面、检查业务代码并追加需求。
 
-本次介绍对应的 Windows 测试版本为 **0.1.0，2026-11-11-bridge-help.1 构建批次（帮助统一与 UUI 原生桥接）**。欢迎开发者试用、反馈，并探讨联合技术验证与产品合作。
+本次介绍对应的 Windows 测试版本为 **0.1.0，2026-11-11-motion-android.1 构建批次（整窗 zoom 与 Android 正式构建）**。欢迎开发者试用、反馈，并探讨联合技术验证与产品合作。
 
 ![咖啡点餐应用实际运行](assets/咖啡点餐_会员九折.png)
 
@@ -26,9 +26,9 @@
 
 ## 演示与下载
 
-**Windows 预览测试版现已开放下载。** [查看本次发行](https://github.com/felixdds/uui-studio/releases/tag/v0.1.0-preview.20261111-help-locale.1)。
+**Windows 预览测试版现已开放下载。** [查看本次发行](https://github.com/felixdds/uui-studio/releases/tag/v0.1.0-preview.20261111-motion-android.1)。
 
-[下载安装包（推荐）](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261111-help-locale.1/UUI-Studio-0.1.0-Windows-Rust-Setup.exe) · [便携 ZIP（可选）](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261111-help-locale.1/UUI-Studio-0.1.0-Windows-Rust.zip) · [1080P 中英字幕演示](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-Localization-Approval-1080p-zh-en.mp4) · [校验文件](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261111-help-locale.1/SHA256SUMS.txt)
+[下载安装包（推荐）](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261111-motion-android.1/UUI-Studio-0.1.0-Windows-Rust-Setup.exe) · [便携 ZIP（可选）](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261111-motion-android.1/UUI-Studio-0.1.0-Windows-Rust.zip) · [1080P 中英字幕演示](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-Localization-Approval-1080p-zh-en.mp4) · [校验文件](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261111-motion-android.1/SHA256SUMS.txt)
 
 > **Windows 安装提示（SmartScreen）**：当前预览版尚未进行受信任的代码签名。下载或首次运行安装包／便携版程序时，Windows SmartScreen 可能显示“Windows 已保护你的电脑”或“未知发布者”。这类信誉提示本身不等于检测到病毒。请确认文件来自本项目官方 GitHub Releases，并可使用发布页的 SHA256 校验值核对文件是否一致。确认来源并决定信任后，可在系统提供该选项时点击“更多信息 → 仍要运行”。无需关闭 Windows Defender 或系统安全保护；如果出现具体的病毒检测提示，请停止运行并反馈。
 
@@ -40,8 +40,8 @@
 
 | 文件 | 用途 | 大小 |
 | --- | --- | --- |
-| UUI-Studio-0.1.0-Windows-Rust-Setup.exe | 推荐，独立安装，无需另下 ZIP | 55.69 MiB |
-| UUI-Studio-0.1.0-Windows-Rust.zip | 可选，解压完整目录后运行 | 85.14 MiB |
+| UUI-Studio-0.1.0-Windows-Rust-Setup.exe | 推荐，独立安装，无需另下 ZIP | 55.71 MiB |
+| UUI-Studio-0.1.0-Windows-Rust.zip | 可选，解压完整目录后运行 | 85.17 MiB |
 
 安装包与便携版均使用 Rust 宿主，界面和业务脚本使用 HTML/CSS/JavaScript。运行 Studio 和构建用户 APP 不需要 Python 或安装 Rust 编译器。包含中英文离线帮助和十个可编辑示例。AI 需要自行配置服务与 API Key，调用费用及可用模型取决于服务方。
 
@@ -54,7 +54,7 @@
 
 ## 当前验证范围
 
-安装包发布前的审批专项使用脚本化提供器与真实本地执行检查；本次新增视频另有真实 OpenAI 单 Form 的两种审批在线实录，仅覆盖标题修改与 Reset 检查。安装检查使用同一模板与同一载荷、独立测试安装身份，不覆盖所有干净机器环境。
+安装包发布前的审批专项使用脚本化提供器与真实本地执行检查；既有演示视频另有真实 OpenAI 单 Form 的两种审批在线实录，仅覆盖标题修改与 Reset 检查。安装检查使用同一模板与同一载荷、独立测试安装身份，不覆盖所有干净机器环境。
 
 Windows Studio 与独立 APP 已有真实运行及构建证据；AI 在线闭环证据来自 OpenAI 与单 Form 小应用。完整组件契约已公开给 AI，但不表示所有组件业务均完成在线验收。其他模型服务、AI 跨 Form 编排及在线数据库需要分别验证。
 
@@ -75,3 +75,10 @@ UUI Studio 由一名牙医提出构想并主导架构设计，需求、规则与
 希望与开发工具、研发效能及应用开发团队交流，由架构设计者与专业工程师共同选择一个小型业务场景，验证工程可维护性、AI 增量修改、构建与问题定位，再讨论产品完善、发行及推广合作。欢迎通过[Issues](https://github.com/felixdds/uui-studio/issues) 提出技术交流意向，请勿在公开反馈中提交密钥或业务私密资料。
 
 本仓库用于产品展示与测试分发，未附 Studio 完整 Rust 源码。公开资料和测试包的提供不构成开源许可；使用与分发范围以软件随附协议及权利方授权为准。
+
+
+## 本次更新：动画与构建
+
+整窗 zoom 保持真实窗口与 WebView 尺寸不变，沿用速度、禁用动画和减少动态效果设置。Run APP / F5 自动生成并启动 Windows 应用，构建菜单保留 Windows 安装包。Android Release 使用工程包名、版本、依赖及按包名保留的上传密钥。请安全备份 Studio Data/Signing 及私密恢复说明，不公开凭据。构建成功不等于商店批准。
+
+[动画行为](docs/motion.md) · [UDM 与 WebView 的分工](docs/udm-boundaries.md)

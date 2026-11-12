@@ -1,6 +1,6 @@
 # Getting Started and Test Feedback
 
-**Updated batch: 2026-11-11-bridge-help.1.** Unified help icons, sizes and hover/pressed/focus feedback; restored AI window controls to the right; standardized native bridges on UUI naming and removed retired runtime remnants. Packaged Windows, independent APP builds and execution, and all 44 product contracts passed.
+**Updated batch: 2026-11-11-motion-android.1.** Restored whole-window Windows zoom in/out, including the title bar and border. The Android build dialog now offers Debug APK or Release AAB + APK. AI is a primary button, the Windows Build menu offers the installer only, and build-choice/license dialogs keep a normal pointer.
 
 [简体中文](../../测试指南.md) · English
 
@@ -9,7 +9,7 @@
 1. Install the setup package or fully extract the portable package, then launch UUI Studio. The Windows host uses WebView2. If startup fails, record the actual error.
 2. Open a bundled example or create a separate project, and save it to your own directory.
 3. Change a component's text, size, or layout. Save, close, and reopen the project to confirm the change was retained.
-4. Use **Run APP** or **F5** to run it and check the actual interactions. Then build a standalone Windows application.
+4. Use **Run APP** or **F5** to run it and check the actual interactions. Run APP generates and starts the Windows application automatically; choose Build APP → Windows installer when you need a Setup.exe.
 5. Read the event and public-interface documentation in the built-in help before adding business logic. Maintain older three-argument modules and new `uui` v2 modules according to their respective protocols.
 
 ## Try AI collaboration
@@ -50,3 +50,11 @@ For the scope of existing checks and pending validation, see the [release notes]
 ## Context help and translation check
 
 Open New Project or Settings, choose ? or press F1, then close Help: focus and draft input should return. In AI Workspace, test Help inside Manage AI keys as well. Simple yes/no confirmations have no Help button. Open the Simplified Chinese language editor: this batch has no missing or outdated source entries in a clean profile. Existing locally customized translations may still require review.
+
+
+## Check this update
+
+1. Slow motion in Settings and reopen Studio: the title bar, frame and workspace should zoom together; cancel a close confirmation and check that the window stays open.
+2. Confirm that AI is a primary button and the Windows Build menu contains only the installer; use Run APP / F5 for automatic application generation.
+3. Open Android Build: choose Debug or Release with a normal pointer, then cancel. The waiting cursor should appear only after final confirmation starts a real build.
+4. Back up signing material before release distribution. Test the resulting app on your actual target devices.

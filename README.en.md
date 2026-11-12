@@ -1,6 +1,6 @@
 # UUI Studio
 
-**Updated batch: 2026-11-11-bridge-help.1.** Unified help icons, sizes and hover/pressed/focus feedback; restored AI window controls to the right; standardized native bridges on UUI naming and removed retired runtime remnants. Packaged Windows, independent APP builds and execution, and all 44 product contracts passed.
+**Updated batch: 2026-11-11-motion-android.1.** Restored whole-window Windows zoom in/out, including the title bar and border. The Android build dialog now offers Debug APK or Release AAB + APK. AI is a primary button, the Windows Build menu offers the installer only, and build-choice/license dialogs keep a normal pointer.
 
 [简体中文](README.md) · English
 
@@ -14,7 +14,7 @@
 
 UUI Studio, short for Unified User Interface Studio, is an application development tool with visual design and AI collaboration. People edit through the designer, while AI operates through a protocol, both working on the same editable project. After generation, you can continue adjusting the interface, inspecting business logic, and adding requirements.
 
-This introduction covers the **Windows preview test version 0.1.0, build 2026-11-11-help-locale.1 (context help and Simplified Chinese revision 1)**. Developers are welcome to try it, provide feedback, and discuss joint technical evaluation and product collaboration.
+This introduction covers the **Windows preview test version 0.1.0, build 2026-11-11-motion-android.1 (whole-window zoom and Android release builds)**. Developers are welcome to try it, provide feedback, and discuss joint technical evaluation and product collaboration.
 
 ![Coffee ordering application running on Windows](assets/咖啡点餐_会员九折.png)
 
@@ -26,9 +26,9 @@ People and AI can take turns working on the same components, properties, event b
 
 ## Demo and downloads
 
-**The Windows preview test version is available to download.** [View this release](https://github.com/felixdds/uui-studio/releases/tag/v0.1.0-preview.20261111-help-locale.1).
+**The Windows preview test version is available to download.** [View this release](https://github.com/felixdds/uui-studio/releases/tag/v0.1.0-preview.20261111-motion-android.1).
 
-[Installer (recommended)](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261111-help-locale.1/UUI-Studio-0.1.0-Windows-Rust-Setup.exe) · [Portable ZIP (optional)](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261111-help-locale.1/UUI-Studio-0.1.0-Windows-Rust.zip) · [1080p demo with bilingual captions](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-Localization-Approval-1080p-zh-en.mp4) · [Checksums](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261111-help-locale.1/SHA256SUMS.txt)
+[Installer (recommended)](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261111-motion-android.1/UUI-Studio-0.1.0-Windows-Rust-Setup.exe) · [Portable ZIP (optional)](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261111-motion-android.1/UUI-Studio-0.1.0-Windows-Rust.zip) · [1080p demo with bilingual captions](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-Localization-Approval-1080p-zh-en.mp4) · [Checksums](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261111-motion-android.1/SHA256SUMS.txt)
 
 > **Windows installation notice (SmartScreen):** This preview is not signed with a trusted code-signing certificate. When downloading or first running the installer or portable application, Windows SmartScreen may display “Windows protected your PC” or “Unknown publisher.” A reputation warning alone does not mean a virus was detected. Confirm that the file comes from this project's official GitHub Releases; you can use the published SHA256 checksums to verify file integrity. If you have verified the source and choose to trust it, select “More info → Run anyway” when Windows offers that option. You do not need to disable Windows Defender or other system protections. If you see a specific malware detection, stop and report it.
 
@@ -40,8 +40,8 @@ The new recording lasts approximately 2 minutes 34 seconds: 1920×1080, 16:9, 30
 
 | File | Purpose | Size |
 | --- | --- | --- |
-| UUI-Studio-0.1.0-Windows-Rust-Setup.exe | Recommended standalone installer; no separate ZIP needed | 55.69 MiB |
-| UUI-Studio-0.1.0-Windows-Rust.zip | Optional portable package; extract the entire directory before running | 85.14 MiB |
+| UUI-Studio-0.1.0-Windows-Rust-Setup.exe | Recommended standalone installer; no separate ZIP needed | 55.71 MiB |
+| UUI-Studio-0.1.0-Windows-Rust.zip | Optional portable package; extract the entire directory before running | 85.17 MiB |
 
 Both packages use a Rust host, with HTML/CSS/JavaScript for the interface and business logic. Running Studio and building user applications do not require Python or an installed Rust compiler. The packages include Chinese and English offline help and ten editable examples. AI use requires configuring your own service and API key; fees and available models depend on the provider.
 
@@ -75,3 +75,10 @@ UUI Studio was conceived by a dentist who leads its architectural design. Requir
 We welcome conversations with teams working on development tools, developer productivity, and applications. The architecture designer and professional engineers can choose a small business scenario together, evaluate maintainability, incremental AI changes, builds, and diagnosis, then discuss product improvements, distribution, and promotion. You can express interest in technical discussions through [Issues](https://github.com/felixdds/uui-studio/issues). Do not include keys or private business information in public feedback.
 
 This repository is for product presentation and test distribution. It does not contain Studio's complete Rust source code. Providing public material and test packages does not constitute an open-source license. Use and distribution are governed by the agreements supplied with the software and authorization from the rights holder.
+
+
+## This release: motion and builds
+
+The native window zoom keeps the real WebView size unchanged. Existing speed, disabled-motion and reduced-motion behavior remain in effect. Windows application generation is handled by Run APP / F5; the build menu retains the Windows installer entry. Android Release uses the project package/version/dependencies and a per-package upload key stored in Studio Data/Signing. Back up that directory and its private recovery instructions; never publish credentials. A successful build is not store approval.
+
+[Motion behavior](docs/en/motion.md) · [UDM and WebView boundaries](docs/en/udm-boundaries.md)
