@@ -1,0 +1,3880 @@
+{
+  "$applicationPlatforms": {
+    "windows": {
+      "installScope": ["all-users", "current-user"],
+      "startMenuShortcut": {},
+      "desktopShortcut": {},
+      "icon": {}
+    },
+    "android": {
+      "packageName": {},
+      "versionCode": {
+        "min": 0,
+        "max": 2100000000
+      },
+      "minimumSdk": {
+        "min": 29,
+        "max": 35
+      },
+      "orientation": ["unspecified", "portrait", "landscape", "sensor"],
+      "internet": {},
+      "allowBackup": {},
+      "icon": {}
+    },
+    "linux": {
+      "desktopEntry": {},
+      "desktopId": {},
+      "category": ["Utility", "Development", "Education", "Office", "Graphics", "AudioVideo", "Network", "Game", "Science"],
+      "icon": {}
+    },
+    "macos": {},
+    "ios": {}
+  },
+  "$version": 0,
+  "uui-application": {
+    "properties": {
+      "Id": null,
+      "Name": null,
+      "Author": null,
+      "Version": null,
+      "Description": null,
+      "Icon": {"colorPicker":["icon"]},
+      "MainForm": "select",
+      "Appearance": {"select":["system","light","dark"]},
+      "Rounding": {"select":["slight","rounded","capsule"]},
+      "Spacing": {"select":["compact","comfortable","spacious"]},
+      "AdaptationMode": {"select":["manual","auto"]},
+      "CompactWidth": null,
+      "AutoWrapToolbars": null,
+      "CompactSelectors": null,
+      "Locale": {"select":["en"]},
+      "Animations": null,
+      "AnimationDuration": null,
+      "PopupShadows": null,
+      "WindowTitle": null,
+      "MinimumWidth": null,
+      "MinimumHeight": null,
+      "Maximized": null,
+      "Windows": "applicationPlatform",
+      "Android": "applicationPlatform",
+      "Linux": "applicationPlatform",
+      "MacOS": "applicationPlatform",
+      "IOS": "applicationPlatform"
+    },
+    "events": {
+      "OnStart": {
+        "comment": "Runs when the application starts."
+      },
+      "OnClose": {
+        "comment": "Runs when the application closes."
+      },
+      "OnActivate": {
+        "comment": "Runs when the application becomes active."
+      },
+      "OnDeactivate": {
+        "comment": "Runs when the application becomes inactive."
+      },
+      "OnUnhandledError": {
+        "comment": "Runs when the application reports an unhandled error."
+      },
+      "OnClosing": {
+        "comment": "Runs when an application close request is being handled."
+      }
+    }
+  },
+  "uui-form": {
+    "properties": {
+      "Name": null,
+      "Color": "colorPicker",
+      "FontFamily": "fontList",
+      "FontSize": "fontSize",
+      "FontColor": "colorPicker",
+      "FontWeight": {"fontChoice":["normal","medium","semibold","bold"]},
+      "FontStyle": {"fontChoice":["normal","italic","oblique"]},
+      "TextDecoration": {"fontChoice":["none","underline","line-through"]},
+      "FontShadow": "shadowList",
+      "Padding": "progressiveQuad",
+      "BorderRadius": {"progressiveQuad":["corners"]},
+      "SnapToGrid": null,
+      "GridSize": null,
+      "Storage": null,
+      "Width": null,
+      "Height": null
+    },
+    "events": {
+      "OnCreate": {
+        "comment": "Runs when this Form is created and its event scope is initialized."
+      }
+    },
+    "container": "dock"
+  },
+  "uui-layout": {},
+  "uui-master-detail": {
+    "localization": {"messages":["masterDetail.back"],"uses":["uui-button"]},
+    "palette": "Containers",
+    "properties": {
+      "Name": null,
+      "Dock": {"select":["none","top","bottom","left","right","fill"]},
+      "Left": null,
+      "Top": null,
+      "Width": null,
+      "Height": null,
+      "MinWidth": null,
+      "MinHeight": null,
+      "MaxWidth": null,
+      "MaxHeight": null,
+      "MasterMinWidth": null,
+      "DetailMinWidth": null,
+      "Gap": null,
+      "Visible": null,
+      "Enabled": null,
+      "AdaptationMode": {"select":["inherit","auto","manual"]},
+      "Stretch": null
+    },
+    "events": {
+      "OnLayoutChange": {
+        "comment": "Runs when the master-detail layout changes."
+      }
+    },
+    "master": {
+      "container": "dock"
+    },
+    "detail": {
+      "container": "dock"
+    }
+  },
+  "uui-data-source": {
+    "palette": "Application",
+    "properties": {
+      "Name": null,
+      "Connection": "dataSourceConnection"
+    }
+  },
+  "uui-menu": {
+    "localization": {"owned":{"item":{"Caption":true,"Group":true}}},
+    "palette": "Application",
+    "events": {
+      "OnSelect": {
+        "comment": "Runs when a menu item is selected."
+      }
+    },
+    "properties": {
+      "Name": null,
+      "Items": "menuItems",
+      "Layout": {"select":["list","wrap","grid"]},
+      "Columns": null,
+      "PopupWidth": null
+    },
+    "item": {
+      "Caption": null,
+      "Value": null,
+      "Group": null,
+      "Enabled": null
+    }
+  },
+  "uui-history": {
+    "localization": {"messages":["history.back","history.backHint","history.clear","history.forward","history.forwardHint","history.group"],"properties":["Hint"]},
+    "palette": "Application",
+    "properties": {
+      "Name": null,
+      "Navigator": "componentReference",
+      "MaxItems": null,
+      "Storage": null,
+      "Dock": {"select":["none","top","bottom","left","right","fill"]},
+      "Anchors": "anchorSet",
+      "Left": null,
+      "Top": null,
+      "Width": null,
+      "Height": null,
+      "MinWidth": null,
+      "MinHeight": null,
+      "MaxWidth": null,
+      "MaxHeight": null,
+      "Enabled": null,
+      "Visible": null,
+      "Hint": null,
+      "ShowHint": null,
+      "TabOrder": null,
+      "TabStop": null,
+      "Responsive": "responsive",
+      "AdaptationMode": {"select":["inherit","auto","manual"]}
+    },
+    "events": {
+      "OnChange": {
+        "comment": "Runs when the component reports a value or state change."
+      },
+      "OnError": {
+        "comment": "Runs when the component reports an error."
+      }
+    }
+  },
+  "uui-dialog": {
+    "localization": {"messages":["common.cancel","common.close","common.no","common.ok","common.yes","dialog.confirmation","dialog.error","dialog.information","dialog.warning"],"properties":["Title","Message"]},
+    "events": {
+      "OnClose": {
+        "comment": "Runs when the dialog closes."
+      }
+    },
+    "palette": "Application",
+    "properties": {
+      "Name": null,
+      "Type": {"select":["information","warning","error","confirmation","custom"]},
+      "Buttons": {"select":["close","ok","ok-cancel","yes-no","yes-no-cancel"]},
+      "Title": null,
+      "Message": null,
+      "DefaultButton": {"select":["auto","ok","cancel","yes","no","close"]},
+      "CancelButton": {"select":["auto","ok","cancel","yes","no","close"]}
+    }
+  },
+  "uui-toolbar": {
+    "palette": "Containers",
+    "properties": {
+      "Name": null,
+      "Items": "toolbarManager",
+      "Orientation": {"select":["horizontal","vertical"]},
+      "Padding": "progressiveQuad",
+      "Gap": null,
+      "HorizontalAlignment": {"select":["start","center","end","stretch"]},
+      "VerticalAlignment": {"select":["start","center","end","stretch"]},
+      "Wrap": null,
+      "Overflow": {"select":["clip","scroll"]},
+      "ScrollBars": {"select":["auto","hidden"]},
+      "Color": "colorPicker",
+      "BorderStyle": {"select":["none","solid","dashed","dotted","double"]},
+      "BorderWidth": "progressiveQuad",
+      "BorderColor": "colorPicker",
+      "BorderRadius": {"progressiveQuad":["corners"]},
+      "Opacity": {"sliderCombo":["opacity"]},
+      "Dock": {"select":["none","top","bottom","left","right","fill"]},
+      "Anchors": "anchorSet",
+      "Left": null,
+      "Top": null,
+      "Width": null,
+      "Height": null,
+      "MinWidth": null,
+      "MinHeight": null,
+      "MaxWidth": null,
+      "MaxHeight": null,
+      "AutoSize": null,
+      "Visible": null,
+      "Responsive": "responsive",
+      "AdaptationMode": {"select":["inherit","auto","manual"]},
+      "Stretch": null
+    },
+    "separator": {
+      "Size": null
+    },
+    "spacer": {
+      "Size": null
+    },
+    "container": "flow"
+  },
+  "uui-menu-bar": {
+    "localization": {"properties":["Hint"],"owned":{"item":{"Caption":true}}},
+    "events": {
+      "OnCommand": {
+        "comment": "Runs when a menu command is invoked."
+      }
+    },
+    "palette": "Containers",
+    "properties": {
+      "Name": null,
+      "Items": {"treeItems":["menu"]},
+      "Dock": {"select":["none","top","bottom","left","right","fill"]},
+      "Anchors": "anchorSet",
+      "Left": null,
+      "Top": null,
+      "Width": null,
+      "Height": null,
+      "MinWidth": null,
+      "MinHeight": null,
+      "MaxWidth": null,
+      "MaxHeight": null,
+      "AutoSize": null,
+      "FontFamily": {"fontList":["inherited"]},
+      "FontSize": {"fontSize":["inherited"]},
+      "FontColor": "colorPicker",
+      "FontWeight": {"fontChoice":["inherited","normal","medium","semibold","bold"]},
+      "FontStyle": {"fontChoice":["inherited","normal","italic","oblique"]},
+      "TextDecoration": {"fontChoice":["inherited","none","underline","line-through"]},
+      "FontShadow": "shadowList",
+      "Color": "colorPicker",
+      "Padding": "progressiveQuad",
+      "Gap": null,
+      "BorderStyle": {"select":["none","solid","dashed","dotted","double"]},
+      "BorderWidth": "progressiveQuad",
+      "BorderColor": "colorPicker",
+      "BorderRadius": {"progressiveQuad":["corners"]},
+      "Opacity": {"sliderCombo":["opacity"]},
+      "Enabled": null,
+      "Visible": null,
+      "Cursor": null,
+      "Hint": null,
+      "ShowHint": null,
+      "TabOrder": null,
+      "TabStop": null,
+      "Responsive": "responsive",
+      "AdaptationMode": {"select":["inherit","auto","manual"]},
+      "Stretch": null
+    },
+    "item": {
+      "Caption": null,
+      "Icon": null,
+      "Shortcut": null,
+      "Checked": null,
+      "Enabled": null
+    },
+    "separator": {}
+  },
+  "uui-nav": {
+    "container": "dock"
+  },
+  "uui-panel": {
+    "localization": {"messages":["panel.menu","panel.pin","panel.unpin","workspace.maximize","workspace.restore"],"uses":["uui-splitter"],"properties":["Hint"],"owned":{"tab":{"Title":true,"Message":true,"Hint":true,"Name":{"key":"tabName"}},"caption":{"Text":{"text":true}}}},
+    "events": {
+      "OnTabChange": {
+        "comment": "Runs when the active panel tab changes."
+      },
+      "OnCollapseChange": {
+        "comment": "Runs when the panel collapsed state changes."
+      },
+      "OnTabClosing": {
+        "comment": "Runs when a panel tab close request is being handled."
+      }
+    },
+    "palette": "Containers",
+    "properties": {
+      "Name": null,
+      "Dock": {"select":["none","top","bottom","left","right","fill"]},
+      "Anchors": "anchorSet",
+      "Left": null,
+      "Top": null,
+      "Width": null,
+      "Height": null,
+      "MinWidth": null,
+      "MinHeight": null,
+      "MaxWidth": null,
+      "MaxHeight": null,
+      "AutoSize": null,
+      "FontFamily": {"fontList":["inherited"]},
+      "FontSize": {"fontSize":["inherited"]},
+      "FontColor": "colorPicker",
+      "FontWeight": {"fontChoice":["inherited","normal","medium","semibold","bold"]},
+      "FontStyle": {"fontChoice":["inherited","normal","italic","oblique"]},
+      "TextDecoration": {"fontChoice":["inherited","none","underline","line-through"]},
+      "FontShadow": "shadowList",
+      "Color": "colorPicker",
+      "Padding": "progressiveQuad",
+      "ScrollBars": {"select":["hidden","auto","horizontal","vertical","both","none"]},
+      "BorderStyle": {"select":["none","solid","dashed","dotted","double"]},
+      "BorderWidth": "progressiveQuad",
+      "BorderColor": "colorPicker",
+      "BorderRadius": {"progressiveQuad":["corners"]},
+      "Opacity": {"sliderCombo":["opacity"]},
+      "Splitter": null,
+      "Pin": null,
+      "Tabs": "tabList",
+      "TabIndex": null,
+      "Enabled": null,
+      "Visible": null,
+      "Cursor": null,
+      "Hint": null,
+      "ShowHint": null,
+      "TabOrder": null,
+      "TabStop": null,
+      "Responsive": "responsive",
+      "AdaptationMode": {"select":["inherit","auto","manual"]},
+      "Storage": null,
+      "Stretch": null
+    },
+    "tab": {
+      "properties": {
+        "Name": null,
+        "Icon": "colorPicker",
+        "Type": {"select":["information","warning","error","confirmation","custom"]},
+        "Buttons": {"select":["close","ok","ok-cancel","yes-no","yes-no-cancel"]},
+        "Title": null,
+        "Message": null,
+        "DefaultButton": {"select":["auto","ok","cancel","yes","no","close"]},
+        "CancelButton": {"select":["auto","ok","cancel","yes","no","close"]},
+        "Default": null,
+        "FontFamily": {"fontList":["inherited"]},
+        "FontSize": {"fontSize":["inherited"]},
+        "FontColor": "colorPicker",
+        "FontWeight": {"fontChoice":["inherited","normal","medium","semibold","bold"]},
+        "FontStyle": {"fontChoice":["inherited","normal","italic","oblique"]},
+        "TextDecoration": {"fontChoice":["inherited","none","underline","line-through"]},
+        "FontShadow": "shadowList",
+        "Color": "colorPicker",
+        "Padding": "progressiveQuad",
+        "ScrollBars": {"select":["inherited","hidden","auto","horizontal","vertical","both","none"]},
+        "BorderStyle": {"select":["none","solid","dashed","dotted","double"]},
+        "BorderWidth": "progressiveQuad",
+        "BorderColor": "colorPicker",
+        "BorderRadius": {"progressiveQuad":["corners"]},
+        "Opacity": {"sliderCombo":["opacity"]},
+        "Enabled": null,
+        "Visible": null,
+        "Cursor": null,
+        "Hint": null,
+        "ShowHint": null,
+        "Maximize": null,
+        "Closable": null
+      },
+      "container": "dock"
+    },
+    "caption": {
+      "Maximize": null,
+      "Menu": null
+    },
+    "source": {
+      "container": "dock"
+    },
+    "container": "dock"
+  },
+  "uui-status-bar": {
+    "palette": "Containers",
+    "properties": {
+      "Name": null,
+      "Items": "toolbarManager",
+      "Orientation": {"select":["horizontal","vertical"]},
+      "Padding": "progressiveQuad",
+      "Gap": null,
+      "HorizontalAlignment": {"select":["start","center","end","stretch"]},
+      "VerticalAlignment": {"select":["start","center","end","stretch"]},
+      "Wrap": null,
+      "Overflow": {"select":["clip","scroll"]},
+      "ScrollBars": {"select":["auto","hidden"]},
+      "Color": "colorPicker",
+      "BorderStyle": {"select":["none","solid","dashed","dotted","double"]},
+      "BorderWidth": "progressiveQuad",
+      "BorderColor": "colorPicker",
+      "BorderRadius": {"progressiveQuad":["corners"]},
+      "Opacity": {"sliderCombo":["opacity"]},
+      "Dock": {"select":["none","top","bottom","left","right","fill"]},
+      "Anchors": "anchorSet",
+      "Left": null,
+      "Top": null,
+      "Width": null,
+      "Height": null,
+      "MinWidth": null,
+      "MinHeight": null,
+      "MaxWidth": null,
+      "MaxHeight": null,
+      "AutoSize": null,
+      "Visible": null,
+      "Responsive": "responsive",
+      "AdaptationMode": {"select":["inherit","auto","manual"]},
+      "Stretch": null
+    },
+    "separator": {
+      "Size": null
+    },
+    "spacer": {
+      "Size": null
+    },
+    "container": "flow"
+  },
+  "uui-group-box": {
+    "localization": {"uses":["uui-panel"],"properties":["Caption","Hint"]},
+    "palette": "Containers",
+    "properties": {
+      "Name": null,
+      "Caption": null,
+      "Dock": {"select":["none","top","bottom","left","right","fill"]},
+      "Anchors": "anchorSet",
+      "Left": null,
+      "Top": null,
+      "Width": null,
+      "Height": null,
+      "MinWidth": null,
+      "MinHeight": null,
+      "MaxWidth": null,
+      "MaxHeight": null,
+      "AutoSize": null,
+      "FontFamily": {"fontList":["inherited"]},
+      "FontSize": {"fontSize":["inherited"]},
+      "FontColor": "colorPicker",
+      "FontWeight": {"fontChoice":["inherited","normal","medium","semibold","bold"]},
+      "FontStyle": {"fontChoice":["inherited","normal","italic","oblique"]},
+      "TextDecoration": {"fontChoice":["inherited","none","underline","line-through"]},
+      "FontShadow": "shadowList",
+      "Color": "colorPicker",
+      "ScrollBars": {"select":["hidden","auto","horizontal","vertical","both","none"]},
+      "Gap": null,
+      "Padding": "progressiveQuad",
+      "BorderStyle": {"select":["none","solid","dashed","dotted","double"]},
+      "BorderWidth": "progressiveQuad",
+      "BorderColor": "colorPicker",
+      "BorderRadius": {"progressiveQuad":["corners"]},
+      "Opacity": {"sliderCombo":["opacity"]},
+      "Enabled": null,
+      "Visible": null,
+      "Cursor": null,
+      "Hint": null,
+      "ShowHint": null,
+      "TabOrder": null,
+      "TabStop": null,
+      "Responsive": "responsive",
+      "AdaptationMode": {"select":["inherit","auto","manual"]},
+      "Stretch": null
+    },
+    "container": "dock"
+  },
+  "uui-list-box": {
+    "localization": {"messages":["command.add","command.moveDown","command.moveUp","common.delete"],"owned":{"span":{"Text":true}}},
+    "events": {
+      "OnSelectionChange": {
+        "comment": "Runs when the component selection changes."
+      }
+    },
+    "palette": "Basic",
+    "properties": {
+      "Name": null,
+      "Dock": {"select":["none","top","bottom","left","right","fill"]},
+      "Anchors": "anchorSet",
+      "Left": null,
+      "Top": null,
+      "Width": null,
+      "Height": null,
+      "MinWidth": null,
+      "MinHeight": null,
+      "MaxWidth": null,
+      "MaxHeight": null,
+      "FontFamily": {"fontList":["inherited"]},
+      "FontSize": {"fontSize":["inherited"]},
+      "FontColor": "colorPicker",
+      "FontWeight": {"fontChoice":["inherited","normal","medium","semibold","bold"]},
+      "FontStyle": {"fontChoice":["inherited","normal","italic","oblique"]},
+      "TextDecoration": {"fontChoice":["inherited","none","underline","line-through"]},
+      "FontShadow": "shadowList",
+      "Color": "colorPicker",
+      "BorderStyle": {"select":["none","solid","dashed","dotted","double","groove","ridge","inset","outset"]},
+      "BorderWidth": "progressiveQuad",
+      "BorderColor": "colorPicker",
+      "BorderRadius": {"progressiveQuad":["corners"]},
+      "Opacity": {"sliderCombo":["opacity"]},
+      "Padding": "progressiveQuad",
+      "ScrollBars": {"select":["hidden","auto","horizontal","vertical","both","none"]},
+      "Items": "itemList",
+      "SelectionMode": {"select":["single","multiple","none"]},
+      "Responsive": "responsive",
+      "AdaptationMode": {"select":["inherit","auto","manual"]},
+      "Stretch": null
+    },
+    "actions": ["moveDown", "moveUp", "delete"],
+    "span": {
+      "Text": null,
+      "Value": null,
+      "Enabled": null
+    }
+  },
+  "uui-tree-view": {
+    "localization": {"properties":["Hint"],"owned":{"item":{"Caption":{"plain":true}}}},
+    "events": {
+      "OnSelectionChange": {
+        "comment": "Runs when the component selection changes."
+      },
+      "OnItemAction": {
+        "comment": "Runs when a tree item action is invoked."
+      },
+      "OnIconClick": {
+        "comment": "Runs when a tree item icon is activated."
+      }
+    },
+    "palette": "Advanced",
+    "properties": {
+      "Name": null,
+      "Items": "treeItems",
+      "SelectionMode": {"select":["single","none"]},
+      "ExpandDepth": null,
+      "ExpandOn": {"select":["click","doubleClick"]},
+      "Dock": {"select":["none","top","bottom","left","right","fill"]},
+      "Anchors": "anchorSet",
+      "Left": null,
+      "Top": null,
+      "Width": null,
+      "Height": null,
+      "MinWidth": null,
+      "MinHeight": null,
+      "MaxWidth": null,
+      "MaxHeight": null,
+      "FontFamily": {"fontList":["inherited"]},
+      "FontSize": {"fontSize":["inherited"]},
+      "FontColor": "colorPicker",
+      "FontWeight": {"fontChoice":["inherited","normal","medium","semibold","bold"]},
+      "FontStyle": {"fontChoice":["inherited","normal","italic","oblique"]},
+      "TextDecoration": {"fontChoice":["inherited","none","underline","line-through"]},
+      "FontShadow": "shadowList",
+      "Color": "colorPicker",
+      "Padding": "progressiveQuad",
+      "ScrollBars": {"select":["hidden","auto","horizontal","vertical","both","none"]},
+      "BorderStyle": {"select":["none","solid","dashed","dotted","double"]},
+      "BorderWidth": "progressiveQuad",
+      "BorderColor": "colorPicker",
+      "Opacity": {"sliderCombo":["opacity"]},
+      "BorderRadius": {"progressiveQuad":["corners"]},
+      "Storage": null,
+      "Enabled": null,
+      "Visible": null,
+      "Cursor": null,
+      "Hint": null,
+      "ShowHint": null,
+      "TabOrder": null,
+      "TabStop": null,
+      "Responsive": "responsive",
+      "AdaptationMode": {"select":["inherit","auto","manual"]},
+      "Stretch": null
+    },
+    "item": {
+      "Caption": null,
+      "Icon": null,
+      "Expanded": null
+    }
+  },
+  "uui-list-view": {
+    "localization": {"messages":["command.add","command.moveDown","command.moveUp","common.delete"],"properties":["Hint"],"owned":{"item":{"Caption":{"plain":true}}}},
+    "events": {
+      "OnSelectionChange": {
+        "comment": "Runs when the component selection changes."
+      }
+    },
+    "palette": "Advanced",
+    "properties": {
+      "Name": null,
+      "Items": "listViewItems",
+      "SelectionMode": {"select":["single","multiple","none"]},
+      "Dock": {"select":["none","top","bottom","left","right","fill"]},
+      "Anchors": "anchorSet",
+      "Left": null,
+      "Top": null,
+      "Width": null,
+      "Height": null,
+      "MinWidth": null,
+      "MinHeight": null,
+      "MaxWidth": null,
+      "MaxHeight": null,
+      "FontFamily": {"fontList":["inherited"]},
+      "FontSize": {"fontSize":["inherited"]},
+      "FontColor": "colorPicker",
+      "FontWeight": {"fontChoice":["inherited","normal","medium","semibold","bold"]},
+      "FontStyle": {"fontChoice":["inherited","normal","italic","oblique"]},
+      "TextDecoration": {"fontChoice":["inherited","none","underline","line-through"]},
+      "FontShadow": "shadowList",
+      "Color": "colorPicker",
+      "Padding": "progressiveQuad",
+      "ScrollBars": {"select":["hidden","auto","horizontal","vertical","both","none"]},
+      "BorderStyle": {"select":["none","solid","dashed","dotted","double"]},
+      "BorderWidth": "progressiveQuad",
+      "BorderColor": "colorPicker",
+      "Opacity": {"sliderCombo":["opacity"]},
+      "BorderRadius": {"progressiveQuad":["corners"]},
+      "Enabled": null,
+      "Visible": null,
+      "Cursor": null,
+      "Hint": null,
+      "ShowHint": null,
+      "TabOrder": null,
+      "TabStop": null,
+      "Responsive": "responsive",
+      "AdaptationMode": {"select":["inherit","auto","manual"]},
+      "Stretch": null
+    },
+    "actions": ["moveDown", "moveUp", "delete"],
+    "item": {
+      "Caption": null,
+      "Icon": null
+    }
+  },
+  "uui-label": {
+    "localization": {"properties":["Caption","Hint"]},
+    "events": {
+      "OnClick": {
+        "comment": "Runs when this component is clicked or activated."
+      }
+    },
+    "palette": "Basic",
+    "properties": {
+      "Name": null,
+      "Caption": null,
+      "Translate": null,
+      "TranslationNote": null,
+      "For": "componentReference",
+      "Dock": {"select":["none","top","bottom","left","right","fill"]},
+      "Anchors": "anchorSet",
+      "Left": null,
+      "Top": null,
+      "Width": null,
+      "Height": null,
+      "AutoSize": null,
+      "MinWidth": null,
+      "MinHeight": null,
+      "MaxWidth": null,
+      "MaxHeight": null,
+      "FontFamily": {"fontList":["inherited"]},
+      "FontSize": {"fontSize":["inherited"]},
+      "FontColor": "colorPicker",
+      "FontWeight": {"fontChoice":["inherited","normal","medium","semibold","bold"]},
+      "FontStyle": {"fontChoice":["inherited","normal","italic","oblique"]},
+      "TextDecoration": {"fontChoice":["inherited","none","underline","line-through"]},
+      "FontShadow": "shadowList",
+      "Opacity": {"sliderCombo":["opacity"]},
+      "WordWrap": null,
+      "TextAlign": {"select":["start","center","end","justify"]},
+      "Cursor": null,
+      "Hint": null,
+      "ShowHint": null,
+      "Visible": null,
+      "Responsive": "responsive",
+      "Padding": "progressiveQuad",
+      "AdaptationMode": {"select":["inherit","auto","manual"]},
+      "Stretch": null
+    }
+  },
+  "uui-input-box": {
+    "localization": {"properties":["Placeholder","Label","Hint"]},
+    "events": {
+      "OnChange": {
+        "comment": "Runs when the component reports a value or state change."
+      }
+    },
+    "palette": "Basic",
+    "properties": {
+      "Name": null,
+      "Text": null,
+      "Placeholder": null,
+      "Label": null,
+      "Translate": null,
+      "TranslationNote": null,
+      "LabelPosition": {"select":["left","right","top","bottom"]},
+      "LabelAlignment": {"select":["auto","start","center","end"]},
+      "LabelGap": null,
+      "Dock": {"select":["none","top","bottom","left","right","fill"]},
+      "Anchors": "anchorSet",
+      "Left": null,
+      "Top": null,
+      "Width": null,
+      "Height": null,
+      "MinWidth": null,
+      "MinHeight": null,
+      "MaxWidth": null,
+      "MaxHeight": null,
+      "FontFamily": {"fontList":["inherited"]},
+      "FontSize": {"fontSize":["inherited"]},
+      "FontColor": "colorPicker",
+      "FontWeight": {"fontChoice":["inherited","normal","medium","semibold","bold"]},
+      "FontStyle": {"fontChoice":["inherited","normal","italic","oblique"]},
+      "TextDecoration": {"fontChoice":["inherited","none","underline","line-through"]},
+      "FontShadow": "shadowList",
+      "Color": "colorPicker",
+      "BorderStyle": {"select":["none","solid","dashed","dotted","double","groove","ridge","inset","outset"]},
+      "BorderWidth": "progressiveQuad",
+      "BorderColor": "colorPicker",
+      "BorderRadius": {"progressiveQuad":["corners"]},
+      "Padding": "progressiveQuad",
+      "Enabled": null,
+      "Visible": null,
+      "Cursor": null,
+      "Hint": null,
+      "ShowHint": null,
+      "TabOrder": null,
+      "TabStop": null,
+      "Responsive": "responsive",
+      "AdaptationMode": {"select":["inherit","auto","manual"]},
+      "Storage": null,
+      "Stretch": null
+    }
+  },
+  "uui-search": {
+    "localization": {"messages":["command.clear","common.search"],"uses":["uui-dialog","uui-data-grid"],"properties":["Placeholder","Hint"]},
+    "palette": "Application",
+    "events": {
+      "OnSearch": {
+        "comment": "Runs when a search request is submitted."
+      },
+      "OnResultsReady": {
+        "comment": "Runs when search results are ready."
+      },
+      "OnClear": {
+        "comment": "Runs when a request to clear the search is submitted."
+      }
+    },
+    "properties": {
+      "Name": null,
+      "Text": null,
+      "Placeholder": null,
+      "Target": "componentReference",
+      "DataSource": "componentReference",
+      "Query": {"query":["search"]},
+      "Storage": null,
+      "Dock": {"select":["none","top","bottom","left","right","fill"]},
+      "Anchors": "anchorSet",
+      "Left": null,
+      "Top": null,
+      "Width": null,
+      "Height": null,
+      "MinWidth": null,
+      "MinHeight": null,
+      "MaxWidth": null,
+      "MaxHeight": null,
+      "FontFamily": {"fontList":["inherited"]},
+      "FontSize": {"fontSize":["inherited"]},
+      "FontColor": "colorPicker",
+      "Enabled": null,
+      "Visible": null,
+      "Hint": null,
+      "ShowHint": null,
+      "TabOrder": null,
+      "TabStop": null,
+      "Responsive": "responsive",
+      "AdaptationMode": {"select":["inherit","auto","manual"]},
+      "Stretch": null
+    }
+  },
+  "uui-text-area": {
+    "localization": {"properties":["Placeholder","Label","Hint"]},
+    "events": {
+      "OnChange": {
+        "comment": "Runs when the component reports a value or state change."
+      }
+    },
+    "palette": "Basic",
+    "properties": {
+      "Name": null,
+      "Text": null,
+      "Placeholder": null,
+      "Label": null,
+      "LabelPosition": {"select":["left","right","top","bottom"]},
+      "LabelAlignment": {"select":["auto","start","center","end"]},
+      "LabelGap": null,
+      "Dock": {"select":["none","top","bottom","left","right","fill"]},
+      "Anchors": "anchorSet",
+      "Left": null,
+      "Top": null,
+      "Width": null,
+      "Height": null,
+      "MinWidth": null,
+      "MinHeight": null,
+      "MaxWidth": null,
+      "MaxHeight": null,
+      "FontFamily": {"fontList":["inherited"]},
+      "FontSize": {"fontSize":["inherited"]},
+      "FontColor": "colorPicker",
+      "FontWeight": {"fontChoice":["inherited","normal","medium","semibold","bold"]},
+      "FontStyle": {"fontChoice":["inherited","normal","italic","oblique"]},
+      "TextDecoration": {"fontChoice":["inherited","none","underline","line-through"]},
+      "FontShadow": "shadowList",
+      "Color": "colorPicker",
+      "BorderStyle": {"select":["none","solid","dashed","dotted","double","groove","ridge","inset","outset"]},
+      "BorderWidth": "progressiveQuad",
+      "BorderColor": "colorPicker",
+      "BorderRadius": {"progressiveQuad":["corners"]},
+      "Padding": "progressiveQuad",
+      "ScrollBars": {"select":["hidden","auto","horizontal","vertical","both","none"]},
+      "WordWrap": null,
+      "TextAlign": {"select":["start","center","end","justify"]},
+      "Enabled": null,
+      "Visible": null,
+      "Cursor": null,
+      "Hint": null,
+      "ShowHint": null,
+      "TabOrder": null,
+      "TabStop": null,
+      "Responsive": "responsive",
+      "AdaptationMode": {"select":["inherit","auto","manual"]},
+      "Storage": null,
+      "Stretch": null
+    }
+  },
+  "uui-checkbox": {
+    "localization": {"properties":["Caption","Hint"]},
+    "events": {
+      "OnClick": {
+        "comment": "Runs when this component is clicked or activated."
+      },
+      "OnChange": {
+        "comment": "Runs when the component reports a value or state change."
+      }
+    },
+    "palette": "Basic",
+    "properties": {
+      "Name": null,
+      "Caption": null,
+      "Checked": null,
+      "Dock": {"select":["none","top","bottom","left","right","fill"]},
+      "Anchors": "anchorSet",
+      "Left": null,
+      "Top": null,
+      "Width": null,
+      "Height": null,
+      "MinWidth": null,
+      "MinHeight": null,
+      "MaxWidth": null,
+      "MaxHeight": null,
+      "FontFamily": {"fontList":["inherited"]},
+      "FontSize": {"fontSize":["inherited"]},
+      "FontColor": "colorPicker",
+      "FontWeight": {"fontChoice":["inherited","normal","medium","semibold","bold"]},
+      "FontStyle": {"fontChoice":["inherited","normal","italic","oblique"]},
+      "TextDecoration": {"fontChoice":["inherited","none","underline","line-through"]},
+      "FontShadow": "shadowList",
+      "Padding": "progressiveQuad",
+      "WordWrap": null,
+      "TextAlign": {"select":["start","center","end","justify"]},
+      "Enabled": null,
+      "Visible": null,
+      "Cursor": null,
+      "Hint": null,
+      "ShowHint": null,
+      "TabOrder": null,
+      "TabStop": null,
+      "Responsive": "responsive",
+      "AdaptationMode": {"select":["inherit","auto","manual"]},
+      "Storage": null,
+      "Stretch": null
+    }
+  },
+  "uui-radio": {
+    "localization": {"properties":["Caption","Hint"]},
+    "events": {
+      "OnClick": {
+        "comment": "Runs when this component is clicked or activated."
+      },
+      "OnChange": {
+        "comment": "Runs when the component reports a value or state change."
+      }
+    },
+    "palette": "Basic",
+    "properties": {
+      "Name": null,
+      "Caption": null,
+      "Checked": null,
+      "Dock": {"select":["none","top","bottom","left","right","fill"]},
+      "Anchors": "anchorSet",
+      "Left": null,
+      "Top": null,
+      "Width": null,
+      "Height": null,
+      "MinWidth": null,
+      "MinHeight": null,
+      "MaxWidth": null,
+      "MaxHeight": null,
+      "FontFamily": {"fontList":["inherited"]},
+      "FontSize": {"fontSize":["inherited"]},
+      "FontColor": "colorPicker",
+      "FontWeight": {"fontChoice":["inherited","normal","medium","semibold","bold"]},
+      "FontStyle": {"fontChoice":["inherited","normal","italic","oblique"]},
+      "TextDecoration": {"fontChoice":["inherited","none","underline","line-through"]},
+      "FontShadow": "shadowList",
+      "Padding": "progressiveQuad",
+      "WordWrap": null,
+      "TextAlign": {"select":["start","center","end","justify"]},
+      "Enabled": null,
+      "Visible": null,
+      "Cursor": null,
+      "Hint": null,
+      "ShowHint": null,
+      "TabOrder": null,
+      "TabStop": null,
+      "Responsive": "responsive",
+      "AdaptationMode": {"select":["inherit","auto","manual"]},
+      "Stretch": null
+    }
+  },
+  "uui-radio-group": {
+    "localization": {"properties":["Caption","Hint"],"owned":{"span":{"Text":true}}},
+    "events": {
+      "OnChange": {
+        "comment": "Runs when the component reports a value or state change."
+      }
+    },
+    "palette": "Basic",
+    "properties": {
+      "Name": null,
+      "Caption": null,
+      "Items": "itemList",
+      "ItemIndex": null,
+      "Columns": null,
+      "Dock": {"select":["none","top","bottom","left","right","fill"]},
+      "Anchors": "anchorSet",
+      "Left": null,
+      "Top": null,
+      "Width": null,
+      "Height": null,
+      "MinWidth": null,
+      "MinHeight": null,
+      "MaxWidth": null,
+      "MaxHeight": null,
+      "FontFamily": {"fontList":["inherited"]},
+      "FontSize": {"fontSize":["inherited"]},
+      "FontColor": "colorPicker",
+      "FontWeight": {"fontChoice":["inherited","normal","medium","semibold","bold"]},
+      "FontStyle": {"fontChoice":["inherited","normal","italic","oblique"]},
+      "TextDecoration": {"fontChoice":["inherited","none","underline","line-through"]},
+      "FontShadow": "shadowList",
+      "Color": "colorPicker",
+      "BorderStyle": {"select":["none","solid","dashed","dotted","double"]},
+      "BorderWidth": "progressiveQuad",
+      "BorderColor": "colorPicker",
+      "BorderRadius": {"progressiveQuad":["corners"]},
+      "Padding": "progressiveQuad",
+      "WordWrap": null,
+      "TextAlign": {"select":["start","center","end","justify"]},
+      "Enabled": null,
+      "Visible": null,
+      "Cursor": null,
+      "Hint": null,
+      "ShowHint": null,
+      "TabOrder": null,
+      "TabStop": null,
+      "Responsive": "responsive",
+      "AdaptationMode": {"select":["inherit","auto","manual"]},
+      "Storage": null,
+      "Stretch": null
+    },
+    "span": {
+      "Text": null,
+      "Enabled": null
+    }
+  },
+  "uui-combo-box": {
+    "localization": {"messages":["common.open"],"properties":["Placeholder","Label","Hint"],"owned":{"span":{"Text":true},"option":{"Text":{"text":true}}}},
+    "events": {
+      "OnChange": {
+        "comment": "Runs when the component reports a value or state change."
+      },
+      "OnEdit": {
+        "comment": "Runs when a combo-box edit request is being handled."
+      }
+    },
+    "palette": "Basic",
+    "properties": {
+      "Name": null,
+      "Items": "itemList",
+      "ItemIndex": null,
+      "Editable": null,
+      "Text": null,
+      "Placeholder": null,
+      "DropDownCount": null,
+      "ReadOnly": null,
+      "Label": null,
+      "LabelPosition": {"select":["left","right","top","bottom"]},
+      "LabelAlignment": {"select":["auto","start","center","end"]},
+      "LabelGap": null,
+      "Dock": {"select":["none","top","bottom","left","right","fill"]},
+      "Anchors": "anchorSet",
+      "Left": null,
+      "Top": null,
+      "Width": null,
+      "Height": null,
+      "AutoSize": null,
+      "MinWidth": null,
+      "MinHeight": null,
+      "MaxWidth": null,
+      "MaxHeight": null,
+      "FontFamily": {"fontList":["inherited"]},
+      "FontSize": {"fontSize":["inherited"]},
+      "FontColor": "colorPicker",
+      "FontWeight": {"fontChoice":["inherited","normal","medium","semibold","bold"]},
+      "FontStyle": {"fontChoice":["inherited","normal","italic","oblique"]},
+      "TextDecoration": {"fontChoice":["inherited","none","underline","line-through"]},
+      "FontShadow": "shadowList",
+      "Color": "colorPicker",
+      "BorderStyle": {"select":["none","solid","dashed","dotted","double"]},
+      "BorderWidth": "progressiveQuad",
+      "BorderColor": "colorPicker",
+      "BorderRadius": {"progressiveQuad":["corners"]},
+      "Padding": "progressiveQuad",
+      "Enabled": null,
+      "Visible": null,
+      "Cursor": null,
+      "Hint": null,
+      "ShowHint": null,
+      "TabOrder": null,
+      "TabStop": null,
+      "Responsive": "responsive",
+      "AdaptationMode": {"select":["inherit","auto","manual"]},
+      "Storage": null,
+      "Stretch": null
+    },
+    "span": {
+      "Text": null,
+      "Value": null,
+      "Enabled": null
+    }
+  },
+  "uui-number-box": {
+    "localization": {"messages":["message.decrease","message.increase"],"properties":["Label","Hint"]},
+    "events": {
+      "OnChange": {
+        "comment": "Runs when the component reports a value or state change."
+      },
+      "OnInput": {
+        "comment": "Runs while the number-box input is edited, including drafts that are not valid numbers."
+      }
+    },
+    "palette": "Basic",
+    "properties": {
+      "Name": null,
+      "Value": null,
+      "MinValue": null,
+      "MaxValue": null,
+      "Increment": null,
+      "DecimalPlaces": null,
+      "ReadOnly": null,
+      "Label": null,
+      "LabelPosition": {"select":["left","right","top","bottom"]},
+      "LabelAlignment": {"select":["auto","start","center","end"]},
+      "LabelGap": null,
+      "Dock": {"select":["none","top","bottom","left","right","fill"]},
+      "Anchors": "anchorSet",
+      "Left": null,
+      "Top": null,
+      "Width": null,
+      "Height": null,
+      "MinWidth": null,
+      "MinHeight": null,
+      "MaxWidth": null,
+      "MaxHeight": null,
+      "FontFamily": {"fontList":["inherited"]},
+      "FontSize": {"fontSize":["inherited"]},
+      "FontColor": "colorPicker",
+      "FontWeight": {"fontChoice":["inherited","normal","medium","semibold","bold"]},
+      "FontStyle": {"fontChoice":["inherited","normal","italic","oblique"]},
+      "TextDecoration": {"fontChoice":["inherited","none","underline","line-through"]},
+      "FontShadow": "shadowList",
+      "Color": "colorPicker",
+      "BorderStyle": {"select":["none","solid","dashed","dotted","double","groove","ridge","inset","outset"]},
+      "BorderWidth": "progressiveQuad",
+      "BorderColor": "colorPicker",
+      "BorderRadius": {"progressiveQuad":["corners"]},
+      "Padding": "progressiveQuad",
+      "Enabled": null,
+      "Visible": null,
+      "Cursor": null,
+      "Hint": null,
+      "ShowHint": null,
+      "TabOrder": null,
+      "TabStop": null,
+      "Responsive": "responsive",
+      "AdaptationMode": {"select":["inherit","auto","manual"]},
+      "Storage": null,
+      "Stretch": null
+    }
+  },
+  "uui-slider": {
+    "localization": {"properties":["Label","Hint"]},
+    "events": {
+      "OnChange": {
+        "comment": "Runs when the component reports a value or state change."
+      }
+    },
+    "palette": "Basic",
+    "properties": {
+      "Name": null,
+      "Mode": {"select":["free","angle","opacity"]},
+      "ShowValue": null,
+      "Value": null,
+      "MinValue": null,
+      "MaxValue": null,
+      "Increment": null,
+      "Orientation": {"select":["horizontal","vertical"]},
+      "Label": null,
+      "LabelPosition": {"select":["left","right","top","bottom"]},
+      "LabelAlignment": {"select":["auto","start","center","end"]},
+      "LabelGap": null,
+      "Dock": {"select":["none","top","bottom","left","right","fill"]},
+      "Anchors": "anchorSet",
+      "Left": null,
+      "Top": null,
+      "Width": null,
+      "Height": null,
+      "MinWidth": null,
+      "MinHeight": null,
+      "MaxWidth": null,
+      "MaxHeight": null,
+      "Enabled": null,
+      "Visible": null,
+      "Cursor": null,
+      "Hint": null,
+      "ShowHint": null,
+      "TabOrder": null,
+      "TabStop": null,
+      "Responsive": "responsive",
+      "AdaptationMode": {"select":["inherit","auto","manual"]},
+      "Storage": null,
+      "Stretch": null
+    }
+  },
+  "uui-paint-picker": {
+    "localization": {"messages":["paint.gradient","paint.image","paint.linear","paint.radial"],"uses":["paint-popup"],"properties":["Hint"]},
+    "events": {
+      "OnChange": {
+        "comment": "Runs when the component reports a value or state change."
+      }
+    },
+    "palette": "Basic",
+    "properties": {
+      "Name": null,
+      "Paint": "colorPicker",
+      "Dock": {"select":["none","top","bottom","left","right","fill"]},
+      "Anchors": "anchorSet",
+      "Left": null,
+      "Top": null,
+      "Width": null,
+      "Height": null,
+      "MinWidth": null,
+      "MinHeight": null,
+      "MaxWidth": null,
+      "MaxHeight": null,
+      "Enabled": null,
+      "Visible": null,
+      "Cursor": null,
+      "Hint": null,
+      "ShowHint": null,
+      "TabOrder": null,
+      "TabStop": null,
+      "Responsive": "responsive",
+      "AdaptationMode": {"select":["inherit","auto","manual"]},
+      "Storage": null,
+      "Stretch": null
+    }
+  },
+  "uui-theme-selector": {
+    "localization": {"messages":["app.theme","common.reset","controller.theme","theme.appTheme","theme.appearance","theme.baseColor","theme.capsule","theme.dark","theme.fontFamily","theme.light","theme.rounded","theme.rounding","theme.slight","theme.system"],"uses":["uui-paint-picker","uui-split-button","uui-combo-box"],"properties":["Hint"]},
+    "events": {
+      "OnChange": {
+        "comment": "Runs when the component reports a value or state change."
+      }
+    },
+    "palette": "Application",
+    "properties": {
+      "Name": null,
+      "Presentation": {"select":["icon","icon-combo-box","combo-box","label-combo-box"]},
+      "Storage": null,
+      "Appearance": {"select":["system","light","dark"]},
+      "Rounding": {"select":["slight","rounded","capsule"]},
+      "Dock": {"select":["none","top","bottom","left","right","fill"]},
+      "Anchors": "anchorSet",
+      "Left": null,
+      "Top": null,
+      "Width": null,
+      "Height": null,
+      "MinWidth": null,
+      "MinHeight": null,
+      "MaxWidth": null,
+      "MaxHeight": null,
+      "Enabled": null,
+      "Visible": null,
+      "Hint": null,
+      "ShowHint": null,
+      "TabOrder": null,
+      "TabStop": null,
+      "Responsive": "responsive",
+      "AdaptationMode": {"select":["inherit","auto","manual"]},
+      "Stretch": null
+    }
+  },
+  "uui-language-selector": {
+    "localization": {"messages":["app.language","controller.language"],"uses":["uui-dialog","language-editor"],"properties":["Hint"]},
+    "events": {
+      "OnChange": {
+        "comment": "Runs when the component reports a value or state change."
+      }
+    },
+    "palette": "Application",
+    "properties": {
+      "Name": null,
+      "Locale": null,
+      "Presentation": {"select":["icon","icon-combo-box","combo-box","label-combo-box"]},
+      "Storage": null,
+      "Dock": {"select":["none","top","bottom","left","right","fill"]},
+      "Anchors": "anchorSet",
+      "Left": null,
+      "Top": null,
+      "Width": null,
+      "Height": null,
+      "MinWidth": null,
+      "MinHeight": null,
+      "MaxWidth": null,
+      "MaxHeight": null,
+      "Enabled": null,
+      "Visible": null,
+      "Hint": null,
+      "ShowHint": null,
+      "TabOrder": null,
+      "TabStop": null,
+      "Responsive": "responsive",
+      "AdaptationMode": {"select":["inherit","auto","manual"]},
+      "Stretch": null
+    }
+  },
+  "uui-spacing-control": {
+    "localization": {"messages":["common.open","controller.spacing","option.comfortable","option.compact","option.spacious"],"properties":["Hint"]},
+    "events": {
+      "OnChange": {
+        "comment": "Runs when the component reports a value or state change."
+      }
+    },
+    "palette": "Application",
+    "properties": {
+      "Name": null,
+      "Spacing": {"select":["compact","comfortable","spacious"]},
+      "IconMode": null,
+      "Storage": null,
+      "Dock": {"select":["none","top","bottom","left","right","fill"]},
+      "Anchors": "anchorSet",
+      "Left": null,
+      "Top": null,
+      "Width": null,
+      "Height": null,
+      "MinWidth": null,
+      "MinHeight": null,
+      "MaxWidth": null,
+      "MaxHeight": null,
+      "Enabled": null,
+      "Visible": null,
+      "Hint": null,
+      "ShowHint": null,
+      "TabOrder": null,
+      "TabStop": null,
+      "Responsive": "responsive",
+      "AdaptationMode": {"select":["inherit","auto","manual"]},
+      "Stretch": null
+    }
+  },
+  "uui-font-size-control": {
+    "localization": {"messages":["common.open","common.reset","controller.font","font.decrease","font.increase","font.reset"],"properties":["Hint"]},
+    "events": {
+      "OnChange": {
+        "comment": "Runs when the component reports a value or state change."
+      }
+    },
+    "palette": "Application",
+    "properties": {
+      "Name": null,
+      "IconMode": null,
+      "Storage": null,
+      "Target": "componentReference",
+      "Step": null,
+      "MinValue": null,
+      "MaxValue": null,
+      "Value": null,
+      "Dock": {"select":["none","top","bottom","left","right","fill"]},
+      "Anchors": "anchorSet",
+      "Left": null,
+      "Top": null,
+      "Width": null,
+      "Height": null,
+      "MinWidth": null,
+      "MinHeight": null,
+      "MaxWidth": null,
+      "MaxHeight": null,
+      "Enabled": null,
+      "Visible": null,
+      "Hint": null,
+      "ShowHint": null,
+      "TabOrder": null,
+      "TabStop": null,
+      "Responsive": "responsive",
+      "AdaptationMode": {"select":["inherit","auto","manual"]},
+      "Stretch": null
+    }
+  },
+  "uui-sequence-navigator": {
+    "localization": {"messages":["navigator.browsePages","navigator.previewLoading","navigator.previewEmpty","navigator.previewUnavailable","navigator.current","navigator.first","navigator.go","navigator.goToPage","navigator.last","navigator.next","navigator.pageRange","navigator.previous","navigator.skipBack","navigator.skipForward"],"properties":["DesignPreviewFormat","FirstTooltip","PreviousTooltip","CurrentTooltip","NextTooltip","LastTooltip","Hint"]},
+    "palette": "Application",
+    "events": {
+      "OnNavigate": {
+        "comment": "Runs when a navigation request is being handled."
+      },
+      "OnFirstClick": {
+        "comment": "Runs when the first-record navigation action is invoked."
+      },
+      "OnPreviousClick": {
+        "comment": "Runs when the previous-record navigation action is invoked."
+      },
+      "OnCurrentClick": {
+        "comment": "Runs when the current-record navigation action is invoked."
+      },
+      "OnNextClick": {
+        "comment": "Runs when the next-record navigation action is invoked."
+      },
+      "OnLastClick": {
+        "comment": "Runs when the last-record navigation action is invoked."
+      },
+      "OnAfterLoad": {
+        "comment": "Runs after query data has been loaded into this component."
+      },
+      "OnError": {
+        "comment": "Runs when the component reports an error."
+      }
+    },
+    "properties": {
+      "Name": null,
+      "DataSource": "componentReference",
+      "Query": {"query":["options"]},
+      "Storage": null,
+      "Value": null,
+      "MinValue": null,
+      "MaxValue": null,
+      "Wrap": null,
+      "FirstTooltip": null,
+      "PreviousTooltip": null,
+      "CurrentTooltip": null,
+      "DesignPreviewFormat": null,
+      "NextTooltip": null,
+      "LastTooltip": null,
+      "Dock": {"select":["none","top","bottom","left","right","fill"]},
+      "Anchors": "anchorSet",
+      "Left": null,
+      "Top": null,
+      "Width": null,
+      "Height": null,
+      "MinWidth": null,
+      "MinHeight": null,
+      "MaxWidth": null,
+      "MaxHeight": null,
+      "Enabled": null,
+      "Visible": null,
+      "Hint": null,
+      "ShowHint": null,
+      "TabOrder": null,
+      "TabStop": null,
+      "Responsive": "responsive",
+      "AutoSize": null,
+      "AdaptationMode": {"select":["inherit","auto","manual"]},
+      "Stretch": null
+    }
+  },
+  "uui-progress-bar": {
+    "localization": {"properties":["Label","Hint"]},
+    "palette": "Advanced",
+    "properties": {
+      "Name": null,
+      "Value": null,
+      "MinValue": null,
+      "MaxValue": null,
+      "Orientation": {"select":["horizontal","vertical"]},
+      "Label": null,
+      "LabelPosition": {"select":["left","right","top","bottom"]},
+      "LabelAlignment": {"select":["auto","start","center","end"]},
+      "LabelGap": null,
+      "ShowText": null,
+      "TextMode": {"select":["percent","value","value-max","custom"]},
+      "TextFormat": null,
+      "FontColor": "colorPicker",
+      "BarColor": "colorPicker",
+      "TrackColor": "colorPicker",
+      "BorderStyle": {"select":["none","solid","dashed","dotted","double","groove","ridge","inset","outset"]},
+      "BorderWidth": "progressiveQuad",
+      "BorderColor": "colorPicker",
+      "BorderRadius": {"progressiveQuad":["corners"]},
+      "Opacity": {"sliderCombo":["opacity"]},
+      "Dock": {"select":["none","top","bottom","left","right","fill"]},
+      "Anchors": "anchorSet",
+      "Left": null,
+      "Top": null,
+      "Width": null,
+      "Height": null,
+      "MinWidth": null,
+      "MinHeight": null,
+      "MaxWidth": null,
+      "MaxHeight": null,
+      "Enabled": null,
+      "Visible": null,
+      "Cursor": null,
+      "Hint": null,
+      "ShowHint": null,
+      "Responsive": "responsive",
+      "AdaptationMode": {"select":["inherit","auto","manual"]},
+      "Stretch": null
+    }
+  },
+  "uui-gauge": {
+    "localization": {"properties":["Hint"]},
+    "palette": "Advanced",
+    "properties": {
+      "Name": null,
+      "Value": null,
+      "MinValue": null,
+      "MaxValue": null,
+      "TrackColor": "colorPicker",
+      "FontFamily": {"fontList":["inherited"]},
+      "FontSize": {"fontSize":["inherited"]},
+      "FontColor": "colorPicker",
+      "FontWeight": {"fontChoice":["inherited","normal","medium","semibold","bold"]},
+      "FontStyle": {"fontChoice":["inherited","normal","italic","oblique"]},
+      "TextDecoration": {"fontChoice":["inherited","none","underline","line-through"]},
+      "FontShadow": "shadowList",
+      "Opacity": {"sliderCombo":["opacity"]},
+      "Dock": {"select":["none","top","bottom","left","right","fill"]},
+      "Anchors": "anchorSet",
+      "Left": null,
+      "Top": null,
+      "Width": null,
+      "Height": null,
+      "MinWidth": null,
+      "MinHeight": null,
+      "MaxWidth": null,
+      "MaxHeight": null,
+      "Visible": null,
+      "Cursor": null,
+      "Hint": null,
+      "ShowHint": null,
+      "Responsive": "responsive",
+      "AdaptationMode": {"select":["inherit","auto","manual"]},
+      "ShowPointer": null,
+      "ShowTicks": null,
+      "TickValues": null,
+      "Stretch": null
+    }
+  },
+  "uui-image": {
+    "localization": {"properties":["AlternateText","Hint"]},
+    "events": {
+      "OnClick": {
+        "comment": "Runs when this component is clicked or activated."
+      }
+    },
+    "palette": "Advanced",
+    "properties": {
+      "Name": null,
+      "Source": {"fileBrowser":["image"]},
+      "Fit": {"select":["contain","cover","fill","none","scale-down"]},
+      "Alignment": {"select":["center","top-left","top","top-right","left","right","bottom-left","bottom","bottom-right"]},
+      "ImageOpacity": {"sliderCombo":["opacity"]},
+      "AlternateText": null,
+      "Opacity": {"sliderCombo":["opacity"]},
+      "Dock": {"select":["none","top","bottom","left","right","fill"]},
+      "Anchors": "anchorSet",
+      "Left": null,
+      "Top": null,
+      "Width": null,
+      "Height": null,
+      "MinWidth": null,
+      "MinHeight": null,
+      "MaxWidth": null,
+      "MaxHeight": null,
+      "Visible": null,
+      "Cursor": null,
+      "Hint": null,
+      "ShowHint": null,
+      "Responsive": "responsive",
+      "AdaptationMode": {"select":["inherit","auto","manual"]},
+      "Stretch": null
+    }
+  },
+  "uui-date-picker": {
+    "localization": {"uses":["uui-calendar"],"properties":["Label","Hint"]},
+    "events": {
+      "OnChange": {
+        "comment": "Runs when the component reports a value or state change."
+      }
+    },
+    "palette": "Basic",
+    "properties": {
+      "Name": null,
+      "Date": "datePicker",
+      "MinDate": "datePicker",
+      "MaxDate": "datePicker",
+      "ReadOnly": null,
+      "Label": null,
+      "LabelPosition": {"select":["left","right","top","bottom"]},
+      "LabelAlignment": {"select":["auto","start","center","end"]},
+      "LabelGap": null,
+      "Dock": {"select":["none","top","bottom","left","right","fill"]},
+      "Anchors": "anchorSet",
+      "Left": null,
+      "Top": null,
+      "Width": null,
+      "Height": null,
+      "MinWidth": null,
+      "MinHeight": null,
+      "MaxWidth": null,
+      "MaxHeight": null,
+      "FontFamily": {"fontList":["inherited"]},
+      "FontSize": {"fontSize":["inherited"]},
+      "FontColor": "colorPicker",
+      "FontWeight": {"fontChoice":["inherited","normal","medium","semibold","bold"]},
+      "FontStyle": {"fontChoice":["inherited","normal","italic","oblique"]},
+      "TextDecoration": {"fontChoice":["inherited","none","underline","line-through"]},
+      "FontShadow": "shadowList",
+      "Color": "colorPicker",
+      "BorderStyle": {"select":["none","solid","dashed","dotted","double","groove","ridge","inset","outset"]},
+      "BorderWidth": "progressiveQuad",
+      "BorderColor": "colorPicker",
+      "BorderRadius": {"progressiveQuad":["corners"]},
+      "Padding": "progressiveQuad",
+      "Enabled": null,
+      "Visible": null,
+      "Cursor": null,
+      "Hint": null,
+      "ShowHint": null,
+      "TabOrder": null,
+      "TabStop": null,
+      "Responsive": "responsive",
+      "AdaptationMode": {"select":["inherit","auto","manual"]},
+      "Storage": null,
+      "Stretch": null
+    }
+  },
+  "uui-time-picker": {
+    "localization": {"properties":["Label","Hint"]},
+    "events": {
+      "OnChange": {
+        "comment": "Runs when the component reports a value or state change."
+      }
+    },
+    "palette": "Basic",
+    "properties": {
+      "Name": null,
+      "Time": "timePicker",
+      "MinTime": "timePicker",
+      "MaxTime": "timePicker",
+      "ReadOnly": null,
+      "Label": null,
+      "LabelPosition": {"select":["left","right","top","bottom"]},
+      "LabelAlignment": {"select":["auto","start","center","end"]},
+      "LabelGap": null,
+      "Dock": {"select":["none","top","bottom","left","right","fill"]},
+      "Anchors": "anchorSet",
+      "Left": null,
+      "Top": null,
+      "Width": null,
+      "Height": null,
+      "MinWidth": null,
+      "MinHeight": null,
+      "MaxWidth": null,
+      "MaxHeight": null,
+      "FontFamily": {"fontList":["inherited"]},
+      "FontSize": {"fontSize":["inherited"]},
+      "FontColor": "colorPicker",
+      "FontWeight": {"fontChoice":["inherited","normal","medium","semibold","bold"]},
+      "FontStyle": {"fontChoice":["inherited","normal","italic","oblique"]},
+      "TextDecoration": {"fontChoice":["inherited","none","underline","line-through"]},
+      "FontShadow": "shadowList",
+      "Color": "colorPicker",
+      "BorderStyle": {"select":["none","solid","dashed","dotted","double","groove","ridge","inset","outset"]},
+      "BorderWidth": "progressiveQuad",
+      "BorderColor": "colorPicker",
+      "BorderRadius": {"progressiveQuad":["corners"]},
+      "Padding": "progressiveQuad",
+      "Enabled": null,
+      "Visible": null,
+      "Cursor": null,
+      "Hint": null,
+      "ShowHint": null,
+      "TabOrder": null,
+      "TabStop": null,
+      "Responsive": "responsive",
+      "AdaptationMode": {"select":["inherit","auto","manual"]},
+      "Storage": null,
+      "Stretch": null
+    }
+  },
+  "uui-calendar": {
+    "localization": {"messages":["calendar.nextMonth","calendar.previousMonth","calendar.today"],"properties":["Hint"]},
+    "events": {
+      "OnChange": {
+        "comment": "Runs when the component reports a value or state change."
+      }
+    },
+    "palette": "Advanced",
+    "properties": {
+      "Name": null,
+      "Date": "datePicker",
+      "MinDate": "datePicker",
+      "MaxDate": "datePicker",
+      "FirstDayOfWeek": {"select":["locale","sunday","monday"]},
+      "ShowWeekNumbers": null,
+      "SelectionMode": {"select":["single"]},
+      "Dock": {"select":["none","top","bottom","left","right","fill"]},
+      "Anchors": "anchorSet",
+      "Left": null,
+      "Top": null,
+      "Width": null,
+      "Height": null,
+      "MinWidth": null,
+      "MinHeight": null,
+      "MaxWidth": null,
+      "MaxHeight": null,
+      "FontFamily": {"fontList":["inherited"]},
+      "FontSize": {"fontSize":["inherited"]},
+      "FontColor": "colorPicker",
+      "FontWeight": {"fontChoice":["inherited","normal","medium","semibold","bold"]},
+      "FontStyle": {"fontChoice":["inherited","normal","italic","oblique"]},
+      "TextDecoration": {"fontChoice":["inherited","none","underline","line-through"]},
+      "FontShadow": "shadowList",
+      "Color": "colorPicker",
+      "BorderStyle": {"select":["none","solid","dashed","dotted","double","groove","ridge","inset","outset"]},
+      "BorderWidth": "progressiveQuad",
+      "BorderColor": "colorPicker",
+      "BorderRadius": {"progressiveQuad":["corners"]},
+      "Padding": "progressiveQuad",
+      "Enabled": null,
+      "Visible": null,
+      "Cursor": null,
+      "Hint": null,
+      "ShowHint": null,
+      "TabOrder": null,
+      "TabStop": null,
+      "Responsive": "responsive",
+      "AdaptationMode": {"select":["inherit","auto","manual"]},
+      "Storage": null,
+      "Stretch": null
+    }
+  },
+  "uui-data-grid": {
+    "localization": {"uses":["uui-sequence-navigator"],"properties":["Hint"],"owned":{"column":{"Caption":{"when":{"property":"ShowHeader","not":"false"}}}}},
+    "events": {
+      "OnSelectionChange": {
+        "comment": "Runs when the component selection changes."
+      },
+      "OnPageRequest": {
+        "comment": "Runs when the grid requests a page of data."
+      },
+      "OnPageChange": {
+        "comment": "Runs when the current grid page changes."
+      },
+      "OnAfterLoad": {
+        "comment": "Runs after query data has been loaded into this component."
+      },
+      "OnError": {
+        "comment": "Runs when the component reports an error."
+      },
+      "OnAction": {
+        "comment": "Runs when a grid action request is being handled."
+      }
+    },
+    "palette": "Advanced",
+    "properties": {
+      "Name": null,
+      "DataSource": "componentReference",
+      "Query": "query",
+      "AutoLoad": null,
+      "Navigators": {"checkboxGroup":["start","end"]},
+      "Columns": "dataGridColumns",
+      "Rows": "dataGridRows",
+      "RowIndex": null,
+      "ShowHeader": null,
+      "Header": "dataGridHeader",
+      "ShowRecordNo": null,
+      "AlternatingRows": null,
+      "GridLines": {"select":["none","horizontal","vertical","both"]},
+      "WordWrap": null,
+      "ColumnSpacing": null,
+      "SwipeNavigation": null,
+      "SelectionMode": {"select":["single","multiple","none"]},
+      "Dock": {"select":["none","top","bottom","left","right","fill"]},
+      "Anchors": "anchorSet",
+      "Left": null,
+      "Top": null,
+      "Width": null,
+      "Height": null,
+      "MinWidth": null,
+      "MinHeight": null,
+      "MaxWidth": null,
+      "MaxHeight": null,
+      "FontFamily": {"fontList":["inherited"]},
+      "FontSize": {"fontSize":["inherited"]},
+      "FontColor": "colorPicker",
+      "Color": "colorPicker",
+      "Padding": "progressiveQuad",
+      "ScrollBars": {"select":["hidden","auto","horizontal","vertical","both","none"]},
+      "BorderStyle": {"select":["none","solid","dashed","dotted","double"]},
+      "BorderWidth": "progressiveQuad",
+      "BorderColor": "colorPicker",
+      "BorderRadius": {"progressiveQuad":["corners"]},
+      "Enabled": null,
+      "Visible": null,
+      "Cursor": null,
+      "Hint": null,
+      "ShowHint": null,
+      "TabOrder": null,
+      "TabStop": null,
+      "Responsive": "responsive",
+      "AdaptationMode": {"select":["inherit","auto","manual"]},
+      "Stretch": null
+    },
+    "column": {
+      "events": {
+        "OnGetText": {
+          "comment": "Runs when the grid requests display text for a cell in this column."
+        }
+      },
+      "properties": {
+        "Field": null,
+        "Caption": null,
+        "WidthMode": {"select":["auto","fill","fixed"]},
+        "Width": null,
+        "Alignment": {"select":["left","center","right","justify"]}
+      }
+    },
+    "columns": {},
+    "rows": {},
+    "row": {},
+    "cell": {
+      "Text": null
+    }
+  },
+  "uui-rich-text": {
+    "localization": {"messages":["common.cancel","common.discard","common.save","richText.content","richText.saveBeforeLeaving","richText.saveFailed","richText.unsaved"],"uses":["uui-dialog"],"properties":["Hint"]},
+    "palette": "Advanced",
+    "properties": {
+      "Name": null,
+      "Dock": {"select":["none","top","bottom","left","right","fill"]},
+      "Anchors": "anchorSet",
+      "Left": null,
+      "Top": null,
+      "Width": null,
+      "Height": null,
+      "MinWidth": null,
+      "MinHeight": null,
+      "MaxWidth": null,
+      "MaxHeight": null,
+      "FontFamily": {"fontList":["inherited"]},
+      "FontSize": {"fontSize":["inherited"]},
+      "FontColor": "colorPicker",
+      "FontWeight": {"fontChoice":["inherited","normal","medium","semibold","bold"]},
+      "FontStyle": {"fontChoice":["inherited","normal","italic","oblique"]},
+      "TextDecoration": {"fontChoice":["inherited","none","underline","line-through"]},
+      "FontShadow": "shadowList",
+      "Color": "colorPicker",
+      "BorderStyle": {"select":["none","solid","dashed","dotted","double","groove","ridge","inset","outset"]},
+      "BorderWidth": "progressiveQuad",
+      "BorderColor": "colorPicker",
+      "BorderRadius": {"progressiveQuad":["corners"]},
+      "Padding": "progressiveQuad",
+      "ScrollBars": {"select":["hidden","auto","horizontal","vertical","both","none"]},
+      "Enabled": null,
+      "Visible": null,
+      "Cursor": null,
+      "Hint": null,
+      "ShowHint": null,
+      "TabOrder": null,
+      "TabStop": null,
+      "Content": "htmlContent",
+      "ReadOnly": null,
+      "Toolbar": {"select":["classic","balloon","document"]},
+      "Responsive": "responsive",
+      "AdaptationMode": {"select":["inherit","auto","manual"]},
+      "Stretch": null
+    },
+    "events": {
+      "OnChange": {
+        "comment": "Runs when the component reports a value or state change."
+      },
+      "OnLinkClick": {
+        "comment": "Runs when a link in this component is activated."
+      },
+      "OnSave": {
+        "comment": "Runs when the rich-text editor requests a save."
+      }
+    }
+  },
+  "uui-chart": {
+    "localization": {"properties":["Title","Hint"]},
+    "palette": "Advanced",
+    "properties": {
+      "Name": null,
+      "Dock": {"select":["none","top","bottom","left","right","fill"]},
+      "Anchors": "anchorSet",
+      "Left": null,
+      "Top": null,
+      "Width": null,
+      "Height": null,
+      "MinWidth": null,
+      "MinHeight": null,
+      "MaxWidth": null,
+      "MaxHeight": null,
+      "FontFamily": {"fontList":["inherited"]},
+      "FontSize": {"fontSize":["inherited"]},
+      "FontColor": "colorPicker",
+      "FontWeight": {"fontChoice":["inherited","normal","medium","semibold","bold"]},
+      "FontStyle": {"fontChoice":["inherited","normal","italic","oblique"]},
+      "TextDecoration": {"fontChoice":["inherited","none","underline","line-through"]},
+      "FontShadow": "shadowList",
+      "Color": "colorPicker",
+      "BorderStyle": {"select":["none","solid","dashed","dotted","double","groove","ridge","inset","outset"]},
+      "BorderWidth": "progressiveQuad",
+      "BorderColor": "colorPicker",
+      "BorderRadius": {"progressiveQuad":["corners"]},
+      "Padding": "progressiveQuad",
+      "Enabled": null,
+      "Visible": null,
+      "Cursor": null,
+      "Hint": null,
+      "ShowHint": null,
+      "TabOrder": null,
+      "TabStop": null,
+      "DataSource": "componentReference",
+      "Query": {"query":["chart"]},
+      "ChartType": {"select":["bar","line","area","pie","scatter"]},
+      "Title": null,
+      "ShowLegend": null,
+      "ShowLabels": null,
+      "ShowAxes": null,
+      "Responsive": "responsive",
+      "AdaptationMode": {"select":["inherit","auto","manual"]},
+      "Stretch": null
+    },
+    "events": {
+      "OnPointClick": {
+        "comment": "Runs when a chart point is clicked."
+      },
+      "OnAfterLoad": {
+        "comment": "Runs after query data has been loaded into this component."
+      },
+      "OnError": {
+        "comment": "Runs when the component reports an error."
+      }
+    }
+  },
+  "uui-web-view": {
+    "localization": {"properties":["Hint"]},
+    "palette": "Advanced",
+    "properties": {
+      "Name": null,
+      "Dock": {"select":["none","top","bottom","left","right","fill"]},
+      "Anchors": "anchorSet",
+      "Left": null,
+      "Top": null,
+      "Width": null,
+      "Height": null,
+      "MinWidth": null,
+      "MinHeight": null,
+      "MaxWidth": null,
+      "MaxHeight": null,
+      "FontFamily": {"fontList":["inherited"]},
+      "FontSize": {"fontSize":["inherited"]},
+      "FontColor": "colorPicker",
+      "FontWeight": {"fontChoice":["inherited","normal","medium","semibold","bold"]},
+      "FontStyle": {"fontChoice":["inherited","normal","italic","oblique"]},
+      "TextDecoration": {"fontChoice":["inherited","none","underline","line-through"]},
+      "FontShadow": "shadowList",
+      "Color": "colorPicker",
+      "BorderStyle": {"select":["none","solid","dashed","dotted","double","groove","ridge","inset","outset"]},
+      "BorderWidth": "progressiveQuad",
+      "BorderColor": "colorPicker",
+      "BorderRadius": {"progressiveQuad":["corners"]},
+      "Padding": "progressiveQuad",
+      "Enabled": null,
+      "Visible": null,
+      "Cursor": null,
+      "Hint": null,
+      "ShowHint": null,
+      "TabOrder": null,
+      "TabStop": null,
+      "URL": null,
+      "Content": "htmlContent",
+      "Responsive": "responsive",
+      "AdaptationMode": {"select":["inherit","auto","manual"]},
+      "Stretch": null
+    },
+    "events": {
+      "OnLoad": {
+        "comment": "Runs when the WebView reports that a page has loaded."
+      },
+      "OnError": {
+        "comment": "Runs when the component reports an error."
+      },
+      "OnLinkClick": {
+        "comment": "Runs when a link in this component is activated."
+      },
+      "OnMessage": {
+        "comment": "Runs when the WebView receives a message from its page."
+      }
+    }
+  },
+  "uui-split-button": {
+    "localization": {"messages":["common.open"],"properties":["Caption","Hint"],"owned":{"item":{"Caption":true}}},
+    "events": {
+      "OnClick": {
+        "comment": "Runs when this component is clicked or activated."
+      },
+      "OnMenuClick": {
+        "comment": "Runs when the split-button menu action is invoked."
+      }
+    },
+    "palette": "Basic",
+    "properties": {
+      "Name": null,
+      "Caption": null,
+      "Icon": "colorPicker",
+      "Dock": {"select":["none","top","bottom","left","right","fill"]},
+      "Anchors": "anchorSet",
+      "Left": null,
+      "Top": null,
+      "Width": null,
+      "Height": null,
+      "AutoSize": null,
+      "FontFamily": {"fontList":["inherited"]},
+      "FontSize": {"fontSize":["inherited"]},
+      "FontColor": "colorPicker",
+      "Color": "colorPicker",
+      "Enabled": null,
+      "Visible": null,
+      "Hint": null,
+      "ShowHint": null,
+      "Responsive": "responsive",
+      "AdaptationMode": {"select":["inherit","auto","manual"]},
+      "Stretch": null
+    },
+    "item": {
+      "Caption": null,
+      "Value": null,
+      "Checked": null,
+      "Enabled": null
+    },
+    "separator": {}
+  },
+  "uui-button": {
+    "localization": {"messages":["button.toggleOn","button.toggleOff"],"properties":["Caption","Hint"]},
+    "events": {
+      "OnClick": {
+        "comment": "Runs when this component is clicked or activated."
+      },
+      "OnHold": {
+        "comment": "Runs when a button hold gesture is recognized."
+      },
+      "OnChange": {
+        "comment": "Runs when the Toggle button checked state changes."
+      }
+    },
+    "palette": "Basic",
+    "properties": {
+      "Name": null,
+      "Caption": null,
+      "Variant": {"select":["secondary","primary","success","warning","danger"]},
+      "ControlSize": {"select":["small","standard","medium"]},
+      "Translate": null,
+      "TranslationNote": null,
+      "Icon": "colorPicker",
+      "IconPosition": {"select":["left","top","right","bottom"]},
+      "Dock": {"select":["none","top","bottom","left","right","fill"]},
+      "Anchors": "anchorSet",
+      "Left": null,
+      "Top": null,
+      "Width": null,
+      "Height": null,
+      "MinWidth": null,
+      "MinHeight": null,
+      "MaxWidth": null,
+      "MaxHeight": null,
+      "AutoSize": null,
+      "FontFamily": {"fontList":["inherited"]},
+      "FontSize": {"fontSize":["inherited"]},
+      "FontColor": "colorPicker",
+      "FontWeight": {"fontChoice":["inherited","normal","medium","semibold","bold"]},
+      "FontStyle": {"fontChoice":["inherited","normal","italic","oblique"]},
+      "TextDecoration": {"fontChoice":["inherited","none","underline","line-through"]},
+      "FontShadow": "shadowList",
+      "Color": "colorPicker",
+      "BorderStyle": {"select":["none","solid","dashed","dotted","double"]},
+      "BorderWidth": "progressiveQuad",
+      "BorderColor": "colorPicker",
+      "BorderRadius": {"progressiveQuad":["corners"]},
+      "BoxShadow": {"shadowList":["box"]},
+      "Opacity": {"sliderCombo":["opacity"]},
+      "Padding": "progressiveQuad",
+      "WordWrap": null,
+      "TextAlign": {"select":["start","center","end","justify"]},
+      "Cursor": {"select":["default","pointer","text","wait","crosshair","move","not-allowed"]},
+      "Hint": null,
+      "ShowHint": null,
+      "Enabled": null,
+      "Visible": null,
+      "TabOrder": null,
+      "TabStop": null,
+      "Responsive": "responsive",
+      "AdaptationMode": {"select":["inherit","auto","manual"]},
+      "Storage": null,
+      "Toggle": null,
+      "Checked": null,
+      "Stretch": null
+    },
+    "visual": {
+      "toggle": {
+        "rest": {
+          "foreground": "--color-text",
+          "background": "transparent",
+          "border": "--color-border"
+        },
+        "checked": {
+          "foreground": "--color-on-primary",
+          "background": "--color-primary",
+          "border": "--color-primary"
+        },
+        "hover": {
+          "foreground": "--color-primary-text",
+          "background": ["--color-primary",12,"--color-surface-elevated"],
+          "border": "--color-primary"
+        },
+        "checkedHover": {
+          "foreground": "--color-on-primary-hover",
+          "background": "--color-primary-hover",
+          "border": "--color-primary-hover"
+        },
+        "active": {
+          "foreground": "--color-on-primary-active",
+          "background": "--color-primary-active",
+          "border": "--color-primary-active"
+        },
+        "focus": {
+          "ring": "--color-focus-ring",
+          "width": 2,
+          "offset": 2
+        },
+        "disabled": {
+          "foreground": "--color-disabled-text",
+          "background": "--color-disabled-bg",
+          "border": "--color-disabled-border"
+        },
+        "checkedDisabled": {"background":["--color-primary",10,"--color-disabled-bg"]},
+        "opacity": {
+          "override": "--uui-disabled-opacity",
+          "disabled": 1
+        },
+        "motion": {
+          "properties": ["background","border-color","color","box-shadow"],
+          "duration": "--motion-duration",
+          "easing": "--ease-standard"
+        },
+        "variants": {
+          "primary": {
+            "enabled": {
+              "fontWeight": "--font-weight-medium"
+            },
+            "disabled": {
+              "opacity": 0.48
+            }
+          }
+        },
+        "fontColor": {
+          "author": "enabled"
+        },
+        "borderColor": {
+          "author": "enabled"
+        },
+        "background": {
+          "author": "enabled",
+          "paint": ["color","gradient","image"]
+        }
+      }
+    }
+  },
+  "$layout": {
+    "dock": {
+      "maxFillPerContainer": 1,
+      "autoShrink": false,
+      "minimumSize": "preserve",
+      "overflow": "container-rule",
+      "fill": {
+        "space": "remaining",
+        "negativeRemaining": "0px",
+        "minimumSize": "preserve"
+      }
+    },
+    "constraints": {
+      "onRejectedEdit": "keep-existing-value",
+      "minExceedsMax": "reject"
+    },
+    "anchors": {
+      "baseline": "design-geometry",
+      "firstRenderAsBaseline": false,
+      "whenDock": "none",
+      "delta": "parentSize - designParentSize",
+      "axis": {
+        "start": {
+          "position": "designStart",
+          "size": "designSize"
+        },
+        "end": {
+          "position": "designStart + delta",
+          "size": "designSize"
+        },
+        "both": {
+          "position": "designStart",
+          "size": "designSize + delta"
+        },
+        "neither": {
+          "position": "designStart + delta / 2",
+          "size": "designSize"
+        }
+      }
+    }
+  },
+  "$fonts": {
+    "inheritance": {
+      "source": "component-parent",
+      "boundary": "uui-form"
+    },
+    "textDecoration": {
+      "source": "component-parent",
+      "applyTo": "text-part",
+      "explicit": "override"
+    },
+    "textParts": ["[data-uui-text-control]","[data-uui-button-caption]","[data-uui-split-button-caption]","[data-uui-checkable-caption]","[data-uui-radio-group-caption]","[data-uui-radio-group-option-caption]","[data-uui-group-box-caption]","[data-uui-tab-label]","[data-uui-attached-label]","[data-uui-combo-box-input]",".uui-list-view-caption","[data-uui-role=\"tree-label\"]",".uui-menu-caption",".uui-menu-shortcut",".uui-menu-group",".uui-menu-trigger > span:last-child","uui-list-box > span","uui-data-grid th","uui-data-grid td","[data-uui-progress-text]","[data-uui-gauge-tick]",".uui-calendar-title",".uui-calendar-weekdays > span",".uui-calendar-week-number",".uui-calendar-day","uui-rich-text .sun-editor-editable",".uui-split-button-item",".uui-split-button-heading",".uui-slider-value-input","[data-uui-sequence-value]","[data-uui-spacing-value]","uui-paint-picker [data-uui-role=\"value-label\"]","uui-calendar [data-uui-calendar-action]","uui-chart text"]
+  },
+  "$events": {
+    "version": 2,
+    "legacy": {
+      "moduleParameter": "UUI",
+      "parameters": ["sender","event","context"]
+    },
+    "moduleParameter": "uui",
+    "registration": "literal-contract-id",
+    "routes": {
+      "OnClick": {
+        "type": "click",
+        "overrides": {
+          "uui-split-button": "uui:split-button-main"
+        }
+      },
+      "OnLayoutChange": {
+        "type": "uui:master-detail-layout"
+      },
+      "OnInput": {
+        "type": "uui:number-input"
+      },
+      "OnChange": {
+        "type": "uui:change",
+        "overrides": {
+          "uui-checkbox": "change",
+          "uui-radio": "change",
+          "uui-radio-group": "change",
+          "uui-slider": "change",
+          "uui-number-box": "uui:number-change",
+          "uui-history": "uui:history-change"
+        }
+      },
+      "OnSelectionChange": {
+        "type": "uui:selection-change",
+        "overrides": {
+          "uui-tree-view": "uui:tree-selection-change"
+        }
+      },
+      "OnError": {
+        "type": "uui:data-error"
+      },
+      "OnAfterLoad": {
+        "type": "uui:query-loaded"
+      },
+      "OnHold": {
+        "type": "uui:button-hold"
+      },
+      "OnMenuClick": {
+        "type": "uui:split-button-menu"
+      },
+      "OnEdit": {
+        "type": "uui:combo-box-edit",
+        "request": true
+      },
+      "OnItemAction": {
+        "type": "uui:tree-item-action"
+      },
+      "OnPointClick": {
+        "type": "uui:chart-point-click"
+      },
+      "OnLoad": {
+        "type": "uui:web-load"
+      },
+      "OnLinkClick": {
+        "type": "uui:web-link",
+        "overrides": {
+          "uui-rich-text": "uui:rich-text-link"
+        }
+      },
+      "OnMessage": {
+        "type": "uui:web-message"
+      },
+      "OnPageRequest": {
+        "type": "uui:grid-page-request",
+        "request": true
+      },
+      "OnPageChange": {
+        "type": "uui:grid-page-change"
+      },
+      "OnAction": {
+        "type": "uui:grid-action",
+        "request": true
+      },
+      "OnNavigate": {
+        "type": "uui:navigation-request",
+        "request": true
+      },
+      "OnCommand": {
+        "type": "uui:menu-command"
+      },
+      "OnTabChange": {
+        "type": "uui:panel-tab-change"
+      },
+      "OnCollapseChange": {
+        "type": "uui:panel-collapse-change"
+      },
+      "OnTabClosing": {
+        "type": "uui:panel-tab-closing",
+        "request": true
+      },
+      "OnClose": {
+        "type": "uui:dialog-close"
+      },
+      "OnSave": {
+        "type": "uui:save-request",
+        "request": true
+      },
+      "OnSelect": {
+        "type": "uui:menu-select",
+        "request": true
+      },
+      "OnSearch": {
+        "type": "uui:search",
+        "cancel": true,
+        "request": true
+      },
+      "OnResultsReady": {
+        "type": "uui:search-results-ready"
+      },
+      "OnClear": {
+        "type": "uui:search-clear",
+        "cancel": true,
+        "request": true
+      },
+      "OnFirstClick": {
+        "type": "uui:navigate",
+        "action": "first",
+        "cancel": true
+      },
+      "OnPreviousClick": {
+        "type": "uui:navigate",
+        "action": "previous",
+        "cancel": true
+      },
+      "OnCurrentClick": {
+        "type": "uui:navigate",
+        "action": "primary",
+        "cancel": true
+      },
+      "OnNextClick": {
+        "type": "uui:navigate",
+        "action": "next",
+        "cancel": true
+      },
+      "OnLastClick": {
+        "type": "uui:navigate",
+        "action": "last",
+        "cancel": true
+      },
+      "OnIconClick": {
+        "type": "uui:tree-icon-click"
+      }
+    },
+    "contracts": {
+      "uui-application/OnStart": {
+        "parameters": [{"name":"sender","type":"uui-application"}],
+        "delivery": "request",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": []
+        }
+      },
+      "uui-application/OnClose": {
+        "parameters": [{"name":"sender","type":"uui-application"}],
+        "delivery": "lifecycle",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": []
+        }
+      },
+      "uui-application/OnActivate": {
+        "parameters": [{"name":"sender","type":"uui-application"}],
+        "delivery": "lifecycle",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": []
+        }
+      },
+      "uui-application/OnDeactivate": {
+        "parameters": [{"name":"sender","type":"uui-application"}],
+        "delivery": "lifecycle",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": []
+        }
+      },
+      "uui-application/OnUnhandledError": {
+        "parameters": [{"name":"sender","type":"uui-application"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "lifecycle",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": []
+        }
+      },
+      "uui-application/OnClosing": {
+        "parameters": [{"name":"sender","type":"uui-application"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "request",
+        "returns": "false-cancels",
+        "payload": {
+          "knownFields": []
+        }
+      },
+      "uui-form/OnCreate": {
+        "parameters": [{"name":"sender","type":"uui-form"}],
+        "delivery": "request",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": []
+        }
+      },
+      "uui-master-detail/OnLayoutChange": {
+        "parameters": [{"name":"sender","type":"uui-master-detail"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": ["compact"]
+        }
+      },
+      "uui-menu/OnSelect": {
+        "parameters": [{"name":"sender","type":"uui-menu"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "request",
+        "returns": "caller-result",
+        "payload": {
+          "knownFields": []
+        }
+      },
+      "uui-history/OnChange": {
+        "parameters": [{"name":"sender","type":"uui-history"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": ["property","value","items","itemIndex","text","index","group"]
+        }
+      },
+      "uui-history/OnError": {
+        "parameters": [{"name":"sender","type":"uui-history"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": ["error"]
+        }
+      },
+      "uui-dialog/OnClose": {
+        "parameters": [{"name":"sender","type":"uui-dialog"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": []
+        }
+      },
+      "uui-menu-bar/OnCommand": {
+        "parameters": [{"name":"sender","type":"uui-menu-bar"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": ["caption","shortcut","checked"]
+        }
+      },
+      "uui-panel/OnTabChange": {
+        "parameters": [{"name":"sender","type":"uui-panel"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": ["name","index"]
+        }
+      },
+      "uui-panel/OnCollapseChange": {
+        "parameters": [{"name":"sender","type":"uui-panel"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": ["object","collapsed","expandedSize"]
+        }
+      },
+      "uui-panel/OnTabClosing": {
+        "parameters": [{"name":"sender","type":"uui-panel"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "request",
+        "returns": "false-cancels",
+        "payload": {
+          "knownFields": []
+        }
+      },
+      "uui-list-box/OnSelectionChange": {
+        "parameters": [{"name":"sender","type":"uui-list-box"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": ["index","item","row","indices","rows","records","path","directory","kind","mode"]
+        }
+      },
+      "uui-tree-view/OnSelectionChange": {
+        "parameters": [{"name":"sender","type":"uui-tree-view"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": ["index","item","row","indices","rows","records","path","directory","kind","mode"]
+        }
+      },
+      "uui-tree-view/OnItemAction": {
+        "parameters": [{"name":"sender","type":"uui-tree-view"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": ["action","trigger","path","directory","kind"]
+        }
+      },
+      "uui-list-view/OnSelectionChange": {
+        "parameters": [{"name":"sender","type":"uui-list-view"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": ["index","item","row","indices","rows","records","path","directory","kind","mode"]
+        }
+      },
+      "uui-label/OnClick": {
+        "parameters": [{"name":"sender","type":"uui-label"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": []
+        }
+      },
+      "uui-input-box/OnChange": {
+        "parameters": [{"name":"sender","type":"uui-input-box"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": ["property","value","items","itemIndex","text","index","group"]
+        }
+      },
+      "uui-search/OnSearch": {
+        "parameters": [{"name":"sender","type":"uui-search"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "request",
+        "returns": "caller-result",
+        "payload": {
+          "knownFields": []
+        }
+      },
+      "uui-search/OnResultsReady": {
+        "parameters": [{"name":"sender","type":"uui-search"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": ["grid","query"]
+        }
+      },
+      "uui-search/OnClear": {
+        "parameters": [{"name":"sender","type":"uui-search"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "request",
+        "returns": "caller-result",
+        "payload": {
+          "knownFields": []
+        }
+      },
+      "uui-text-area/OnChange": {
+        "parameters": [{"name":"sender","type":"uui-text-area"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": ["property","value","items","itemIndex","text","index","group"]
+        }
+      },
+      "uui-checkbox/OnClick": {
+        "parameters": [{"name":"sender","type":"uui-checkbox"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": []
+        }
+      },
+      "uui-checkbox/OnChange": {
+        "parameters": [{"name":"sender","type":"uui-checkbox"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": ["property","value","items","itemIndex","text","index","group"]
+        }
+      },
+      "uui-radio/OnClick": {
+        "parameters": [{"name":"sender","type":"uui-radio"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": []
+        }
+      },
+      "uui-radio/OnChange": {
+        "parameters": [{"name":"sender","type":"uui-radio"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": ["property","value","items","itemIndex","text","index","group"]
+        }
+      },
+      "uui-radio-group/OnChange": {
+        "parameters": [{"name":"sender","type":"uui-radio-group"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": ["property","value","items","itemIndex","text","index","group"]
+        }
+      },
+      "uui-combo-box/OnChange": {
+        "parameters": [{"name":"sender","type":"uui-combo-box"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": ["property","value","items","itemIndex","text","index","group"]
+        }
+      },
+      "uui-combo-box/OnEdit": {
+        "parameters": [{"name":"sender","type":"uui-combo-box"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "request",
+        "returns": "false-cancels",
+        "payload": {
+          "knownFields": []
+        }
+      },
+      "uui-number-box/OnChange": {
+        "parameters": [{"name":"sender","type":"uui-number-box"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": ["property","value","items","itemIndex","text","index","group"]
+        }
+      },
+      "uui-number-box/OnInput": {
+        "parameters": [{"name":"sender","type":"uui-number-box"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": ["text","value","valid"]
+        }
+      },
+      "uui-slider/OnChange": {
+        "parameters": [{"name":"sender","type":"uui-slider"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": ["property","value","items","itemIndex","text","index","group"]
+        }
+      },
+      "uui-paint-picker/OnChange": {
+        "parameters": [{"name":"sender","type":"uui-paint-picker"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": ["property","value","items","itemIndex","text","index","group"]
+        }
+      },
+      "uui-theme-selector/OnChange": {
+        "parameters": [{"name":"sender","type":"uui-theme-selector"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": ["property","value","items","itemIndex","text","index","group"]
+        }
+      },
+      "uui-language-selector/OnChange": {
+        "parameters": [{"name":"sender","type":"uui-language-selector"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": ["property","value","items","itemIndex","text","index","group"]
+        }
+      },
+      "uui-spacing-control/OnChange": {
+        "parameters": [{"name":"sender","type":"uui-spacing-control"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": ["property","value","items","itemIndex","text","index","group"]
+        }
+      },
+      "uui-font-size-control/OnChange": {
+        "parameters": [{"name":"sender","type":"uui-font-size-control"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": ["property","value","items","itemIndex","text","index","group"]
+        }
+      },
+      "uui-sequence-navigator/OnNavigate": {
+        "parameters": [{"name":"sender","type":"uui-sequence-navigator"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "request",
+        "returns": "caller-result",
+        "payload": {
+          "knownFields": []
+        }
+      },
+      "uui-sequence-navigator/OnFirstClick": {
+        "parameters": [{"name":"sender","type":"uui-sequence-navigator"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": ["action"]
+        }
+      },
+      "uui-sequence-navigator/OnPreviousClick": {
+        "parameters": [{"name":"sender","type":"uui-sequence-navigator"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": ["action"]
+        }
+      },
+      "uui-sequence-navigator/OnCurrentClick": {
+        "parameters": [{"name":"sender","type":"uui-sequence-navigator"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": ["action"]
+        }
+      },
+      "uui-sequence-navigator/OnNextClick": {
+        "parameters": [{"name":"sender","type":"uui-sequence-navigator"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": ["action"]
+        }
+      },
+      "uui-sequence-navigator/OnLastClick": {
+        "parameters": [{"name":"sender","type":"uui-sequence-navigator"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": ["action"]
+        }
+      },
+      "uui-sequence-navigator/OnAfterLoad": {
+        "parameters": [{"name":"sender","type":"uui-sequence-navigator"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": ["snapshot"]
+        }
+      },
+      "uui-sequence-navigator/OnError": {
+        "parameters": [{"name":"sender","type":"uui-sequence-navigator"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": ["error"]
+        }
+      },
+      "uui-image/OnClick": {
+        "parameters": [{"name":"sender","type":"uui-image"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": []
+        }
+      },
+      "uui-date-picker/OnChange": {
+        "parameters": [{"name":"sender","type":"uui-date-picker"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": ["property","value","items","itemIndex","text","index","group"]
+        }
+      },
+      "uui-time-picker/OnChange": {
+        "parameters": [{"name":"sender","type":"uui-time-picker"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": ["property","value","items","itemIndex","text","index","group"]
+        }
+      },
+      "uui-calendar/OnChange": {
+        "parameters": [{"name":"sender","type":"uui-calendar"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": ["property","value","items","itemIndex","text","index","group"]
+        }
+      },
+      "uui-data-grid/OnSelectionChange": {
+        "parameters": [{"name":"sender","type":"uui-data-grid"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": ["index","item","row","indices","rows","records","path","directory","kind","mode"]
+        }
+      },
+      "uui-data-grid/OnPageRequest": {
+        "parameters": [{"name":"sender","type":"uui-data-grid"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "request",
+        "returns": "caller-result",
+        "payload": {
+          "knownFields": []
+        }
+      },
+      "uui-data-grid/OnPageChange": {
+        "parameters": [{"name":"sender","type":"uui-data-grid"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": ["position","snapshot"]
+        }
+      },
+      "uui-data-grid/OnAfterLoad": {
+        "parameters": [{"name":"sender","type":"uui-data-grid"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": ["snapshot"]
+        }
+      },
+      "uui-data-grid/OnError": {
+        "parameters": [{"name":"sender","type":"uui-data-grid"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": ["error"]
+        }
+      },
+      "uui-data-grid/OnAction": {
+        "parameters": [{"name":"sender","type":"uui-data-grid"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "request",
+        "returns": "caller-result",
+        "payload": {
+          "knownFields": []
+        }
+      },
+      "uui-data-grid/column/OnGetText": {
+        "parameters": [{"name":"sender","type":"uui-data-grid"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "request",
+        "returns": "display-value",
+        "payload": {
+          "knownFields": []
+        }
+      },
+      "uui-rich-text/OnChange": {
+        "parameters": [{"name":"sender","type":"uui-rich-text"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": ["property","value","items","itemIndex","text","index","group"]
+        }
+      },
+      "uui-rich-text/OnLinkClick": {
+        "parameters": [{"name":"sender","type":"uui-rich-text"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": ["url","text"]
+        }
+      },
+      "uui-rich-text/OnSave": {
+        "parameters": [{"name":"sender","type":"uui-rich-text"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "request",
+        "returns": "caller-result",
+        "payload": {
+          "knownFields": []
+        }
+      },
+      "uui-chart/OnPointClick": {
+        "parameters": [{"name":"sender","type":"uui-chart"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": ["rowIndex","field","value","category","record","seriesName"]
+        }
+      },
+      "uui-chart/OnAfterLoad": {
+        "parameters": [{"name":"sender","type":"uui-chart"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": ["snapshot"]
+        }
+      },
+      "uui-chart/OnError": {
+        "parameters": [{"name":"sender","type":"uui-chart"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": ["error"]
+        }
+      },
+      "uui-web-view/OnLoad": {
+        "parameters": [{"name":"sender","type":"uui-web-view"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": []
+        }
+      },
+      "uui-web-view/OnError": {
+        "parameters": [{"name":"sender","type":"uui-web-view"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": ["error"]
+        }
+      },
+      "uui-web-view/OnLinkClick": {
+        "parameters": [{"name":"sender","type":"uui-web-view"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": ["url","text"]
+        }
+      },
+      "uui-web-view/OnMessage": {
+        "parameters": [{"name":"sender","type":"uui-web-view"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": []
+        }
+      },
+      "uui-split-button/OnClick": {
+        "parameters": [{"name":"sender","type":"uui-split-button"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": []
+        }
+      },
+      "uui-split-button/OnMenuClick": {
+        "parameters": [{"name":"sender","type":"uui-split-button"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": ["index","value","group"]
+        }
+      },
+      "uui-button/OnClick": {
+        "parameters": [{"name":"sender","type":"uui-button"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": []
+        }
+      },
+      "uui-button/OnHold": {
+        "parameters": [{"name":"sender","type":"uui-button"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": ["source"]
+        }
+      },
+      "uui-button/OnChange": {
+        "parameters": [{"name":"sender","type":"uui-button"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": ["property","value","items","itemIndex","text","index","group"]
+        }
+      },
+      "uui-tree-view/OnIconClick": {
+        "parameters": [{"name":"sender","type":"uui-tree-view"},{"name":"payload","type":"EventPayload"}],
+        "delivery": "notification",
+        "returns": "ignored",
+        "payload": {
+          "knownFields": ["path","directory","kind"]
+        }
+      }
+    },
+    "payload": {
+      "source": "event-detail-or-listed-dom-fields",
+      "exclude": ["result"],
+      "domFields": ["type","key","code","button","buttons","clientX","clientY","ctrlKey","shiftKey","altKey","metaKey","message","error","reason"]
+    },
+    "capabilities": ["log","components","events","state","signal","onDispose","text","onLocaleChange","data","forms","parameters","setNavigationState","form","application"]
+  },
+  "$localization": {
+    "version": 1,
+    "services": {
+      "application": {
+        "messages": ["app.error"],
+        "uses": []
+      }
+    },
+    "components": {
+      "language-editor": {
+        "messages": [
+          "common.cancel",
+          "common.no",
+          "common.openFolder",
+          "common.yes",
+          "language.all",
+          "language.completed",
+          "language.context",
+          "language.files",
+          "language.key",
+          "language.languages",
+          "language.legacyCategory",
+          "language.legacyEntries",
+          "language.legacyPublic",
+          "language.legacyRetired",
+          "language.legacyStudio",
+          "language.legacyUnregistered",
+          "language.legacyValue",
+          "language.needsTranslation",
+          "language.note",
+          "language.open",
+          "language.openFolder",
+          "language.publicText",
+          "language.searchPlaceholder",
+          "language.statistics",
+          "language.translate",
+          "language.translationPlaceholder",
+          "language.update",
+          "language.updatedSource",
+          "status.complete",
+          "status.coverage",
+          "status.total",
+          "status.translated",
+          "status.untranslated",
+          "status.updated"
+        ],
+        "uses": ["uui-dialog", "uui-combo-box"]
+      },
+      "uui-splitter": {
+        "messages": ["splitter.resize"],
+        "uses": []
+      },
+      "paint-popup": {
+        "messages": [
+          "common.apply",
+          "common.browse",
+          "common.cancel",
+          "editor.angle",
+          "editor.angleDegrees",
+          "editor.chooseColor",
+          "editor.imageAlignment",
+          "editor.opacity",
+          "editor.stopColor",
+          "editor.stopPosition",
+          "editor.style",
+          "option.none",
+          "paint.gradient",
+          "paint.image",
+          "paint.linear",
+          "paint.radial"
+        ],
+        "uses": ["uui-dialog"]
+      }
+    },
+    "retiredPublicMessages": [
+      "dialog.cancel",
+      "dialog.close",
+      "dialog.no",
+      "dialog.ok",
+      "dialog.yes",
+      "language.english",
+      "language.noEntries",
+      "language.original",
+      "language.translation",
+      "language.unsavedWarning",
+      "splitter.sizedToContent",
+      "status.noLanguages"
+    ],
+    "studioMessages": [
+      "ai.connection",
+      "ai.incomplete",
+      "ai.keyHelp",
+      "ai.keyMissing",
+      "ai.keyReady",
+      "ai.keysHelp",
+      "ai.loadFailed",
+      "ai.manageKeys",
+      "ai.maxOutput",
+      "ai.model",
+      "ai.new",
+      "ai.newConversation",
+      "ai.saveKeyFirst",
+      "ai.send",
+      "ai.sending",
+      "ai.title",
+      "ai.usage",
+      "ai.you",
+      "app.ai",
+      "app.androidAcceptPrepare",
+      "app.androidSetup",
+      "app.androidSetupMessage",
+      "app.build",
+      "app.buildCancelled",
+      "app.buildComplete",
+      "app.buildOutput",
+      "app.building",
+      "app.commandFailed",
+      "app.database",
+      "app.design",
+      "app.events",
+      "app.log",
+      "app.newProject",
+      "app.nonvisual",
+      "app.open",
+      "app.openProject",
+      "app.palette",
+      "app.preview",
+      "app.project",
+      "app.properties",
+      "app.ready",
+      "app.run",
+      "app.running",
+      "app.source",
+      "app.starting",
+      "arrange.align-bottom",
+      "arrange.align-bottom.hint",
+      "arrange.align-horizontal-center",
+      "arrange.align-horizontal-center.hint",
+      "arrange.align-left",
+      "arrange.align-left.hint",
+      "arrange.align-right",
+      "arrange.align-right.hint",
+      "arrange.align-top",
+      "arrange.align-top.hint",
+      "arrange.align-vertical-center",
+      "arrange.align-vertical-center.hint",
+      "arrange.bottom",
+      "arrange.center",
+      "arrange.distribute-horizontal",
+      "arrange.distribute-horizontal.hint",
+      "arrange.distribute-vertical",
+      "arrange.distribute-vertical.hint",
+      "arrange.left",
+      "arrange.middle",
+      "arrange.right",
+      "arrange.spaceHorizontally",
+      "arrange.spaceVertically",
+      "arrange.top",
+      "asset.database",
+      "asset.databaseDescription",
+      "asset.image",
+      "asset.imageDescription",
+      "asset.otherFile",
+      "asset.otherFileDescription",
+      "asset.svgLibrary",
+      "asset.svgLibraryDescription",
+      "build.android",
+      "build.android-rust",
+      "build.ios",
+      "build.linux",
+      "build.macos",
+      "build.studioInstaller",
+      "build.studioMigrate",
+      "build.windows",
+      "build.windows-installer",
+      "build.windows-rust",
+      "command.copy",
+      "command.cut",
+      "command.duplicate",
+      "command.indent",
+      "command.inspect",
+      "command.paste",
+      "command.promote",
+      "command.redo",
+      "command.undo",
+      "common.available",
+      "common.childCount",
+      "common.childCountOne",
+      "common.formDefault",
+      "common.inherited",
+      "common.inheritedValue",
+      "common.itemCount",
+      "common.itemCountOne",
+      "common.missingValue",
+      "common.mixed",
+      "common.none",
+      "common.notAssigned",
+      "common.resetProperty",
+      "common.selectMultiple",
+      "common.selectedCount",
+      "common.shadowCount",
+      "common.shadowCountOne",
+      "common.columnCount",
+      "common.columnCountOne",
+      "common.rowCount",
+      "common.rowCountOne",
+      "common.tabCount",
+      "common.tabCountOne",
+      "component.d93a632e-df9e-43e1-b752-fe760a667608.hint",
+      "component.feb631e7-e672-48d1-9ce4-a879fbe4639f.placeholder",
+      "component.ee6d73be-67ac-4faf-a3d3-99788f8a1e1c.hint",
+      "component.d882fdc6-d422-4f31-8567-b8b306a04d28.caption",
+      "component.d882fdc6-d422-4f31-8567-b8b306a04d28.hint",
+      "component.ea8848ea-547a-48c6-8082-7a503a78db15.caption",
+      "component.ea8848ea-547a-48c6-8082-7a503a78db15.hint",
+      "component.e98b13eb-7334-4f1e-8caf-3bb2eaad2f97.hint",
+      "component.e2fa2cb1-d63e-4ede-abbe-9656853c6643.hint",
+      "component.f1e9beb3-1674-4496-a335-b62687967b23.placeholder",
+      "component.ba35ce2d-53df-4154-a955-cd8bedae2909.placeholder",
+      "component.f71c66d5-165a-47f1-8eda-15fa8aab7df9.caption",
+      "component.ad01ba81-08a5-44bb-a879-1064dea58d0d.caption",
+      "component.ad01ba81-08a5-44bb-a879-1064dea58d0d.hint",
+      "component.c319335c-85e7-4e63-8728-83a9209611de.placeholder",
+      "component.b4c232bc-b2af-4b68-883c-22e838432a04.caption",
+      "component.a43729ee-efac-4b05-b17b-7b8d20e5cc12.caption",
+      "component.e79b41e9-d2eb-4e29-8457-572a8827c2a4.caption",
+      "component.a509eaa8-595e-43dc-a0cb-4b10c295c5ef.caption",
+      "component.a509eaa8-595e-43dc-a0cb-4b10c295c5ef.hint",
+      "component.e2359454-5078-4e95-becd-be35339f8a57.caption",
+      "component.f62629e8-ab3e-4a19-80c4-b2241ba819c0.hint",
+      "component.cdc062fe-9b58-4896-abfb-815a349599c7.hint",
+      "component.VPDT.hint",
+      "component.VPFT.hint",
+      "component.VPPH.hint",
+      "component.VPTB.hint",
+      "component.application",
+      "component.button",
+      "component.calendar",
+      "component.chart",
+      "component.checkbox",
+      "component.comboBox",
+      "component.dataGrid",
+      "component.dataSource",
+      "component.datePicker",
+      "component.dialog",
+      "component.fontSizeControl",
+      "component.form",
+      "component.gauge",
+      "component.groupBox",
+      "component.history",
+      "component.image",
+      "component.inputBox",
+      "component.label",
+      "component.languageSelector",
+      "component.layout",
+      "component.listBox",
+      "component.listView",
+      "component.masterDetail",
+      "component.menu",
+      "component.menuBar",
+      "component.nav",
+      "component.numberBox",
+      "component.paintPicker",
+      "component.panel",
+      "component.progressBar",
+      "component.radio",
+      "component.radioGroup",
+      "component.richText",
+      "component.search",
+      "component.sequenceNavigator",
+      "component.slider",
+      "component.spacingControl",
+      "component.splitButton",
+      "component.statusBar",
+      "component.textArea",
+      "component.themeSelector",
+      "component.timePicker",
+      "component.toolbar",
+      "component.treeView",
+      "component.webView",
+      "controller.options",
+      "design.containerBoundaries",
+      "dialog.auto",
+      "dialog.custom",
+      "dialog.ok-cancel",
+      "dialog.yes-no",
+      "dialog.yes-no-cancel",
+      "editor.addChild",
+      "editor.addItem",
+      "editor.addSibling",
+      "editor.blur",
+      "editor.bottomLeft",
+      "editor.bottomRight",
+      "editor.browseImage",
+      "editor.browseProjectImage",
+      "editor.checkable",
+      "editor.clickToAddStop",
+      "editor.color",
+      "editor.fixedWidth",
+      "editor.itemCaption",
+      "editor.itemText",
+      "editor.javascriptNotSaved",
+      "editor.linear",
+      "editor.listViewItems",
+      "editor.maxHeight",
+      "editor.maxWidth",
+      "editor.minHeight",
+      "editor.minWidth",
+      "editor.noPublishedParentProperties",
+      "editor.onGetText",
+      "editor.radial",
+      "editor.remove",
+      "editor.resetAuto",
+      "editor.resetPropertyAuto",
+      "editor.showHeader",
+      "editor.size",
+      "editor.spread",
+      "editor.tabName",
+      "editor.tabs",
+      "editor.toolbarItems",
+      "editor.topLeft",
+      "editor.topRight",
+      "editor.type",
+      "editor.unsavedSource",
+      "editor.widthMode",
+      "editor.x",
+      "editor.y",
+      "event.createHandler",
+      "event.onAction",
+      "event.onActivate",
+      "event.onAfterLoad",
+      "event.onChange",
+      "event.onClear",
+      "event.onClick",
+      "event.onClose",
+      "event.onClosing",
+      "event.onCollapseChange",
+      "event.onCommand",
+      "event.onCreate",
+      "event.onCurrentClick",
+      "event.onDeactivate",
+      "event.onEdit",
+      "event.onError",
+      "event.onFirstClick",
+      "event.onHold",
+      "event.onItemAction",
+      "event.onLastClick",
+      "event.onLayoutChange",
+      "event.onLinkClick",
+      "event.onLoad",
+      "event.onMenuClick",
+      "event.onMessage",
+      "event.onNavigate",
+      "event.onNextClick",
+      "event.onPageChange",
+      "event.onPageRequest",
+      "event.onPointClick",
+      "event.onPreviousClick",
+      "event.onResultsReady",
+      "event.onSave",
+      "event.onSearch",
+      "event.onSelect",
+      "event.onSelectionChange",
+      "event.onStart",
+      "event.onTabChange",
+      "event.onTabClosing",
+      "event.onUnhandledError",
+      "event.openHandler",
+      "file.binaryText",
+      "file.company",
+      "file.description",
+      "file.loading",
+      "file.markdownPreview",
+      "file.modified",
+      "file.name",
+      "file.originalName",
+      "file.path",
+      "file.preview",
+      "file.product",
+      "file.productVersion",
+      "file.size",
+      "file.textTooLarge",
+      "file.unavailable",
+      "file.version",
+      "header.alignment",
+      "header.background",
+      "header.bold",
+      "header.captionCase",
+      "header.color",
+      "header.fontFamily",
+      "header.fontSize",
+      "header.height",
+      "header.italic",
+      "header.wordWrap",
+      "help.component",
+      "help.open",
+      "icon.clear",
+      "icon.editor",
+      "icon.file",
+      "icon.invalid",
+      "icon.loading",
+      "icon.preview",
+      "inspector.application",
+      "inspector.component",
+      "inspector.componentCount",
+      "inspector.form",
+      "inspector.noParentProperties",
+      "studio.paletteSearch",
+      "studio.propertySearch",
+      "studio.cardSort",
+      "inspector.noProperties",
+      "inspector.parent",
+      "inspector.tab",
+      "language.appLanguage",
+      "language.orphaned",
+      "language.removeOrphaned",
+      "language.removedSource",
+      "language.studioLanguage",
+      "log.accessor",
+      "log.count",
+      "log.depthLimit",
+      "log.diagnostics",
+      "log.functionArguments",
+      "log.internal",
+      "log.items",
+      "log.members",
+      "log.parameter",
+      "log.snapshotLimit",
+      "message.clearContainedComponentsFirst",
+      "message.invalidProjectFormat",
+      "message.openMenu",
+      "message.projectError",
+      "message.projectName",
+      "message.removeOrphanedConfirm",
+      "message.resetProperty",
+      "message.resetPropertyToDefault",
+      "message.resetThemeValue",
+      "message.resetThemeValueToGenerated",
+      "message.unableToOpenProject",
+      "message.unsavedThemeConfirm",
+      "option.AudioVideo",
+      "option.Development",
+      "option.Education",
+      "option.Game",
+      "option.Graphics",
+      "option.Network",
+      "option.Office",
+      "option.Science",
+      "option.Utility",
+      "option.allUsers",
+      "option.angle",
+      "option.area",
+      "option.auto",
+      "option.balloon",
+      "option.bar",
+      "option.bl",
+      "option.bold",
+      "option.both",
+      "option.bottom",
+      "option.bottomLeft",
+      "option.bottomRight",
+      "option.box",
+      "option.br",
+      "option.cancel",
+      "option.capitalize",
+      "option.capsule",
+      "option.center",
+      "option.classic",
+      "option.click",
+      "option.clip",
+      "option.close",
+      "option.comboBox",
+      "option.confirmation",
+      "option.contain",
+      "option.cover",
+      "option.crosshair",
+      "option.currentUser",
+      "option.custom",
+      "option.dark",
+      "option.dashed",
+      "option.default",
+      "option.document",
+      "option.dotted",
+      "option.double",
+      "option.doubleClick",
+      "option.en",
+      "option.end",
+      "option.error",
+      "option.fill",
+      "option.fixed",
+      "option.fixedSpacer",
+      "option.flexibleSpacer",
+      "option.free",
+      "option.grid",
+      "option.groove",
+      "option.hidden",
+      "option.horizontal",
+      "option.icon",
+      "option.iconComboBox",
+      "option.image",
+      "option.information",
+      "option.inherit",
+      "option.inherited",
+      "option.inset",
+      "option.italic",
+      "option.item",
+      "option.labelComboBox",
+      "option.landscape",
+      "option.left",
+      "option.light",
+      "option.line",
+      "option.lineThrough",
+      "option.list",
+      "option.locale",
+      "option.lowercase",
+      "option.manual",
+      "option.medium",
+      "property.controlSize",
+      "option.small",
+      "option.standard",
+      "option.monday",
+      "option.move",
+      "option.multiple",
+      "option.no",
+      "option.normal",
+      "option.notAllowed",
+      "option.oblique",
+      "option.ok",
+      "option.okCancel",
+      "option.opacity",
+      "option.original",
+      "option.outset",
+      "option.percent",
+      "option.pie",
+      "option.pointer",
+      "option.portrait",
+      "option.ridge",
+      "option.right",
+      "property.pin",
+      "property.variant",
+      "option.secondary",
+      "option.primary",
+      "option.success",
+      "option.danger",
+      "option.justify",
+      "option.rounded",
+      "option.scaleDown",
+      "option.scatter",
+      "option.scroll",
+      "option.semibold",
+      "option.sensor",
+      "option.separator",
+      "option.single",
+      "option.slight",
+      "option.solid",
+      "option.start",
+      "option.stretch",
+      "option.sunday",
+      "option.system",
+      "option.text",
+      "option.tile",
+      "option.tl",
+      "option.top",
+      "option.topLeft",
+      "option.topRight",
+      "option.tr",
+      "option.underline",
+      "option.unspecified",
+      "option.uppercase",
+      "option.value",
+      "option.valueMax",
+      "option.vertical",
+      "option.wait",
+      "option.warning",
+      "option.wrap",
+      "option.yes",
+      "option.yesNo",
+      "option.yesNoCancel",
+      "palette.advanced",
+      "palette.application",
+      "palette.applicationLayout",
+      "palette.basic",
+      "palette.basicLayout",
+      "palette.containers",
+      "palette.layout",
+      "palette.sidebarLayout",
+      "palette.splitter",
+      "palette.topMainLayout",
+      "project.chooseLocation",
+      "project.clearInvalid",
+      "project.clearRecent",
+      "project.create",
+      "project.defaultLanguage",
+      "project.deleteFileConfirm",
+      "project.deleteFileFailed",
+      "project.deleteFileNoResult",
+      "project.deleteFormConfirm",
+      "project.enterName",
+      "project.hideNonvisualComponent",
+      "project.layout",
+      "project.layout.application",
+      "project.layout.applicationDescription",
+      "project.layout.basic",
+      "project.layout.basicDescription",
+      "project.layout.sidebar",
+      "project.layout.sidebarDescription",
+      "project.layout.topMain",
+      "project.layout.topMainDescription",
+      "project.location",
+      "project.name",
+      "project.newForm",
+      "project.setMainForm",
+      "project.setMainFormConfirm",
+      "project.showNonvisualComponent",
+      "property.adaptationMode",
+      "property.alignment",
+      "property.alternateText",
+      "property.alternatingRows",
+      "property.anchors",
+      "property.android",
+      "property.animationDuration",
+      "property.animations",
+      "property.appearance",
+      "property.arrange",
+      "property.author",
+      "property.autoLoad",
+      "property.autoSize",
+      "property.autoWrapToolbars",
+      "property.barColor",
+      "property.baseColor",
+      "property.border",
+      "property.borderColor",
+      "property.borderRadius",
+      "property.borderStyle",
+      "property.borderWidth",
+      "property.boxShadow",
+      "property.buttons",
+      "property.cancelButton",
+      "property.caption",
+      "property.chartType",
+      "property.checked",
+      "property.color",
+      "property.columnSpacing",
+      "property.columns",
+      "property.compact",
+      "property.compactSelectors",
+      "property.compactWidth",
+      "property.connection",
+      "property.constraints",
+      "property.minWidth",
+      "property.minHeight",
+      "property.maxWidth",
+      "property.maxHeight",
+      "property.content",
+      "property.currentTooltip",
+      "property.cursor",
+      "property.dataSource",
+      "property.database",
+      "property.date",
+      "property.decimalPlaces",
+      "property.default",
+      "property.defaultButton",
+      "property.description",
+      "property.designPreviewFormat",
+      "property.detailMinWidth",
+      "property.dock",
+      "property.dropDownCount",
+      "property.editable",
+      "property.enabled",
+      "property.expandDepth",
+      "property.expandOn",
+      "property.firstDayOfWeek",
+      "property.firstTooltip",
+      "property.fit",
+      "property.fontColor",
+      "property.fontFamily",
+      "property.fontShadow",
+      "property.fontSize",
+      "property.fontStyle",
+      "property.fontWeight",
+      "property.for",
+      "property.form",
+      "property.gap",
+      "property.gridLines",
+      "property.gridSize",
+      "property.group",
+      "property.header",
+      "property.height",
+      "property.hint",
+      "property.horizontalAlignment",
+      "property.iOS",
+      "property.icon",
+      "property.iconMode",
+      "property.iconPosition",
+      "property.id",
+      "property.imageOpacity",
+      "property.increment",
+      "property.itemIndex",
+      "property.items",
+      "property.label",
+      "property.labelAlignment",
+      "property.labelGap",
+      "property.labelPosition",
+      "property.lastTooltip",
+      "property.layout",
+      "property.left",
+      "property.linux",
+      "property.locale",
+      "property.macOS",
+      "property.mainForm",
+      "property.masterMinWidth",
+      "property.maxDate",
+      "property.maxItems",
+      "property.maxTime",
+      "property.maxValue",
+      "property.maximized",
+      "property.message",
+      "property.minDate",
+      "property.minTime",
+      "property.minValue",
+      "property.minimumHeight",
+      "property.minimumWidth",
+      "property.mode",
+      "property.name",
+      "property.navigator",
+      "property.navigators",
+      "property.nextTooltip",
+      "property.onActivate",
+      "property.onClear",
+      "property.onClose",
+      "property.onDeactivate",
+      "property.onSearch",
+      "property.onStart",
+      "property.onUnhandledError",
+      "property.opacity",
+      "property.orientation",
+      "property.overflow",
+      "property.padding",
+      "property.paint",
+      "property.parameter",
+      "property.parent",
+      "property.placeholder",
+      "property.popupShadows",
+      "property.popupWidth",
+      "property.presentation",
+      "property.previousTooltip",
+      "property.query",
+      "property.readOnly",
+      "property.responsive",
+      "property.rounding",
+      "property.rowIndex",
+      "property.rows",
+      "property.scrollBars",
+      "property.selectionMode",
+      "property.shortcut",
+      "property.showAxes",
+      "property.showHeader",
+      "property.showHint",
+      "property.showLabels",
+      "property.showLegend",
+      "property.showPointer",
+      "property.showRecordNo",
+      "property.showText",
+      "property.showTicks",
+      "property.showValue",
+      "property.showWeekNumbers",
+      "property.size",
+      "property.snapToGrid",
+      "property.source",
+      "property.spacing",
+      "property.splitter",
+      "property.step",
+      "property.storage",
+      "property.stretch",
+      "property.swipeNavigation",
+      "property.tabIndex",
+      "property.tabOrder",
+      "property.tabStop",
+      "property.tabs",
+      "property.target",
+      "property.text",
+      "property.textAlign",
+      "property.textDecoration",
+      "property.textFormat",
+      "property.textMode",
+      "property.theme",
+      "property.tickValues",
+      "property.time",
+      "property.title",
+      "property.toggle",
+      "property.toolbar",
+      "property.top",
+      "property.trackColor",
+      "property.translate",
+      "property.translationNote",
+      "property.type",
+      "property.uRL",
+      "property.value",
+      "property.version",
+      "property.verticalAlignment",
+      "property.visible",
+      "property.width",
+      "property.windowHeight",
+      "property.windowTitle",
+      "property.windowWidth",
+      "property.windows",
+      "property.wordWrap",
+      "property.wrap",
+      "query.add",
+      "query.categoryField",
+      "query.checking",
+      "query.chooseField",
+      "query.chooseObject",
+      "query.chooseParameter",
+      "query.deleteConsumers",
+      "query.describeBeforeCreate",
+      "query.describeFirst",
+      "query.displayFields",
+      "query.draftedFrom",
+      "query.emptyName",
+      "query.enter",
+      "query.inspectConsumersFailed",
+      "query.javascriptReferences",
+      "query.learned",
+      "query.nameTable",
+      "query.noColumns",
+      "query.noParameter",
+      "query.noRelationship",
+      "query.optionMapping",
+      "query.pageFailed",
+      "query.parameters",
+      "query.recordLimit",
+      "query.renameConsumers",
+      "query.renameConsumersTitle",
+      "query.reusedPattern",
+      "query.roleForField",
+      "query.rowsShowing",
+      "query.schema",
+      "query.searchParameter",
+      "query.showField",
+      "query.useLimit",
+      "query.useUnlimited",
+      "query.valid",
+      "query.valueFields",
+      "settings.about",
+      "settings.autoSave",
+      "settings.autoSaveDelay",
+      "settings.buildId",
+      "settings.builtAt",
+      "settings.compiler",
+      "settings.disabled",
+      "settings.enabled",
+      "settings.experience",
+      "settings.fast",
+      "settings.fontSize",
+      "settings.general",
+      "settings.host",
+      "settings.minimap",
+      "settings.motion",
+      "settings.motionSpeed",
+      "settings.normal",
+      "settings.relaxed",
+      "settings.relaxedDuration",
+      "settings.relaxedDurationHint",
+      "settings.reopenWorkspace",
+      "settings.resetDefaults",
+      "settings.restorePanels",
+      "settings.sourceEditor",
+      "settings.tabSize",
+      "settings.target",
+      "settings.title",
+      "settings.version",
+      "settings.wordWrap",
+      "settings.workspace",
+      "status.orphaned",
+      "studio.productName",
+      "theme.background",
+      "theme.border",
+      "theme.saveAs",
+      "theme.studioTheme",
+      "theme.surface",
+      "theme.text",
+      "app.androidBuild",
+      "app.androidBuildMode",
+      "app.androidDebug",
+      "app.androidRelease",
+      "app.androidBuildStart",
+      "app.androidReleaseNotice"
+    ]
+  }
+}

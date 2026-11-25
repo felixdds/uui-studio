@@ -1,2 +1,2 @@
-e494a2afe1f55680bda1ea047dbe6d73c6f1775740f65713c5e3384fef0e8055  UUI-Studio-0.2.0-alpha.1-Windows-Setup.exe
-479517354bf72425900c28959f6e7bcf075ac581bf77841ef962ef3ddd00d27a  UUI-Studio-0.2.0-alpha.1-Windows.zip
+64c7529a35b9f1d093f1301243377e3e07ff15a8e1028c74474de27845fd47fa  UUI-Studio-0.2.0-alpha.1-Windows-Setup.exe
+70a190e600e5c911f3153c3e148acf2142ff8d34b4d5ce27037c92956b8fe612  UUI-Studio-0.2.0-alpha.1-Windows.zip
