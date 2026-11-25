@@ -1,25 +1,13 @@
 # Downloads and Demo
 
-**Updated batch: 2026-11-11-motion-android.1.** Restored whole-window Windows zoom in/out, including the title bar and border. The Android build dialog now offers Debug APK or Release AAB + APK. AI is a primary button, the Windows Build menu offers the installer only, and build-choice/license dialogs keep a normal pointer.
-
 [简体中文](../../下载与演示.md) · English
 
-The Windows preview test version, whole-window zoom and Android release builds, and a Chinese demo video are available: [view this release](https://github.com/felixdds/uui-studio/releases/tag/v0.1.0-preview.20261111-motion-android.1).
+The current Windows prerelease is **0.2.0-alpha.1**.
 
-[Installer (recommended)](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261111-motion-android.1/UUI-Studio-0.1.0-Windows-Rust-Setup.exe) · [Portable ZIP (optional)](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261111-motion-android.1/UUI-Studio-0.1.0-Windows-Rust.zip) · [1080p demo with bilingual captions](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-Localization-Approval-1080p-zh-en.mp4) · [Checksums](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261111-motion-android.1/SHA256SUMS.txt)
+[Windows installer](https://github.com/felixdds/uui-studio/releases/download/v0.2.0-alpha.1/UUI-Studio-0.2.0-alpha.1-Windows-Setup.exe) · [Portable ZIP](https://github.com/felixdds/uui-studio/releases/download/v0.2.0-alpha.1/UUI-Studio-0.2.0-alpha.1-Windows.zip) · [SHA-256](https://github.com/felixdds/uui-studio/releases/download/v0.2.0-alpha.1/SHA256SUMS.txt) · [Release notes](https://github.com/felixdds/uui-studio/releases/tag/v0.2.0-alpha.1)
 
-## Download and install
+The installer is self-contained. For the portable edition, extract the complete ZIP. Verify your download with the [SHA-256 manifest](../../SHA256SUMS.txt).
 
-For first-time use, choose `UUI-Studio-0.1.0-Windows-Rust-Setup.exe`. If you need the portable version, choose `UUI-Studio-0.1.0-Windows-Rust.zip`. Choose either one; the installer does not require the ZIP. Check your download against the [release notes](../../RELEASE_NOTES.en.md) and [checksum file](../../SHA256SUMS.txt).
+## Historical demos and releases
 
-For installation and upgrade steps, see [Installation and upgrades](../../RELEASE_NOTES.en.md#installation-and-upgrades), then follow the [getting started and testing guide](testing.md).
-
-## Watch the demo
-
-The new attachment is `UUI-Studio-Localization-Approval-1080p-zh-en.mp4`: approximately 2 minutes 34 seconds, 1920×1080, 16:9, 30 fps, H.264/AAC. It has Chinese narration and bilingual captions, with three separate SRT files and optional embedded subtitle tracks. See the [viewing notes and subtitles](demo-1080p.md).
-
-It shows translation groups, editing and confirmed cleanup, continuous execution after task approval, and a genuine pause before stage two followed by another approval. It uses the real OpenAI service and local builds/interaction checks. Acceleration and reading holds are labeled.
-
-The [older coffee demo](https://github.com/felixdds/uui-studio/releases/download/v0.1.0-preview.20261110-locale-approval.1/UUI-Studio-AI-Cafe-Demo-zh-CN.mp4) and [older software batch](https://github.com/felixdds/uui-studio/releases/tag/v0.1.0-preview.20261109-logo.1) remain available. The existing video stays on its original release; this batch updates the software downloads and checksums. No YouTube upload or new mobile-device/platform acceptance testing was performed.
-
-[Product homepage](../../README.en.md) · [Release notes](../../RELEASE_NOTES.en.md) · [Getting started and testing](testing.md)
+[Demo and subtitle guide](../demo-1080p.md) · [Demo video release](https://github.com/felixdds/uui-studio/releases/tag/v0.1.0-preview.20261110-locale-approval.1) · [0.1 historical release](https://github.com/felixdds/uui-studio/releases/tag/v0.1.0-preview.20261111-motion-android.1)

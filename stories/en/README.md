@@ -42,6 +42,10 @@ Read in order or start with a question that interests you. These are accounts of
 
     Respecting professional habits, finding collaborators, and continuing architectural work into retirement.
 
+9. [From UDM to UCM, and on to a Professional Team](09-ucm-handover.md)
+
+    The 0.2 architecture migration, cross-platform validation, and the next phase of collaboration.
+
 ## A software developer's perspective
 
 [A Software Developer's Perspective](../../docs/en/review.md) is separate from the first-person stories. It discusses consistency, engineering boundaries, and questions for further assessment. It is analytical commentary, not an outside expert's endorsement or an independent audit.
