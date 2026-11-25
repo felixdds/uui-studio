@@ -1,34 +1,308 @@
 {
   "$applicationPlatforms": {
     "windows": {
-      "installScope": ["all-users", "current-user"],
-      "startMenuShortcut": {},
-      "desktopShortcut": {},
-      "icon": {}
+      "installScope": {"options":["all-users","current-user"],"default":"all-users"},
+      "startMenuShortcut": {"default":true},
+      "desktopShortcut": {"default":false},
+      "icon": {"default":""}
     },
     "android": {
-      "packageName": {},
-      "versionCode": {
-        "min": 0,
-        "max": 2100000000
-      },
-      "minimumSdk": {
-        "min": 29,
-        "max": 35
-      },
-      "orientation": ["unspecified", "portrait", "landscape", "sensor"],
-      "internet": {},
-      "allowBackup": {},
-      "icon": {}
+      "packageName": {"default":""},
+      "versionCode": {"min":0,"max":2100000000,"default":0},
+      "minimumSdk": {"min":29,"max":35,"default":29},
+      "orientation": {"options":["unspecified","portrait","landscape","sensor"],"default":"unspecified"},
+      "internet": {"default":true},
+      "allowBackup": {"default":false},
+      "icon": {"default":""}
     },
     "linux": {
-      "desktopEntry": {},
-      "desktopId": {},
-      "category": ["Utility", "Development", "Education", "Office", "Graphics", "AudioVideo", "Network", "Game", "Science"],
-      "icon": {}
+      "desktopEntry": {"default":false},
+      "desktopId": {"default":""},
+      "category": {"options":["Utility","Development","Education","Office","Graphics","AudioVideo","Network","Game","Science"],"default":"Utility"},
+      "icon": {"default":""}
     },
     "macos": {},
     "ios": {}
+  },
+  "$formSize": {"width":900,"height":640},
+  "$projectInitial": {"version":"0.1.0"},
+  "$componentDefaults": {
+    "version": 1,
+    "common": {
+      "MasterMinWidth": 320,
+      "DetailMinWidth": 440,
+      "ChartType": "bar",
+      "ShowLegend": true,
+      "ShowLabels": false,
+      "ShowAxes": true,
+      "URL": "",
+      "Maximize": false,
+      "Closable": false,
+      "Menu": false,
+      "Layout": "list",
+      "PopupWidth": 0,
+      "Connection": "",
+      "DataSource": "",
+      "Type": "information",
+      "Buttons": "ok",
+      "Title": "",
+      "Message": "",
+      "DefaultButton": "auto",
+      "CancelButton": "auto",
+      "Dock": "none",
+      "Anchors": "left top",
+      "MinWidth": 0,
+      "MinHeight": 0,
+      "MaxWidth": 0,
+      "MaxHeight": 0,
+      "Left": 0,
+      "Top": 0,
+      "Width": 75,
+      "Height": 25,
+      "Stretch": false,
+      "AutoSize": false,
+      "Icon": "#00000000",
+      "IconPosition": "left",
+      "Value": 0,
+      "MinValue": "",
+      "MaxValue": "",
+      "Increment": 1,
+      "DecimalPlaces": 0,
+      "Mode": "free",
+      "Appearance": "system",
+      "BaseColor": "#2F81F7",
+      "Rounding": "slight",
+      "Locale": "en",
+      "Spacing": "comfortable",
+      "ShowValue": false,
+      "ReadOnly": false,
+      "Editable": false,
+      "DropDownCount": 8,
+      "Orientation": "horizontal",
+      "ShowPointer": true,
+      "ShowTicks": true,
+      "TickValues": "",
+      "ShowText": false,
+      "TextMode": "percent",
+      "TextFormat": "{percent}%",
+      "BarColor": "#2F81F7",
+      "TrackColor": "#21262D",
+      "Date": "",
+      "MinDate": "",
+      "MaxDate": "",
+      "FirstDayOfWeek": "locale",
+      "ShowWeekNumbers": false,
+      "Time": "",
+      "MinTime": "",
+      "MaxTime": "",
+      "Padding": "0 0 0 0",
+      "ScrollBars": "hidden",
+      "Storage": false,
+      "AutoLoad": true,
+      "MaxItems": 100,
+      "FontFamily": "inherited",
+      "FontSize": "inherited",
+      "FontColor": "inherited",
+      "FontWeight": "inherited",
+      "FontStyle": "inherited",
+      "TextDecoration": "inherited",
+      "FontShadow": "inherited",
+      "Font": "(Name=Segoe UI, Size=9, Style=[])",
+      "Color": "#21262D",
+      "BoxShadow": "none",
+      "BackgroundColor": "clBtnFace",
+      "WordWrap": false,
+      "TextAlign": "start",
+      "Enabled": true,
+      "Visible": true,
+      "Translate": true,
+      "TranslationNote": "",
+      "Cursor": "default",
+      "Hint": "",
+      "ShowHint": false,
+      "TabOrder": 0,
+      "TabStop": true,
+      "Default": false,
+      "Cancel": false,
+      "ModalResult": "mrNone",
+      "SnapToGrid": true,
+      "GridSize": 8,
+      "Presentation": "label-combo-box",
+      "AdaptationMode": "inherit",
+      "Responsive": "[]",
+      "IconMode": false,
+      "Target": "",
+      "Navigator": "",
+      "Step": 2,
+      "Size": 6,
+      "Splitter": false,
+      "Pin": true,
+      "ControlSize": "standard",
+      "Variant": "secondary",
+      "Tabs": "[]",
+      "TabIndex": 0,
+      "Items": "[]",
+      "SelectionMode": "single",
+      "ExpandDepth": 1,
+      "ExpandOn": "click",
+      "Text": "",
+      "Content": "",
+      "Toolbar": "classic",
+      "For": "",
+      "Placeholder": "",
+      "Label": "",
+      "LabelPosition": "left",
+      "LabelAlignment": "auto",
+      "LabelGap": 6,
+      "Source": "",
+      "Fit": "contain",
+      "Alignment": "center",
+      "HorizontalAlignment": "start",
+      "VerticalAlignment": "center",
+      "Opacity": 1,
+      "ImageOpacity": 1,
+      "AlternateText": "",
+      "Gap": 4,
+      "Wrap": false,
+      "FirstTooltip": "First",
+      "PreviousTooltip": "Previous",
+      "CurrentTooltip": "Current",
+      "DesignPreviewFormat": "{label}",
+      "NextTooltip": "Next",
+      "LastTooltip": "Last",
+      "Overflow": "clip",
+      "Paint": "#2F81F7",
+      "Toggle": false,
+      "Checked": false,
+      "ItemIndex": -1,
+      "Columns": 1,
+      "Query": "{}",
+      "Navigators": "",
+      "Rows": "[]",
+      "RowIndex": 0,
+      "Header": "{}",
+      "ShowHeader": true,
+      "ShowRecordNo": false,
+      "AlternatingRows": true,
+      "GridLines": "both",
+      "ColumnSpacing": 0,
+      "SwipeNavigation": false
+    },
+    "geometry": {
+      "uui-button": { "width": 80, "height": 26 },
+      "uui-split-button": { "width": 100, "height": 26 },
+      "uui-list-box": { "width": 160, "height": 142 },
+      "uui-list-view": { "width": 220, "height": 180 },
+      "uui-label": { "width": 80, "height": 20 },
+      "uui-input-box": { "width": 160, "height": 26 },
+      "uui-search": { "width": 240, "height": 26 },
+      "uui-text-area": { "width": 200, "height": 96 },
+      "uui-chart": { "width": 480, "height": 300 },
+      "uui-web-view": { "width": 480, "height": 300 },
+      "uui-rich-text": { "width": 320, "height": 180 },
+      "uui-checkbox": { "width": 120, "height": 26 },
+      "uui-radio": { "width": 120, "height": 26 },
+      "uui-radio-group": { "width": 200, "height": 120 },
+      "uui-combo-box": { "width": 160, "height": 26 },
+      "uui-number-box": { "width": 120, "height": 26 },
+      "uui-slider": { "width": 160, "height": 26 },
+      "uui-paint-picker": { "width": 160, "height": 26 },
+      "uui-theme-selector": { "width": 180, "height": 26 },
+      "uui-language-selector": { "width": 180, "height": 26 },
+      "uui-spacing-control": { "width": 272, "height": 26 },
+      "uui-font-size-control": { "width": 120, "height": 26 },
+      "uui-sequence-navigator": { "width": 160, "height": 26 },
+      "uui-history": { "width": 52, "height": 26 },
+      "uui-gauge": { "width": 320, "height": 74 },
+      "uui-progress-bar": { "width": 160, "height": 26 },
+      "uui-image": { "width": 160, "height": 120 },
+      "uui-tree-view": { "width": 220, "height": 180 },
+      "uui-toolbar": { "width": 400, "height": 38 },
+      "uui-status-bar": { "width": 400, "height": 26 },
+      "uui-panel": { "width": 240, "height": 160 },
+      "uui-group-box": { "width": 240, "height": 160 },
+      "uui-master-detail": { "width": 640, "height": 400 },
+      "uui-menu-bar": { "width": 400, "height": 26 },
+      "uui-date-picker": { "width": 160, "height": 26 },
+      "uui-time-picker": { "width": 120, "height": 26 },
+      "uui-calendar": { "width": 280, "height": 280 },
+      "uui-data-grid": { "width": 320, "height": 200 }
+    },
+    "containerMinimum": {
+      "uui-toolbar": [26, 38],
+      "uui-status-bar": [26, 26],
+      "uui-panel": [48, 32]
+    },
+    "overrides": {
+      "$autoScrollBars": [
+        "uui-tree-view",
+        "uui-list-view",
+        "uui-data-grid",
+        "uui-text-area",
+        "uui-rich-text",
+        "uui-toolbar",
+        "uui-status-bar",
+        "uui-group-box"
+      ],
+      "uui-list-box": {
+        "ScrollBars": "vertical"
+      },
+      "tab": {
+        "ScrollBars": "inherited"
+      },
+      "uui-button": {
+        "TextAlign": "center"
+      },
+      "uui-label": {
+        "Padding": "0 8 0 8"
+      },
+      "uui-group-box": {
+        "Gap": 8
+      }
+    },
+    "creation": {
+      "uui-label": {
+        "attributes": {
+          "data-uui-auto-size": "true"
+        }
+      },
+      "uui-master-detail": {
+        "children": [
+          {
+            "tag": "master"
+          },
+          {
+            "tag": "detail"
+          }
+        ]
+      },
+      "uui-tree-view": [
+        { "caption": "Item 1", "expanded": true, "children": ["Child 1"] },
+        "Item 2"
+      ],
+      "uui-list-view": ["Item 1", "Item 2", "Item 3"],
+      "uui-data-grid": {
+        "children": [
+          { "tag": "columns", "children": [
+            { "tag": "column", "attributes": { "caption": "Name", "width": "160" } },
+            { "tag": "column", "attributes": { "caption": "Status", "width": "120" } }
+          ] },
+          { "tag": "rows", "children": [["Alpha", "Ready"], ["Beta", "Pending"]] }
+        ]
+      },
+      "uui-menu-bar": [{ "File": ["New", "Open", null, "Exit"] }, "Edit"],
+      "uui-calendar": {
+        "localDateAttribute": "data-uui-date"
+      },
+      "uui-panel": {
+        "children": [
+          {
+            "tag": "tab",
+            "identity": true
+          }
+        ]
+      }
+    }
   },
   "$version": 0,
   "uui-application": {
@@ -40,21 +314,21 @@
       "Description": null,
       "Icon": {"colorPicker":["icon"]},
       "MainForm": "select",
-      "Appearance": {"select":["system","light","dark"]},
-      "Rounding": {"select":["slight","rounded","capsule"]},
-      "Spacing": {"select":["compact","comfortable","spacious"]},
-      "AdaptationMode": {"select":["manual","auto"]},
-      "CompactWidth": null,
-      "AutoWrapToolbars": null,
-      "CompactSelectors": null,
+      "Appearance": {"select":["system","light","dark"],"default":"system"},
+      "Rounding": {"select":["slight","rounded","capsule"],"default":"slight"},
+      "Spacing": {"select":["compact","comfortable","spacious"],"default":"comfortable"},
+      "AdaptationMode": {"select":["manual","auto"],"default":"auto"},
+      "CompactWidth": {"default":600},
+      "AutoWrapToolbars": {"default":true},
+      "CompactSelectors": {"default":true},
       "Locale": {"select":["en"]},
-      "Animations": null,
+      "Animations": {"default":true},
       "AnimationDuration": null,
       "PopupShadows": null,
       "WindowTitle": null,
-      "MinimumWidth": null,
-      "MinimumHeight": null,
-      "Maximized": null,
+      "MinimumWidth": {"default":240},
+      "MinimumHeight": {"default":360},
+      "Maximized": {"default":false},
       "Windows": "applicationPlatform",
       "Android": "applicationPlatform",
       "Linux": "applicationPlatform",
@@ -2206,6 +2480,7 @@
     }
   },
   "$fonts": {
+    "defaults": {"FontFamily":"system-ui","FontSize":"medium","FontColor":"var(--color-text)","FontWeight":"normal","FontStyle":"normal","TextDecoration":"none","FontShadow":"none"},
     "inheritance": {
       "source": "component-parent",
       "boundary": "uui-form"

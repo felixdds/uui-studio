@@ -9,17 +9,17 @@
 
 UUI Studio is a visual application development tool built for human–AI collaboration. Developers can edit layouts, properties, and events in the designer. AI can work on the same project within the user’s approved scope. The project and business scripts remain editable after the app is built.
 
-## UCM architecture files
+## UCM architecture file
 
-These two JSON files are the authored UCM declarations used by Studio. Definition declares components, properties, events, and rules. Defaults supplies fallback values and initial content for newly created components. A shared expansion step gives Studio and the build tools the structure they consume. Projects store explicit author settings, and the app builder selects runtime code and resources according to the components and capabilities used.
+Studio uses one authored UCM JSON file for component definitions, events, rules, defaults, and creation values. Application and platform defaults sit alongside their rules. Studio and the build tools share the expansion step, and the app builder selects the runtime data and resources each project needs.
 
-[View ucm-definition.json](architecture/ucm/ucm-definition.json) · [View ucm-defaults.json](architecture/ucm/ucm-defaults.json)
+[View ucm-definition.json](architecture/ucm/ucm-definition.json)
 
 ## 0.2.0-alpha.1
 
 This prerelease completes the underlying architecture migration and preserves the existing design and AI workflows. Projects use JSON-based UCM, and the builder selects the runtime component code and resources each project uses. Building the same project for Windows and Android has been demonstrated during development. This release is intended for technical evaluation and early testing.
 
-[Windows installer](https://github.com/felixdds/uui-studio/releases/download/v0.2.0-alpha.1.ucm.1/UUI-Studio-0.2.0-alpha.1-Windows-Setup.exe) · [Portable ZIP](https://github.com/felixdds/uui-studio/releases/download/v0.2.0-alpha.1.ucm.1/UUI-Studio-0.2.0-alpha.1-Windows.zip) · [SHA-256](https://github.com/felixdds/uui-studio/releases/download/v0.2.0-alpha.1.ucm.1/SHA256SUMS.txt) · [Release notes](https://github.com/felixdds/uui-studio/releases/tag/v0.2.0-alpha.1.ucm.1)
+[Windows installer](https://github.com/felixdds/uui-studio/releases/download/v0.2.0-alpha.1.ucm.2/UUI-Studio-0.2.0-alpha.1-Windows-Setup.exe) · [Portable ZIP](https://github.com/felixdds/uui-studio/releases/download/v0.2.0-alpha.1.ucm.2/UUI-Studio-0.2.0-alpha.1-Windows.zip) · [SHA-256](https://github.com/felixdds/uui-studio/releases/download/v0.2.0-alpha.1.ucm.2/SHA256SUMS.txt) · [Release notes](https://github.com/felixdds/uui-studio/releases/tag/v0.2.0-alpha.1.ucm.2)
 
 The installer is self-contained. If Windows reports an unknown publisher, verify the source and SHA-256 checksum. Extract the entire portable ZIP into a fresh folder. Both packages include English and Simplified Chinese offline Help and editable examples. AI features require your own provider configuration and API key.
 
