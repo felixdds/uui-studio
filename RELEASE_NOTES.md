@@ -15,10 +15,12 @@ This prerelease validates the underlying UCM migration and cross-platform build 
 [0.1 historical release](https://github.com/felixdds/uui-studio/releases/tag/v0.1.0-preview.20261111-motion-android.1)
 
 ~~~text
-596512e2fc08da7e6ef506b1e7f4dad4755d46960d6c5d1bb9ebd78fb6423cb0  UUI-Studio-0.2.0-alpha.1-Windows-Setup.exe
-aa659870a1abb55efcbd02d060138eeba79d4ad682258deea2f99ec7d55b8b66  UUI-Studio-0.2.0-alpha.1-Windows.zip
+e494a2afe1f55680bda1ea047dbe6d73c6f1775740f65713c5e3384fef0e8055  UUI-Studio-0.2.0-alpha.1-Windows-Setup.exe
+479517354bf72425900c28959f6e7bcf075ac581bf77841ef962ef3ddd00d27a  UUI-Studio-0.2.0-alpha.1-Windows.zip
 ~~~
 
-## 历史发行
+## 修复更新 / Corrected Windows packages
 
-[0.1 预览版本与原发行记录](https://github.com/felixdds/uui-studio/releases/tag/v0.1.0-preview.20261111-motion-android.1)。
+- 修复安装版 Run APP 缺少构建输入的问题，并验证了 BMI 的构建、启动、计算和 Reset。
+- 修复 Primary 按钮文字误用禁用颜色的问题。
+- Fixed missing build input in installed Studio and verified BMI build, launch, calculation, and reset. Restored Primary button text contrast.
