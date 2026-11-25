@@ -10,4 +10,4 @@ I’m looking for a company or professional team willing to take over ongoing de
 
 I would start with one business scenario and work through design, build, and testing together. Seeing firsthand which design decisions hold up and which need improvement would give us a basis for a long-term handover.
 
-[Story index](README.md) · [0.2 prerelease](https://github.com/felixdds/uui-studio/releases/tag/v0.2.0-alpha.1)
+[Story index](README.md) · [0.2 prerelease](https://github.com/felixdds/uui-studio/releases/tag/v0.2.0-alpha.1.ucm.1)

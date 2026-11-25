@@ -10,4 +10,4 @@ BMI 计算器是个小例子，却帮我验证了一个大问题：同一个工�
 
 我希望先和有意愿的团队一起选一个业务场景，从设计、构建到测试完整走一遍。能共同看清哪些设计值得保留、哪些环节需要改进，才有基础谈长期接手。
 
-[返回故事目录](README.md) · [0.2 预发行](https://github.com/felixdds/uui-studio/releases/tag/v0.2.0-alpha.1)
+[返回故事目录](README.md) · [0.2 预发行](https://github.com/felixdds/uui-studio/releases/tag/v0.2.0-alpha.1.ucm.1)
