@@ -13,13 +13,15 @@ UUI Studio 是一套支持可视化设计和 AI 协作的应用开发工具。�
 
 Studio 使用一份 UCM 源声明。组件、属性、事件、规则、默认值和创建初值都在这个 JSON 中维护。Application 属性和平台选项在规则旁声明默认值。Studio 与构建工具通过共用入口展开，APP 构建器按工程选取所需的运行数据和资源。
 
+普通枚举直接列出选项，有固定默认值时用默认值作键。字体继承由共享 Select 显示祖辈的有效值。
+
 [查看 ucm-definition.json](architecture/ucm/ucm-definition.json)
 
 ## 0.2.0-alpha.1
 
 这次预发行完成了底层架构迁移，保留已有的设计和 AI 工作流。工程使用 JSON 格式的 UCM，构建器按工程抽取运行所需的组件代码和资源。同一工程的 Windows 与 Android 构建已在开发过程中验证。这个版本用于技术评估和试用。
 
-[Windows 安装包](https://github.com/felixdds/uui-studio/releases/download/v0.2.0-alpha.1.ucm.2/UUI-Studio-0.2.0-alpha.1-Windows-Setup.exe) · [便携 ZIP](https://github.com/felixdds/uui-studio/releases/download/v0.2.0-alpha.1.ucm.2/UUI-Studio-0.2.0-alpha.1-Windows.zip) · [SHA-256](https://github.com/felixdds/uui-studio/releases/download/v0.2.0-alpha.1.ucm.2/SHA256SUMS.txt) · [发行说明](https://github.com/felixdds/uui-studio/releases/tag/v0.2.0-alpha.1.ucm.2)
+[Windows 安装包](https://github.com/felixdds/uui-studio/releases/download/v0.2.0-alpha.1.ucm.3/UUI-Studio-0.2.0-alpha.1-Windows-Setup.exe) · [便携 ZIP](https://github.com/felixdds/uui-studio/releases/download/v0.2.0-alpha.1.ucm.3/UUI-Studio-0.2.0-alpha.1-Windows.zip) · [SHA-256](https://github.com/felixdds/uui-studio/releases/download/v0.2.0-alpha.1.ucm.3/SHA256SUMS.txt) · [发行说明](https://github.com/felixdds/uui-studio/releases/tag/v0.2.0-alpha.1.ucm.3)
 
 安装包可独立使用。Windows 可能提示未知发布者，请确认下载来源并核对 SHA-256。便携 ZIP 请完整解压到新目录。包内包含中英文离线帮助和可编辑示例。AI 功能需要自行配置服务和 API Key。
 
