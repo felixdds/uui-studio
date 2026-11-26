@@ -21,7 +21,7 @@ Ordinary enums list their options directly. A fixed default is the key of the or
 
 This prerelease completes the underlying architecture migration and preserves the existing design and AI workflows. Projects use JSON-based UCM, and the builder selects the runtime component code and resources each project uses. Building the same project for Windows and Android has been demonstrated during development. This release is intended for technical evaluation and early testing.
 
-[Windows installer](https://github.com/felixdds/uui-studio/releases/download/v0.2.0-alpha.1.ucm.3/UUI-Studio-0.2.0-alpha.1-Windows-Setup.exe) · [Portable ZIP](https://github.com/felixdds/uui-studio/releases/download/v0.2.0-alpha.1.ucm.3/UUI-Studio-0.2.0-alpha.1-Windows.zip) · [SHA-256](https://github.com/felixdds/uui-studio/releases/download/v0.2.0-alpha.1.ucm.3/SHA256SUMS.txt) · [Release notes](https://github.com/felixdds/uui-studio/releases/tag/v0.2.0-alpha.1.ucm.3)
+[Windows installer](https://github.com/felixdds/uui-studio/releases/download/v0.2.0-alpha.1.ucm.4/UUI-Studio-0.2.0-alpha.1-Windows-Setup.exe) · [Portable ZIP](https://github.com/felixdds/uui-studio/releases/download/v0.2.0-alpha.1.ucm.4/UUI-Studio-0.2.0-alpha.1-Windows.zip) · [SHA-256](https://github.com/felixdds/uui-studio/releases/download/v0.2.0-alpha.1.ucm.4/SHA256SUMS.txt) · [Release notes](https://github.com/felixdds/uui-studio/releases/tag/v0.2.0-alpha.1.ucm.4)
 
 The installer is self-contained. If Windows reports an unknown publisher, verify the source and SHA-256 checksum. Extract the entire portable ZIP into a fresh folder. Both packages include English and Simplified Chinese offline Help and editable examples. AI features require your own provider configuration and API key.
 
