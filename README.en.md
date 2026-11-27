@@ -9,6 +9,12 @@
 
 UUI Studio is a visual application development tool built for human–AI collaboration. Developers can edit layouts, properties, and events in the designer. AI can work on the same project within the user’s approved scope. The project and business scripts remain editable after the app is built.
 
+## Strategic collaboration · UCM Partnership
+
+UCM is a standards-first application architecture with a working prototype. We welcome technology partners to evaluate and develop it further.
+
+**[Partnership invitation](PARTNERSHIP.md) · [Technical brief](docs/partnership/Technical_Brief.md) · [Presentation PDF](docs/partnership/UCM_Strategic_Presentation.pdf)**
+
 ## UCM architecture file
 
 Studio uses one authored UCM JSON file for component definitions, events, rules, defaults, and creation values. Application and platform defaults sit alongside their rules. Studio and the build tools share the expansion step, and the app builder selects the runtime data and resources each project needs.

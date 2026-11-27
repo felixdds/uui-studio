@@ -9,6 +9,12 @@
 
 UUI Studio 是一套支持可视化设计和 AI 协作的应用开发工具。人可以在设计器中编辑界面、属性和事件，AI 可以在批准的范围内操作同一份工程。应用生成后，工程和业务脚本仍可继续编辑。
 
+## 战略合作 · UCM Partnership
+
+UCM 架构已有可运行原型，现寻求技术伙伴共同评估与研发。欢迎了解合作提案、技术简报和演示材料。
+
+**[合作邀请（English）](PARTNERSHIP.md) · [技术简报（English）](docs/partnership/Technical_Brief.md) · [Presentation PDF](docs/partnership/UCM_Strategic_Presentation.pdf)**
+
 ## UCM 架构文件
 
 Studio 使用一份 UCM 源声明。组件、属性、事件、规则、默认值和创建初值都在这个 JSON 中维护。Application 属性和平台选项在规则旁声明默认值。Studio 与构建工具通过共用入口展开，APP 构建器按工程选取所需的运行数据和资源。
